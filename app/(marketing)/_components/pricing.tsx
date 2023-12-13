@@ -11,11 +11,11 @@ const Pricing: React.FC<PricingProps> = ({ features }) => {
     <>
       <h2 className="text-4xl font-bold mb-4 text-center my-8">Pricing</h2>
       <div className="flex flex-col items-center justify-center p-6 border rounded-lg shadow-lg shadow-red-500/50 max-w-lg mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Lifetime Access</h2>
+        <h2 className="text-2xl font-bold mb-4">Beta Access</h2>
         <p className="text-lg mb-4">
           <span className="line-through text-gray-500">$29.99</span> <span className="text-red-600">$9.99</span>
         </p>
-        <p className="text-sm text-gray-500 mb-6">Limited Time Deal</p>
+        <p className="text-sm text-gray-500 mb-6">Limited to first 100 Users. (10 left)</p>
         <Button variant="premium" className="mb-5">
           Buy Now <ArrowRight className="ml-2" size={20} />
         </Button>
