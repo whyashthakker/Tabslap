@@ -6,6 +6,8 @@ import { useScrollTop } from "@/components/hooks/use-scroll-top";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
+import { ArrowRight } from "lucide-react";
+import AddOllyButton from "./add-olly";
 
 export const Navbar = () => {
   const scrolled = useScrollTop();
@@ -19,11 +21,13 @@ export const Navbar = () => {
       <Logo />
       <div className="flex flex-wrap md:ml-auto md:justify-end justify-between w-full items-center gap-x-2">
           <>
-              <Button variant="ghost" size="sm">
+              {/* <Button variant="ghost" size="sm">
                 <Link href="https://chromewebstore.google.com/u/2/detail/safegpt/fecdlcopjiaeaoachfgpocdgaanolkkc?hl=en-GB">
-                Add Olly
+                  Add Now
                 </Link>
-              </Button>
+              </Button> */}
+
+              <AddOllyButton />
               <Button variant="ghost" size="sm">
                 <Link href="/privacy-policy">
                 Privacy Policy

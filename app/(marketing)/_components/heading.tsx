@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import AddOllyButton from "./add-olly";
 
 export const Heading = () => {
 
@@ -18,10 +19,7 @@ export const Heading = () => {
       <h3 className="text-xs md:text-m font-small mb-4 text-gray-500">
         Generate Comments, Replies, Virality Scores & similar Posts with AI.
       </h3>
-          <Button variant="default" size="sm" onClick={handleButtonClick}>
-              Add Olly
-            <ArrowRight className="h-4 w-4 ml-2" />
-          </Button>
+      <AddOllyButton />
     </div>
   )
 }

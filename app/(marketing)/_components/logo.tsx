@@ -28,7 +28,7 @@ export const Logo = () => {
       />
       <Link href="/" passHref>
         <p className={cn("font-semibold", font.className)}>
-          Add Olly.
+          Your Social Media Sidekick.
         </p>
       </Link>
     </div>
