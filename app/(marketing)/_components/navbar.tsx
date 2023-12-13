@@ -21,7 +21,7 @@ export const Navbar = () => {
           <>
               <Button variant="ghost" size="sm">
                 <Link href="https://chromewebstore.google.com/u/2/detail/safegpt/fecdlcopjiaeaoachfgpocdgaanolkkc?hl=en-GB">
-                Get Sidekick
+                Add Olly
                 </Link>
               </Button>
               <Button variant="ghost" size="sm">

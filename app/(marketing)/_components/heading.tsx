@@ -13,14 +13,13 @@ export const Heading = () => {
   return (
     <div className="max-w-3xl space-y-4">
       <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-10">
-        Your Very Own Personal Assistant.
+        Your Social Media Sidekick
       </h1>
       <h3 className="text-xs md:text-m font-small mb-4 text-gray-500">
-        Redacts Sensitive Information. Generates Content on the fly. Deep Dives into Topics.
-        All in your browser.
+        Generate Comments, Replies, Virality Scores & similar Posts with AI.
       </h3>
           <Button variant="default" size="sm" onClick={handleButtonClick}>
-              Add Sidekick
+              Add Olly
             <ArrowRight className="h-4 w-4 ml-2" />
           </Button>
     </div>
