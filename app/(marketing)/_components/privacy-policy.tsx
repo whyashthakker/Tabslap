@@ -25,7 +25,7 @@ const PrivacyPolicy: React.FC = () => {
                 <p>Olly is dedicated to complying with relevant privacy laws and regulations. Our practices are designed to uphold legal standards and respect your privacy rights.</p>
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">6. Policy Updates</h2>
-                <p>Our Privacy Policy may be updated to reflect changes in our practices or legal obligations. We will inform users of any significant changes by updating the 'Last updated' date at the top of this policy. Regular review of this policy is recommended.</p>
+                <p>Our Privacy Policy may be updated to reflect changes in our practices or legal obligations. We will inform users of any significant changes by updating the [Last updated] date at the top of this policy. Regular review of this policy is recommended.</p>
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">7. Contact Us</h2>
                 <p>For any questions or concerns about our Privacy Policy or practices, please reach out to us at yash@yashthakker.com.</p>
