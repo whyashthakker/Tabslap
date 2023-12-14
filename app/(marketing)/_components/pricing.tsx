@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,16 +9,23 @@ interface PricingProps {
 }
 
 const Pricing: React.FC<PricingProps> = ({ features }) => {
+
+  const handleBuyNowButtonClick = () => {
+    window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank");
+  }
+
+  
   return (
     <>
       <h2 className="text-4xl font-bold mb-4 text-center my-8">Pricing</h2>
       <div className="flex flex-col items-center justify-center p-6 border rounded-lg shadow-lg shadow-red-500/50 max-w-lg mx-auto">
         <h2 className="text-2xl font-bold mb-4">Beta Access</h2>
         <p className="text-lg mb-4">
-          <span className="line-through text-gray-500">$29.99</span> <span className="text-red-600">$9.99</span>
+        <span className="text-red-600 text-3xl">$9.99</span> <span className="line-through text-gray-500">$29.99</span> 
         </p>
-        <p className="text-sm text-gray-500 mb-6">Limited to first 100 Users. (10 left)</p>
-        <Button variant="premium" className="mb-5">
+        <p className="text-sm text-gray-500 mb-1">Limited to first 100 Users.</p>
+        <p className="text-xs mb-4 text-red-400">10 Left.</p>
+        <Button variant="premium" className="mb-5" onClick={handleBuyNowButtonClick}>
           Buy Now <ArrowRight className="ml-2" size={20} />
         </Button>
         <div className="text-left w-full">

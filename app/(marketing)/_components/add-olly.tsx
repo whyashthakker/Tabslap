@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 const AddOllyButton = () => {
   const handleButtonClick = () => {
-    window.open("https://chrome.google.com/webstore/detail/olly-your-ai-social-media/your-extension-id", "_blank");
+    window.open("https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", "_blank");
   }
 
   return (
