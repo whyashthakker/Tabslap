@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
 import { ArrowRight } from "lucide-react";
 import AddOllyButton from "./add-olly";
+import Image from "next/image";
 
 export const Navbar = () => {
   const scrolled = useScrollTop();
@@ -27,12 +28,22 @@ export const Navbar = () => {
                 </Link>
               </Button> */}
 
-              <AddOllyButton />
+              <div className="hidden md:flex">
+                <AddOllyButton />
+              </div>              
+
               <Button variant="ghost" size="sm">
                 <Link href="/privacy-policy">
                 Privacy Policy
                 </Link>
               </Button>
+
+              {/* Small logo for mobile view */}
+              <div className="flex md:hidden">
+                <Link href="/">
+                  <Image src="/logo.svg" height="40" width="40" alt="Logo" />
+                </Link>
+              </div>
 
               <Button variant="ghost" size="sm">
                 <Link href="/activation-guide">

@@ -12,6 +12,7 @@ const HowToUse: React.FC<HowToUseProps> = ({ featureName, featureDescription, im
   const isImageLeft = formatImage === 'left';
 
   return (
+    <div className="flex justify-center items-center bg-white p-4">
     <div className="flex flex-col items-center justify-center my-4 mx-5">
 
       <div className="w-full my-2">
@@ -24,9 +25,10 @@ const HowToUse: React.FC<HowToUseProps> = ({ featureName, featureDescription, im
       </div>
 
       <div className={`flex ${isImageLeft ? 'flex-row-reverse' : 'flex-row'} items-center justify-center my-3 w-full`}>
-        <Image src={imageLink} height={700} width={700} alt={featureName} className="m-2" />
+        <Image src={imageLink} height={500} width={500} alt={featureName} className="m-2" />
       </div>
     </div>
+  </div>
   );
 };
 
