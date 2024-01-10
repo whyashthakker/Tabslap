@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://www.olly.social/</loc>
-      <lastmod>2023-12-13</lastmod>
+      <lastmod>2024-01-10</lastmod>
       <priority>1.00</priority>
    </url>
    <url>
       <loc>https://www.olly.social/privacy-policy</loc>
-      <lastmod>2023-12-13</lastmod>
+      <lastmod>2024-01-10</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>https://www.olly.social/activation-guide</loc>
+      <lastmod>2024-01-10</lastmod>
       <priority>0.80</priority>
    </url>
 </urlset>
