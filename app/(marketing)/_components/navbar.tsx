@@ -33,6 +33,12 @@ export const Navbar = () => {
                 Privacy Policy
                 </Link>
               </Button>
+
+              <Button variant="ghost" size="sm">
+                <Link href="/activation-guide">
+                  How to Use?
+                </Link>
+              </Button>
           </>
       </div>
     </div>
