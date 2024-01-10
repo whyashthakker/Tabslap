@@ -26,11 +26,11 @@ const ActivationGuide: React.FC = () => {
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">Step 5: Read the Disclaimer</h2>
                 <Image src="/5.png" alt="Step 5 Image" width={500} height={300} />
-                <p>Understand how your settings affect OpenAI's usage charges and read other important information.</p>
+                <p>Understand how your settings affect OpenAI usage charges and read other important information.</p>
 
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">Ready to Start</h2>
-                <p>Once everything is set up, you're ready to engage with your community using Olly!</p>
+                <p>Once everything is set up, you are ready to engage with your community using Olly!</p>
             </div>
         </div>
     );
