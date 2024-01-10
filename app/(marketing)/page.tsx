@@ -21,11 +21,6 @@ const MarketingPage = () => {
         <h2 className="text-4xl font-bold mb-4 text-center my-8">Features</h2>
         <Heroes />
         <AddOllyButton />
-        <div>
-        <Button variant="premium" size="lg" onClick={handleButtonClick}>
-          Buy Olly
-        </Button>
-        </div>
         <Pricing features={pricingFeatures} />
       </div>
     </div>

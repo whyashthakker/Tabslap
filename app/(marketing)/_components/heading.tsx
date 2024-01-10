@@ -8,7 +8,7 @@ import AddOllyButton from "./add-olly";
 export const Heading = () => {
 
   const handleButtonClick = () => {
-    window.open("https://chromewebstore.google.com/u/2/detail/safegpt/fecdlcopjiaeaoachfgpocdgaanolkkc?hl=en-GB", "_blank")
+    window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
   }
 
   return (
@@ -19,7 +19,12 @@ export const Heading = () => {
       <h3 className="text-xs md:text-m font-small mb-4 text-gray-500">
         Generate Comments, Replies, Virality Scores & similar Posts with AI.
       </h3>
-      <AddOllyButton />
+      <div className="flex flex-row justify-center">
+        <AddOllyButton />
+        <Button variant="premium" size="lg" className="ml-2" onClick={handleButtonClick}>
+            Activate Olly
+        </Button>
+      </div>
     </div>
   )
 }
