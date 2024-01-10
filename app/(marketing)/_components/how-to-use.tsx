@@ -20,7 +20,7 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "Step 3: Select Model to Use",
-        featureDescription: "Choose between different AI models like GPT-3.5 or GPT-4 for personalized interactions. To check costs/billing for each of these models, please refer to OpenAI usage costs.",
+        featureDescription: "Choose between different AI models like GPT-3.5 or GPT-4 for personalized interactions. To check costs/billing for each of these models, please refer to OpenAI usage costs at https://openai.com/pricing",
         imageLink: "/step_3.gif",
         formatImage: "right"
     },
@@ -40,12 +40,6 @@ const howToUseData: howToUseData[] = [
         featureName: "Step 6: Customize Your Commenting Style",
         featureDescription: "Set your preferred style of commenting, including the tone and length of replies.",
         imageLink: "/step_6.gif",
-        formatImage: "right"
-    },
-    {
-        featureName: "Step 7: Read the Disclaimer",
-        featureDescription: "Understand how your settings affect OpenAI usage charges and read other important information.",
-        imageLink: "",
         formatImage: "right"
     },
     {
