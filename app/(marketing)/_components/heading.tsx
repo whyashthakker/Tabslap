@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Brain, BrainCircuit } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import AddOllyButton from "./add-olly";
@@ -14,10 +14,10 @@ export const Heading = () => {
   return (
     <div className="max-w-3xl space-y-4">
       <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-10">
-        Your Social Media Sidekick
+        Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
       </h1>
-      <h3 className="text-xs md:text-m font-small mb-4 text-gray-500">
-        Generate Comments, Replies, Virality Scores & similar Posts with AI.
+      <h3 className="text-s md:text-m font-small mb-4 text-gray-500">
+        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts across LinkedIn, Product Hunt, YouTube, Reddit, Facebook, Instagram, X and more in seconds.
       </h3>
       <div className="flex flex-row justify-center">
         <AddOllyButton />

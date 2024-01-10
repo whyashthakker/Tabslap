@@ -8,7 +8,7 @@ interface howToUseData {
 const howToUseData: howToUseData[] = [
     {
         featureName: "Step 1: Add Olly to Google Chrome",
-        featureDescription: "Head to the Chrome Web Store and add Olly to your browser. You can also click here add Olly to Chrome via the Navbar.",
+        featureDescription: "Head to the Chrome Web Store and add Olly to your browser. You can also click Add Olly to Chrome via the Navbar.",
         imageLink: "/step_1.gif",
         formatImage: "right"
     },
@@ -26,13 +26,13 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "Step 4: Setup your Activation Key",
-        featureDescription: "Enter your activation key and OpenAI API key to start using Olly.",
+        featureDescription: "Enter your activation key first to start using Olly. Get your Activation key: https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca - if you already bought the key, you can find it in your email or your lemonsqeezy orders. Note you can have a maximum of 5 activation keys.",
         imageLink: "/step_4.gif",
         formatImage: "right"
     },
     {
         featureName: "Step 5: Setup your OpenAI API Key",
-        featureDescription: "Enter your activation key and OpenAI API key to start using Olly.",
+        featureDescription: "Enter your activation key and OpenAI API key to start using Olly: https://platform.openai.com/account/api-keys - We never access any of your data. You can read on Chrome extension permissions and also our Privacy Policy for more information. Also note OpenAI will bill you per month based on your usage.",
         imageLink: "/step_5.gif",
         formatImage: "right"
     },
@@ -43,8 +43,8 @@ const howToUseData: howToUseData[] = [
         formatImage: "right"
     },
     {
-        featureName: "Ready to Start",
-        featureDescription: "Once everything is set up, you are ready to engage with your community using Olly!",
+        featureName: "You are all set!",
+        featureDescription: "Start using Olly 🥳 across Facebook, Reddit, LinkedIn, ProductHunt, Instagram, X and YouTube!",
         imageLink: "/1.png",
         formatImage: "right"
     },
