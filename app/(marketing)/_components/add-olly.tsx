@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Chrome } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const AddOllyButton = () => {
@@ -12,7 +12,7 @@ const AddOllyButton = () => {
   return (
     <Button variant="default" size="lg" onClick={handleButtonClick}>
       Add Olly to Chrome
-      <ArrowRight className="h-4 w-4 ml-2" />
+      <Chrome className="h-4 w-4 ml-2" />
     </Button>
   );
 };
