@@ -10,10 +10,6 @@ import ProductHuntBadge from "./ph-embed";
 
 export const Heading = () => {
 
-  const handleButtonClick = () => {
-    window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
-  }
-
   const handleWatchDemo = () => {
     window.open("https://youtu.be/I5jyvy5S5T4", "_blank")
   }
