@@ -2,12 +2,11 @@
 
 import { Accessibility, ArrowRight, Brain, BrainCircuit, Heart } from "lucide-react";
 
+import React, { useState, useEffect } from "react";
+
 import { Button } from "@/components/ui/button";
 import AddOllyButton from "./add-olly";
-import Link from "next/link";
-import Image from "next/image";
 import ProductHuntBadge from "./ph-embed";
-import SupportedPlatforms from "./supported-platforms";
 
 export const Heading = () => {
 
@@ -18,7 +17,6 @@ export const Heading = () => {
   const handleButtonClick = () => {
     window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
   }
-
 
   return (
 
@@ -35,10 +33,12 @@ export const Heading = () => {
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
         <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
-            Get Lifetime Access
-            <Heart className="h-4 w-4 ml-2" />
+            {/* <Heart className="h-4 w-4 ml-2" /> */}
+            Get Lifetime Access at&nbsp;<span className="text-white-600 text-l">$19.99&nbsp;</span>
+            <span className="line-through text-gray-800 text-s justify-bottom">$49.99</span> 
         </Button>
       </div>
+      <p className="text-xs text-red-500">Lifetime offer is valid until 12th January 2024, 11:59:59pm.</p>
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
