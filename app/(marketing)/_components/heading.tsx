@@ -29,9 +29,9 @@ export const Heading = () => {
       </h3>
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
-        <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
+        {/* <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
             Activate Olly
-        </Button>
+        </Button> */}
       </div>
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
