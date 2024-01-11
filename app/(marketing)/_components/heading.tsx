@@ -20,6 +20,7 @@ export const Heading = () => {
 
   return (
     <div className="max-w-3xl space-y-4">
+      <ProductHuntBadge />
       <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-10">
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
       </h1>
@@ -32,9 +33,6 @@ export const Heading = () => {
             Activate Olly
         </Button>
       </div>
-
-      <ProductHuntBadge />
-
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
