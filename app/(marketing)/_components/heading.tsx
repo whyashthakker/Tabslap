@@ -34,8 +34,9 @@ export const Heading = () => {
         <AddOllyButton />
         <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
             {/* <Heart className="h-4 w-4 ml-2" /> */}
-            Get Lifetime Access at&nbsp;<span className="text-white-600 text-l">$19.99&nbsp;</span>
-            <span className="line-through text-gray-800 text-s justify-bottom">$49.99</span> 
+            Get Lifetime Access at&nbsp;
+            <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
+            <span className="text-white-600 text-l">&nbsp;$19.99</span>
         </Button>
       </div>
       <p className="text-xs text-red-500">Lifetime offer is valid until 12th January 2024, 11:59:59pm.</p>
