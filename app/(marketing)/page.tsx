@@ -22,7 +22,6 @@ const MarketingPage = () => {
         <Heading />
         <UserReviews />
         <SupportedPlatforms />
-        <h2 className="text-4xl font-bold mb-4 text-center my-8">Features</h2>
         <Heroes />
         <AddOllyButton />
         <Pricing features={pricingFeatures} />
