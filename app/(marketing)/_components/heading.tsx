@@ -4,6 +4,9 @@ import { ArrowRight, Brain, BrainCircuit } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import AddOllyButton from "./add-olly";
+import Link from "next/link";
+import Image from "next/image";
+import ProductHuntBadge from "./ph-embed";
 
 export const Heading = () => {
 
@@ -25,11 +28,14 @@ export const Heading = () => {
       </h3>
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
-        <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
+        <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
             Activate Olly
         </Button>
       </div>
-      <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
+
+      <ProductHuntBadge />
+
+      <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
     </div>
