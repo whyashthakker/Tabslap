@@ -14,7 +14,7 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "Step 2: Turn on and Refresh the Page",
-        featureDescription: "Make sure that the Olly extension is enabled in your browser. Please Refresh the page if you have just installed Olly.",
+        featureDescription: "Make sure that the Olly extension is enabled in your browser. Please Refresh the page if you have just installed Olly. Note all pages need to be refreshed after installing Olly. We recommend restarting your browser after installing Olly.",
         imageLink: "/step_2.gif",
         formatImage: "right"
     },

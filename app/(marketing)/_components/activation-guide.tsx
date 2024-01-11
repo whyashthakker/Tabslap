@@ -4,6 +4,7 @@ import { SeparatorHorizontal } from 'lucide-react';
 import howToUseData from './how-to-use';
 
 import HowToUse from './how-to-use-component';
+import AddOllyButton from './add-olly';
 
 const ActivationGuide: React.FC = () => {
     return (
@@ -13,6 +14,9 @@ const ActivationGuide: React.FC = () => {
             <p className='text-gray-500 text-center'>
                 The following guide will help you to get started with the Olly. 
             </p>
+            </div>
+            <div className='flex justify-center'>
+            <AddOllyButton />
             </div>
             <div className="max-w-7xl mx-auto px-4">
             {howToUseData.map((feature, index) => (
