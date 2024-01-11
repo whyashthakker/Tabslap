@@ -44,8 +44,8 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "You are all set!",
-        featureDescription: "Start using Olly 🥳 across Facebook, Reddit, LinkedIn, ProductHunt, Instagram, X and YouTube!",
-        imageLink: "/1.png",
+        featureDescription: "Select the text across Facebook, Reddit, LinkedIn, ProductHunt, Instagram, X and YouTube! and Olly will popup in the bottom middle of your screen. If you don not see Olly, please refresh the page or check if the extension is enabled as shown in step 1.",
+        imageLink: "/step_7.gif",
         formatImage: "right"
     },
 
