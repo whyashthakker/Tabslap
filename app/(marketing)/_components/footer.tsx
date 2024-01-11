@@ -18,9 +18,9 @@ export const Footer = () => {
             50K+ AI Newsletter Community 🚀
           </Button>
         </Link>
-        <Link href="https://narrate.bio">
+        <Link href="https://yashthakker.com">
           <Button variant="ghost" size="sm">
-            Messy Audio Notes to Beautiful Memos ❤️
+            Maker Projects 👋
           </Button>
         </Link>
       </div>
