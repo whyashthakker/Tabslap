@@ -7,6 +7,8 @@ import Pricing from "./_components/pricing";
 import pricingFeatures from "./_components/pricing-features";
 
 import { Button } from "@/components/ui/button";
+import UserReviews from "./_components/user-reviews";
+import SupportedPlatforms from "./_components/supported-platforms";
 
 const MarketingPage = () => {
 
@@ -18,6 +20,8 @@ const MarketingPage = () => {
     <div className="min-h-full flex flex-col dark:bg-[#1F1F1F]">
       <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-1 flex-1 px-4 md:px-6 pb-10">
         <Heading />
+        <UserReviews />
+        <SupportedPlatforms />
         <h2 className="text-4xl font-bold mb-4 text-center my-8">Features</h2>
         <Heroes />
         <AddOllyButton />

@@ -1,18 +1,14 @@
-import { Facebook, Instagram, Linkedin, X } from 'lucide-react'
+import Image from 'next/image';
 import React from 'react'
 
 const SupportedPlatforms = () => {
   return (
     <div>
-    <h1>Supported Platforms</h1>
-    <div className='flex flex-row justify-center gap-x-3'>
-        <Facebook />
-        <X />
-        <Instagram />
-        <Linkedin />
+          <h2 className="font-semibold text-xl">Supported Platforms: </h2>
+      <div className="flex justify-center">
+      <Image src="/platforms-supported.png" width={400} height={100} alt="We currently support Facebook, LinkedIn, Instagram, Reddit, Product Hunt, YouTube, Twitter, and plan to add Hacker News, Indie Hackers, Quora, Medium, Pinterest, TikTok, Twitch, and more." />
+      </div>
     </div>
-    </div>
-
   )
 }
 
