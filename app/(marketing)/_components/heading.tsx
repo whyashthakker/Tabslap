@@ -39,7 +39,7 @@ export const Heading = () => {
             <span className="text-white-600 text-l">&nbsp;$19.99</span>
         </Button>
       </div>
-      <p className="text-xs text-red-500">Lifetime offer is valid until 12th January 2024, 11:59:59pm.</p>
+      <p className="text-xs text-red-500">Lifetime offer is valid until 12th January, 2024 11:59:59 PM PST.</p>
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
