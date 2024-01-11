@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import AddOllyButton from "./add-olly";
 import ProductHuntBadge from "./ph-embed";
+import Image from "next/image";
 
 export const Heading = () => {
 
@@ -43,6 +44,7 @@ export const Heading = () => {
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
+      <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
     </div>
   )
 }
