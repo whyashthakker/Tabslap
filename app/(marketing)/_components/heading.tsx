@@ -1,6 +1,6 @@
 "use client";
 
-import { Accessibility, ArrowRight, Brain, BrainCircuit, Heart } from "lucide-react";
+import { Accessibility, ArrowBigDown, ArrowBigDownDash, ArrowRight, Brain, BrainCircuit, Heart } from "lucide-react";
 
 import React, { useState, useEffect } from "react";
 
@@ -23,12 +23,15 @@ export const Heading = () => {
   return (
     <div className="max-w-3xl space-y-4 mb-4">
       <ProductHuntBadge />
-      <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-10">
+      <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
       </h1>
-      <h3 className="text-s md:text-m font-small mb-4 text-gray-500">
-        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds.
+      <h3 className="text-xs md:text-m font-small mb-2 text-gray-500">
+        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds across all major social media platforms.
       </h3>
+      {/* <div className="flex justify-center">
+        <ArrowBigDown className="h-10 w-5 animate-bounce" />
+      </div> */}
       <SupportedPlatforms />
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
