@@ -21,7 +21,7 @@ const MarketingPage = () => {
       <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-1 flex-1 px-4 md:px-6 pb-10">
         <Heading />
         <UserReviews />
-        <SupportedPlatforms />
+        {/* <SupportedPlatforms /> */}
         <Heroes />
         <AddOllyButton />
         <Pricing features={pricingFeatures} />
