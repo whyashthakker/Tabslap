@@ -10,7 +10,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import UserReviewsData from './user-reviews-data'; // Update the path to where userReviews is exported
+import UserReviewsData from './user-reviews-data';
+
+import Autoplay from 'embla-carousel-autoplay';
 
 export function UserReviews() {
 
@@ -24,7 +26,11 @@ export function UserReviews() {
 
       
   return (
-    <Carousel className="w-full max-w-md"> {/* Adjusted the width */}
+    <Carousel className="w-full max-w-md" plugins={[
+        Autoplay({
+            delay:3500,
+        })
+    ]}> {/* Adjusted the width */}
       <CarouselContent>
         {UserReviewsData.map((review, index) => (
           <CarouselItem key={index}>
