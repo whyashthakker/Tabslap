@@ -7,6 +7,12 @@ interface ReviewData {
 
 const UserReviewsData: ReviewData[] = [
     {
+        reviewerName: "Geeta Belani",
+        reviewDate: "Dec 18, 2023",
+        review: "This extension is a social saver, have been able to engage more with people on multiple platforms in a better way and much more frequently.",
+        reviewStar: 5,
+    },
+    {
         reviewerName: "Bienaime",
         reviewDate: "Jan 12, 2024",
         review: "Olly's understanding of my audience is uncanny. It consistently generates comments that reflect the preferences and interests of my followers. The result? A surge in engagement and a more authentic online presence. It's like having a mind-reading social media sidekick. I'm impressed!",
@@ -30,12 +36,6 @@ const UserReviewsData: ReviewData[] = [
         review: "Olly has become my go-to social media sidekick for building a genuine and engaged audience.",
         reviewStar: 5,
     },
-    {
-        reviewerName: "Geeta Belani",
-        reviewDate: "Dec 18, 2023",
-        review: "This extension is a social saver, have been able to engage more with people on multiple platforms in a better way and much more frequently.",
-        reviewStar: 5,
-    }
 ]
 
   
