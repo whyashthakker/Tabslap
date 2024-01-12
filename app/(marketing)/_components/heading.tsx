@@ -20,9 +20,7 @@ export const Heading = () => {
   }
 
   return (
-
-    
-    <div className="max-w-3xl space-y-4">
+    <div className="max-w-3xl space-y-4 mb-4">
       <ProductHuntBadge />
       <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-10">
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
@@ -45,7 +43,9 @@ export const Heading = () => {
         Watch Demo
       </Button>
       <div className="flex justify-center">
-      <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
+      <div className="shadow-lg shadow-teal-500/50">
+        <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
+      </div>
       </div>
     </div>
   )
