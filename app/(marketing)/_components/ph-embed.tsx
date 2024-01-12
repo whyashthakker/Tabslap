@@ -8,8 +8,8 @@ const ProductHuntBadge = () => {
         <Image 
           src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=430993&theme=light&period=daily" 
           alt="Olly - In-browser AI comments, posts, viral scores in seconds | Product Hunt" 
-          width={250} 
-          height={54} 
+          width={200} 
+          height={30} 
           unoptimized={true} // Use this if you are not configuring an external loader
         />
       </a>
