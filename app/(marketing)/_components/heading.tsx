@@ -42,7 +42,7 @@ export const Heading = () => {
             <span className="text-white-600 text-l">&nbsp;$19.99</span>
         </Button>
       </div>
-      <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. Lifetime offer is valid until 12th January, 2024 11:59:59 PM PST.</p>
+      <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. Lifetime offer is valid until 14th January, 2024 11:59:59 PM PST. After this the price will be $29.99 and after Jan 31st will be $49.99.</p>
       <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
         Watch Demo
       </Button>
