@@ -9,6 +9,7 @@ import { Logo } from "./logo";
 import { ArrowRight } from "lucide-react";
 import AddOllyButton from "./add-olly";
 import Image from "next/image";
+import WatchDemo from "./watch-demo";
 
 export const Navbar = () => {
   const scrolled = useScrollTop();
@@ -50,6 +51,14 @@ export const Navbar = () => {
                   How to Use?
                 </Link>
               </Button>
+
+              <div className="hidden md:flex">
+              <Button variant="ghost" size="sm">
+                <Link href="https://youtu.be/I5jyvy5S5T4">
+                  Watch Demo
+                </Link>
+              </Button>
+              </div>
           </>
       </div>
     </div>

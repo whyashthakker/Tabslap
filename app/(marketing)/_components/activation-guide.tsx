@@ -6,6 +6,7 @@ import howToUseData from './how-to-use';
 import HowToUse from './how-to-use-component';
 import AddOllyButton from './add-olly';
 import { Button } from '@/components/ui/button';
+import WatchDemo from './watch-demo';
 
 const ActivationGuide: React.FC = () => {
 
@@ -22,12 +23,13 @@ const ActivationGuide: React.FC = () => {
                 The following guide will help you to get started with the Olly. 
             </p>
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
+            <div className="flex flex-col md:flex-row justify-center items-center md:items-start mb-4">
                 <AddOllyButton />
                 <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
                     Activate Olly
                 </Button>
             </div>
+            <WatchDemo />
             <div className="max-w-7xl mx-auto px-4">
             {howToUseData.map((feature, index) => (
             <HowToUse key={index} {...feature} />

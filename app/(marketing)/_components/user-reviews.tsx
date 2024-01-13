@@ -26,6 +26,8 @@ export function UserReviews() {
 
       
   return (
+    <div>
+    <h1 className="font-semibold text-2xl mb-3">What our Users say</h1>
     <Carousel className="w-full max-w-md" plugins={[
         Autoplay({
             delay:3500,
@@ -37,7 +39,7 @@ export function UserReviews() {
             <div className="p-1">
               <Card>
                 <CardContent className="flex flex-col items-center justify-center p-6">
-                <div className="text-2xl font-semibold mb-1">{review.reviewerName}</div>
+                <div className="text-xl font-semibold mb-1">{review.reviewerName}</div>
                 <div className="text-xs text-gray-400 mb-1">{review.reviewDate}</div>
                 <p className="text-sm text-gray-600 mb-1">{review.review}</p>
                 <div className="text-sm font-medium text-yellow-400 mb-1">
@@ -52,6 +54,7 @@ export function UserReviews() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
+    </div>
   )
 }
 

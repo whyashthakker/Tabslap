@@ -12,10 +12,6 @@ import SupportedPlatforms from "./supported-platforms";
 
 export const Heading = () => {
 
-  const handleWatchDemo = () => {
-    window.open("https://youtu.be/I5jyvy5S5T4", "_blank")
-  }
-
   const handleButtonClick = () => {
     window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
   }
@@ -43,9 +39,6 @@ export const Heading = () => {
         </Button>
       </div>
       <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. Lifetime offer is valid until 14th January, 2024 11:59:59 PM PST. After this the price will be $29.99 and after Jan 31st will be $49.99.</p>
-      <Button variant="ghost" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleWatchDemo}>
-        Watch Demo
-      </Button>
       <div className="flex justify-center">
       <div className="shadow-lg shadow-teal-500/50">
         <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
