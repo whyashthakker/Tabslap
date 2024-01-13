@@ -27,7 +27,7 @@ export function UserReviews() {
       
   return (
     <div>
-    <h1 className="font-semibold text-2xl mb-3">What our Users say</h1>
+    <h2 className="text-4xl font-bold mb-4 text-center my-8">What our Users say</h2>
     <Carousel className="w-full max-w-md" plugins={[
         Autoplay({
             delay:3500,
