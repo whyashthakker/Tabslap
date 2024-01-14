@@ -59,6 +59,14 @@ export const Navbar = () => {
                 </Link>
               </Button>
               </div>
+
+              <div className="hidden md:flex">
+              <Button variant="ghost" size="sm">
+                <Link href="https://blog.olly.social">
+                  Blog
+                </Link>
+              </Button>
+              </div>
           </>
       </div>
     </div>
