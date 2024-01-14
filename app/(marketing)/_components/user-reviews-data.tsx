@@ -32,7 +32,7 @@ const UserReviewsData: ReviewData[] = [
     },
     {
         reviewerName: "Aneta Kownacka",
-        reviewDate: "Jan 12, 2024",
+        reviewDate: "Jan 13, 2024",
         review: "Olly has become my go-to social media sidekick for building a genuine and engaged audience.",
         reviewStar: 5,
     },

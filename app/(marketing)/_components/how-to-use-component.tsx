@@ -34,7 +34,7 @@ const HowToUse: React.FC<HowToUseProps> = ({ featureName, featureDescription, im
         </div>
 
         <div className={`flex ${isImageLeft ? 'flex-row-reverse' : 'flex-row'} items-center justify-center my-3 w-full`}>
-          <div className="relative w-full max-w-xs md:max-w-lg max-h-96 overflow-auto">
+          <div className="relative w-full max-w-xs md:max-w-xl max-h-96 overflow-auto">
             <Image src={imageLink} height={500} width={500} alt={featureName} layout="responsive" className="m-2" />
           </div>
         </div>
