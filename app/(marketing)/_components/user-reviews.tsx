@@ -23,7 +23,7 @@ export function UserReviews() {
   };
 
   return (
-    <div className="w-5/6">
+    <div className="w-5/6 md:w-full">
       <h2 className="text-2xl md:text-4xl font-bold mb-4 text-center my-8">What our Users say</h2>
       <Carousel className="w-full max-w-sm md:max-w-md mx-auto" plugins={[
           Autoplay({
