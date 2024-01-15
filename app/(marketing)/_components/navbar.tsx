@@ -29,9 +29,9 @@ export const Navbar = () => {
                 </Link>
               </Button> */}
 
-              <div className="hidden md:flex">
+              {/* <div className="hidden md:flex">
                 <AddOllyButton />
-              </div>              
+              </div>               */}
 
               <Button variant="ghost" size="sm">
                 <Link href="/privacy-policy">
@@ -64,6 +64,14 @@ export const Navbar = () => {
               <Button variant="ghost" size="sm">
                 <Link href="https://blog.olly.social">
                   Blog
+                </Link>
+              </Button>
+              </div>
+
+              <div className="hidden md:flex">
+              <Button variant="ghost" className="text-blue-500" size="sm">
+                <Link href="https://safegpt.lemonsqueezy.com/affiliates">
+                  Become an Affiliate 🤝 (Get 25% per sale)
                 </Link>
               </Button>
               </div>
