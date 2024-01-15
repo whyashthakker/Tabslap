@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import GoogleAnalytics from './(marketing)/_components/google-analytics'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
+      <Script
+        id="crazy-egg" 
+        src="//script.crazyegg.com/pages/scripts/0121/1949.js" 
+        strategy="afterInteractive" 
+        async 
+      />
+
       <body className={inter.className}>
         <GoogleAnalytics ga_id="G-1551CR6XGX" />
         {children}
