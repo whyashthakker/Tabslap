@@ -35,10 +35,10 @@ export const Heading = () => {
             {/* <Heart className="h-4 w-4 ml-2" /> */}
             Get Lifetime Access at&nbsp;
             <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
-            <span className="text-white-600 text-l">&nbsp;$19.99</span>
+            <span className="text-white-600 text-l">&nbsp;$29.99</span>
         </Button>
       </div>
-      <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. Lifetime offer is valid until 14th January, 2024 11:59:59 PM PST. After this the price will be $29.99 and after Jan 31st will be $49.99.</p>
+      <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p>
       <div className="flex justify-center">
       <div className="shadow-lg shadow-teal-500/50">
         <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
