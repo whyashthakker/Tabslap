@@ -35,7 +35,7 @@ export const Heading = () => {
             {/* <Heart className="h-4 w-4 ml-2" /> */}
             Get Lifetime Access at&nbsp;
             <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
-            <span className="text-white-600 text-l">&nbsp;$19.99</span>
+            <span className="text-white-600 text-l">&nbsp;$29.99</span>
         </Button>
       </div>
       <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p>
