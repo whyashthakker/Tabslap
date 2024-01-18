@@ -1,6 +1,7 @@
 "use client"
 
 import AddOllyButton from "./_components/add-olly";
+import FAQSection from "./_components/faq-section";
 import { Heading } from "./_components/heading";
 import Heroes  from "./_components/heroes";
 import Pricing from "./_components/pricing";
@@ -19,6 +20,7 @@ const MarketingPage = () => {
         <Heroes />
         <AddOllyButton />
         <Pricing features={pricingFeatures} />
+        <FAQSection />
       </div>
     </div>
   );
