@@ -5,6 +5,7 @@ import GoogleAnalytics from './(marketing)/_components/google-analytics'
 import Script from 'next/script'
 import CrazyEggScript from './(marketing)/_components/crazy-egg-script'
 import FacebookPixelScript from './(marketing)/_components/fb-pixel-script'
+import SmartlookScript from './(marketing)/_components/smartlook-script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -71,7 +72,9 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-      <CrazyEggScript />
+      {/* <CrazyEggScript /> */}
+
+      <SmartlookScript />
 
       <FacebookPixelScript />
 
