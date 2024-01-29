@@ -146,7 +146,7 @@ interface FAQData {
       },
       {
         question: "How can I contact support for Olly?",
-        answer: "For any questions or issues with Olly, you can reach out to their support team at support@explainx.ai.",
+        answer: "For any questions or issues with Olly, you can reach out to their support team at yash@explainx.ai.",
       },
       {
         question: "What are Chrome extension permissions for Olly?",

@@ -16,6 +16,11 @@ module.exports = {
       },
     },
     extend: {
+      fontSize:{
+        '2xs': '.65rem',
+        '3xs': '.5rem',
+        '4xs': '.4rem',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

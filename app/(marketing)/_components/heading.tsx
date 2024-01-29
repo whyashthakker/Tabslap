@@ -9,6 +9,7 @@ import AddOllyButton from "./add-olly";
 import ProductHuntBadge from "./ph-embed";
 import Image from "next/image";
 import SupportedPlatforms from "./supported-platforms";
+import Link from "next/link";
 
 export const Heading = () => {
 
@@ -23,12 +24,16 @@ export const Heading = () => {
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
       </h1>
       <h3 className="text-xs md:text-m font-small mb-2 text-gray-500">
-        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds across all major social media platforms.
+        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more! 
+        {/* <Link href={"https://youtu.be/wpYeDmWoXH8"} target="_blank" className="text-blue-800"> Watch Demo </Link> */}
+
       </h3>
       {/* <div className="flex justify-center">
         <ArrowBigDown className="h-10 w-5 animate-bounce" />
       </div> */}
-      <SupportedPlatforms />
+      {/* <div className="flex flex-row justify-center items-center"> */}
+      {/* <SupportedPlatforms /> */}
+      {/* </div> */}
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
         <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>

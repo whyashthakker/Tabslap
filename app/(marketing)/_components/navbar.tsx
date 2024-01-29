@@ -10,6 +10,7 @@ import { ArrowRight } from "lucide-react";
 import AddOllyButton from "./add-olly";
 import Image from "next/image";
 import WatchDemo from "./watch-demo";
+import StickyBanner from "./sticky-banner";
 
 export const Navbar = () => {
   const scrolled = useScrollTop();

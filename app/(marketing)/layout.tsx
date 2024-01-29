@@ -1,5 +1,6 @@
 import { Navbar } from "./_components/navbar";
 import { Footer } from "./_components/footer";
+import StickyBanner from "./_components/sticky-banner";
 
 const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
   return ( 

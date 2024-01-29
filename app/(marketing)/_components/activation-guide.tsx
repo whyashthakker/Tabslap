@@ -35,7 +35,7 @@ const ActivationGuide: React.FC = () => {
             <HowToUse key={index} {...feature} />
             ))}
         </div>
-        <p className='text-center text-gray-800 m-3'>If you have any questions, please reach out to us at support@explainx.ai.</p>
+        <p className='text-center text-gray-800 m-3'>If you have any questions, please reach out to us at yash@explainx.ai.</p>
       </div>
     );
 };
