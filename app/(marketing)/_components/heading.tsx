@@ -9,7 +9,7 @@ import AddOllyButton from "./add-olly";
 import ProductHuntBadge from "./ph-embed";
 import Image from "next/image";
 import SupportedPlatforms from "./supported-platforms";
-import Link from "next/link";
+import BackgroundImage from "./background-image";
 
 export const Heading = () => {
 
@@ -18,7 +18,8 @@ export const Heading = () => {
   }
 
   return (
-    <div className="max-w-3xl space-y-4 mb-4">
+    <div className="relative max-w-3xl min-h-screen space-y-4 mb-4">
+      {/* <BackgroundImage /> */}
       <ProductHuntBadge />
       <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
