@@ -1,24 +1,30 @@
-import Script from 'next/script';
-import React from 'react';
+"use client"
+
+import React, { useEffect, useState } from 'react';
+import Smartlook from 'smartlook-client';
 
 const SmartlookScript = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Set the state to true once the component is mounted
+    setIsClient(true);
+    // Initialize Smartlook only if we're on the client side
+    if (typeof window !== 'undefined') {
+      Smartlook.init('4e687ab80472d319342344f93e8a4848da4c53fd');
+    }
+  }, []);
+
+  if (!isClient) {
+    // Render nothing on the server
+    return null;
+  }
+
+  // Your client-side script goes here, if necessary
   return (
-    <>
-      <Script
-        id="smartlook"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.smartlook || (function(d) {
-            var o = smartlook=function(){ o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
-            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
-            c.charset = 'utf-8'; c.src = 'https://web-sdk.smartlook.com/recorder.js'; h.appendChild(c);
-          })(document);
-          smartlook('init', '4e687ab80472d319342344f93e8a4848da4c53fd', { region: 'eu' });
-          `,
-        }}
-      />
-    </>
+    <div>
+      {/* Client-side script can be placed here, if needed */}
+    </div>
   );
 };
 
