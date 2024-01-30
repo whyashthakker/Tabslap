@@ -6,11 +6,7 @@ import { useScrollTop } from "@/components/hooks/use-scroll-top";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
-import { ArrowRight } from "lucide-react";
-import AddOllyButton from "./add-olly";
 import Image from "next/image";
-import WatchDemo from "./watch-demo";
-import StickyBanner from "./sticky-banner";
 
 export const Navbar = () => {
   const scrolled = useScrollTop();

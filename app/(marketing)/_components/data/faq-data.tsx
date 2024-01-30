@@ -3,7 +3,7 @@ interface FAQData {
     answer: string;
   }
   
-  const FAQs: FAQData[] = [
+  const FAQDataMain: FAQData[] = [
     {
       question: "What is Olly?",
       answer: "Olly is your personal AI assistant that helps you optimize your presence on social media platforms like LinkedIn, Twitter, Reddit, and Facebook. With Olly, you get personalized interactions, time-saving commenting, and insights into what makes content viral. It's designed to grow your following by strategically enhancing engagement and providing content ideas that resonate with your audience.",
@@ -167,4 +167,4 @@ interface FAQData {
   ];
 
   
-    export default FAQs;
+    export default FAQDataMain;

@@ -3,11 +3,19 @@
 import AddOllyButton from "./_components/add-olly";
 import BackgroundImage from "./_components/background-image";
 import FAQSection from "./_components/faq-section";
+import {
+  Features,
+  FeaturesAutomation,
+  FeaturesStats,
+  FeaturesUnsubscribe,
+} from "./_components/features";
 import { Heading } from "./_components/heading";
 import Heroes  from "./_components/heroes";
-import Pricing from "./_components/pricing";
+import { PreFooter } from "./_components/pre-footer";
+import { Pricing } from "./_components/pricing-2";
 import pricingFeatures from "./_components/pricing-features";
 import SocialProof from "./_components/social-proof";
+import { Testimonials } from "./_components/testimonials";
 
 import UserReviews from "./_components/user-reviews";
 
@@ -17,11 +25,17 @@ const MarketingPage = () => {
       <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-1 flex-1 px-4 md:px-6 pb-10">
         <Heading />
         {/* <SocialProof /> */}
-        <UserReviews />
-        <Heroes />
+        {/* <UserReviews /> */}
+        <Testimonials />
+        {/* <Heroes /> */}
+        <Features />
+        <FeaturesUnsubscribe />
+        <FeaturesStats />
+        <FeaturesAutomation />
         <AddOllyButton />
-        <Pricing features={pricingFeatures} />
+        <Pricing />
         <FAQSection />
+        <PreFooter />
       </div>
     </div>
   );

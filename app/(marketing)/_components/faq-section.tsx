@@ -1,32 +1,31 @@
-import React from 'react'
+import FAQDataMain from "./data/faq-data";
 
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
-
-import FAQs from './data/faq-data'
-
-const FAQSection = () => {
+export default function FAQs() {
   return (
-    <div>
-        <h1 className='text-4xl font-bold mb-4 text-center my-8'>FAQ</h1>
-        <div className='flex w-full justify-center'>
-            <Accordion type="single" collapsible>
-                {FAQs.map((faq, index) => (
-                        <AccordionItem key={`item-${index}`} value={`item-${index}`}>
-                            <AccordionTrigger>{faq.question}</AccordionTrigger>
-                            <AccordionContent>
-                                {faq.answer}
-                            </AccordionContent>
-                        </AccordionItem>
-                    ))}
-            </Accordion>
-        </div>
+    <div
+      className="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32"
+      id="faq"
+    >
+      <h2 className="font-cal text-2xl leading-10 text-gray-900">
+        Frequently asked questions
+      </h2>
+      <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">
+        {FAQDataMain.map((faq) => (
+          <div
+            key={faq.question}
+            className="pt-8 lg:grid lg:grid-cols-12 lg:gap-8"
+          >
+            <dt className="text-base font-semibold leading-7 text-gray-900 lg:col-span-5">
+              {faq.question}
+            </dt>
+            <dd className="mt-4 lg:col-span-7 lg:mt-0">
+              <p className="text-base leading-7 text-gray-600">{faq.answer}</p>
+            </dd>
+          </div>
+        ))}
+      </dl>
     </div>
-  )
+  );
 }
 
-export default FAQSection
+

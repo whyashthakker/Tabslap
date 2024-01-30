@@ -10,6 +10,28 @@ import ProductHuntBadge from "./ph-embed";
 import Image from "next/image";
 import SupportedPlatforms from "./supported-platforms";
 import BackgroundImage from "./background-image";
+import { VideoDemo } from "./video-demo";
+import {cn} from "@/utils";
+import { CTAButtons } from "./cta-buttons";
+
+export function HeroText(props: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const { className, ...rest } = props;
+
+  return (
+    <h1
+      className={cn("font-cal text-4xl text-gray-900 sm:text-6xl", className)}
+      {...rest}
+    />
+  );
+}
+
+export function HeroSubtitle(props: { children: React.ReactNode }) {
+  return <p className="mt-6 text-lg leading-8 text-gray-600" {...props} />;
+}
+
 
 export const Heading = () => {
 
@@ -18,38 +40,62 @@ export const Heading = () => {
   }
 
   return (
-    <div className="relative max-w-3xl min-h-screen space-y-4 mb-4">
+    <div className="relative max-w-3xl min-h-screen space-y-4 mb-4 pt-4">
+      <div className="pt-5 sm:pb-12 sm:pt-5">
+
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* <HeroTag /> */}
+          <div className="mb-10">
+            <ProductHuntBadge />
+          </div>
+
       {/* <BackgroundImage /> */}
-      <ProductHuntBadge />
-      <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
+      {/* <ProductHuntBadge /> */}
+      {/* <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
         Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
       </h1>
       <h3 className="text-xs md:text-m font-small mb-2 text-gray-500">
         In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more! 
-        {/* <Link href={"https://youtu.be/wpYeDmWoXH8"} target="_blank" className="text-blue-800"> Watch Demo </Link> */}
-
       </h3>
-      {/* <div className="flex justify-center">
-        <ArrowBigDown className="h-10 w-5 animate-bounce" />
-      </div> */}
-      {/* <div className="flex flex-row justify-center items-center"> */}
-      {/* <SupportedPlatforms /> */}
-      {/* </div> */}
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
         <AddOllyButton />
         <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
-            {/* <Heart className="h-4 w-4 ml-2" /> */}
             Get Lifetime Access at&nbsp;
             <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
             <span className="text-white-600 text-l">&nbsp;$29.99</span>
-        </Button>
-      </div>
-      <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p>
-      <div className="flex justify-center">
-      <div className="shadow-lg shadow-teal-500/50">
-        <Image src="/step_main.gif" width={800} height={800} alt="AI Powered Comment Generator tool online" />
-      </div>
-      </div>
+        </Button> */}
+
+        <div className="mx-auto max-w-xl text-center">
+            {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
+            <HeroText>
+              Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
+            </HeroText>
+            <HeroSubtitle>
+              {(
+                <>
+                  In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more!
+                </>
+              )}
+            </HeroSubtitle>
+            <CTAButtons />
+          </div>
+      {/* <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
+
+      <div className="mt-16 flow-root sm:mt-24">
+            <div className="relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+              <Image
+                src={"/step_main.gif"}
+                alt="Olly Social Alternatives"
+                width={2432}
+                height={1442}
+                className="rounded-md shadow ring-1 ring-gray-900/10"
+              />
+
+              <VideoDemo />
+            </div>
+          </div>
+          </div>
+          </div>
     </div>
   )
 }

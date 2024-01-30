@@ -1,9 +1,8 @@
 const pricingFeatures = [
-    "Auto Commenting",
-    "Virality Score",
-    "Content Generation",
+    "AI Powered Comment, Virality score, Posts Generator",
     "Personalized Interactions",
-    "Engagement Analytics",
+    "Supported on 10+ Platforms",
+    "Lifetime Updates",
   ];
 
 export default pricingFeatures;
