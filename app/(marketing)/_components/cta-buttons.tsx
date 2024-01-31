@@ -27,7 +27,7 @@ export function CTAButtons() {
           posthog.capture("Clicked Star on Github", {});
         }}
       >
-        <Heart className="mr-2 h-4 w-4" />
+        <Heart className="mr-2 h-4 w-4 fill-red-500" />
         Get Lifetime Access
       </Button>
     </div>
