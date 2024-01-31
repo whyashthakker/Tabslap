@@ -47,7 +47,7 @@ function LifetimePricing() {
             </div>
           </h3>
           <p className="mt-6 text-base leading-7 text-gray-600">
-            Get Lifetime access to Olly with Onetime payment.
+            Lifetime updates and support.
             <br />
             {/* Includes $100 in AI credits. */}
           </p>
@@ -93,10 +93,9 @@ function LifetimePricing() {
               >
                 Get lifetime access
               </a>
-              {/* <p className="mt-6 text-xs leading-5 text-gray-600">
-                {pricingAdditonalEmail[PremiumTier.LIFETIME]} per additional
-                email address
-              </p> */}
+              <p className="mt-6 text-xs leading-5 text-gray-600">
+                This is a launch offer and price will increase to $49.99 after February 15th.
+              </p>
             </div>
           </div>
         </div>

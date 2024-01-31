@@ -9,7 +9,7 @@ const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="flex flex-col h-full dark:bg-[#1F1F1F]">
       {/* <Navbar /> */}
       <Header />
-      <main className="flex-grow pt-20 md:pt-28">
+      <main className="flex-grow pt-12 md:pt-20 isolate">
         {children}
       </main>
       <PreFooter />
