@@ -9,10 +9,11 @@ import Logo from "./logo-2";
 
 const navigation = [
   { name: "Features", href: "/#features" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "Wall of Love", href: "/#testimonials" },
   { name: "Blog", href: "https://blog.olly.social/", target: "_blank" as const },
   { name: "Affiliates (25% Per Sale)", href: "https://safegpt.lemonsqueezy.com/affiliates", target: "_blank" as const },
   { name: "Pricing", href: "/#pricing" },
+  { name: "FAQ", href: "/#faq" },
 ];
 
 export function Header() {
