@@ -2,6 +2,8 @@
 
 import AddOllyButton from "./_components/add-olly";
 import BackgroundImage from "./_components/background-image";
+import { CTA } from "./_components/cta";
+import { CTAButtons } from "./_components/cta-buttons";
 import FAQSection from "./_components/faq-section";
 import {
   Features,
@@ -35,6 +37,8 @@ const MarketingPage = () => {
         <AddOllyButton />
         <Pricing />
         <FAQSection />
+        <CTA />
+        <CTAButtons />
         <PreFooter />
       </div>
     </div>
