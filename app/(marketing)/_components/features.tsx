@@ -100,7 +100,7 @@ export function FeaturesWithImage(props: {
               <Image
                 src={props.image}
                 alt="Product screenshot"
-                className="w-[48rem] max-w-none rounded-xl shadow-2xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                className="w-[48rem] max-w-none rounded-xl shadow-2xl shadow-teal-500/50 ring-1 ring-gray-400/10 sm:w-[57rem]"
                 width={2400}
                 height={1800}
               />
