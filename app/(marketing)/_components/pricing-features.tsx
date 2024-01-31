@@ -1,5 +1,5 @@
 const pricingFeatures = [
-    "AI Powered Comment, Virality score, Posts Generator",
+    "AI Comments, Posts & Virality Scores",
     "Personalized Interactions",
     "Supported on 10+ Platforms",
     "Lifetime Updates",
