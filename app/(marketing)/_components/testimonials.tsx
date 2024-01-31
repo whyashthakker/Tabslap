@@ -9,7 +9,7 @@ const featuredTestimonial = {
     handle: "cfeedbackcom",
     imageUrl:
       "https://ph-avatars.imgix.net/6216430/b022a883-5eb8-42f7-84cd-8de08322d38f.png",
-    logoUrl: "https://www.cfeedback.com/assets/img/customer-feedback-logo.png",
+    logoUrl: "/cfeedback.png",
   },
 };
 
