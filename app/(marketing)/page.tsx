@@ -38,8 +38,8 @@ const MarketingPage = () => {
         <Pricing />
         <FAQSection />
         <CTA />
-        <CTAButtons />
-        <PreFooter />
+        <CTAButtons />  
+        {/* <PreFooter /> */}
       </div>
     </div>
   );
