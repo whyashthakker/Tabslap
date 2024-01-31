@@ -1,16 +1,27 @@
 import Link from "next/link";
 
 const navigation = {
-  main: [
-    { name: "LinkedIn Comment Generator", href: "https://blog.olly.social/revolutionizing-professional-networking-ai-linkedin-comment-generation" },
-    { name: "Twitter / X Comment Generator", href: "https://blog.olly.social/olly-ai-social-media-management-twitter-linkedin" },
-    { name: "Facebook Comment Generator", href: "https://blog.olly.social/elevate-facebook-presence-olly-social-ultimate-comment-generator" },
-    { name: "Reddit Comment Generator", href: "https://blog.olly.social/enhancing-social-media-presence-olly-social-guide" },
-    { name: "Product Hunt Comment Generator", href: "https://blog.olly.social/olly-social-boost-product-hunt-success" },
-    { name: "YouTube Comment Generator", href: "https://blog.olly.social/mastering-youtube-comments-with-olly-social", target: "_blank" },
-    { name: "Instagram Comment Generator", href: "https://blog.olly.social/supercharge-social-media-engagement-olly-auto-commenting-instagram" },
-    {name: "AI Comment Generator", href: "https://blog.olly.social/enhancing-online-engagement-olly-revolutionary-social-ai-tool", target: "_blank" },
-  ],
+    main: [
+        { name: "LinkedIn Comment Generator", href: "/products/linkedin-comment-generator" },
+        { name: "Twitter / X Comment Generator", href: "/products/twitter-x-comment-generator" },
+        { name: "Facebook Comment Generator", href: "/products/facebook-comment-generator" },
+        { name: "Reddit Comment Generator", href: "/products/reddit-comment-generator" },
+        { name: "Product Hunt Comment Generator", href: "/products/product-hunt-comment-generator" },
+        { name: "YouTube Comment Generator", href: "/products/youtube-comment-generator" },
+        { name: "Instagram Comment Generator", href: "/products/instagram-comment-generator" },
+        { name: "AI Comment Generator", href: "/products/ai-comment-generator" },
+        { name: "Quora Comment Generator", href: "/products/quora-comment-generator" },
+        { name: "AI Chrome Extension", href: "/products/ai-chrome-extension" },
+        { name: "Automatic Blog Commenting", href: "/products/automatic-blog-commenting" },
+        { name: "Automatic Commenter", href: "/products/automatic-commenter" },
+        { name: "Hacker News/YCombinator Comment Generator", href: "/products/hacker-news-ycombinator-comment-generator" },
+        { name: "Instagram Auto Commenter", href: "/products/instagram-auto-commenter" },
+        { name: "Medium Comment Generator", href: "/products/medium-comment-generator" },
+        { name: "Social Media Chrome Extension", href: "/products/social-media-chrome-extension" },
+        { name: "TikTok Comment Generator", href: "/products/tiktok-comment-generator" },
+        { name: "Virality Score AI", href: "/products/virality-score-ai" },
+        { name: "X Comment Generator", href: "/products/x-comment-generator" }
+    ],
   support: [
     { name: "Pricing", href: "/#pricing" },
     { name: "Contact", href: "mailto:yash@explainx.ai", target: "_blank" },
@@ -26,6 +37,7 @@ const navigation = {
   legal: [
     { name: "How to Use?", href: "/activation-guide" },
     { name: "Privacy", href: "/privacy-policy" },
+    { name: "Terms", href: "/terms" },
     { name: "Sitemap", href: "/sitemap.xml" },
   ],
   social: [
@@ -39,6 +51,26 @@ const navigation = {
         </svg>
       ),
     },
+    {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/company/olly-social",
+        target: "_blank",
+        icon: (props: any) => (
+          <svg fill="currentColor" viewBox="0 0 192 192" {...props}>
+            <path d="M156,0h-120c-19.875,0 -36,16.125 -36,36v120c0,19.875 16.125,36 36,36h120c19.875,0 36,-16.125 36,-36v-120c0,-19.875 -16.125,-36 -36,-36zM59.36539,162.98077h-29.82693l-0.17307,-89.30769h29.82692zM43.70192,61.99038h-0.17308c-9.75,0 -16.03846,-6.72115 -16.03846,-15.08653c0,-8.56731 6.49039,-15.0577 16.41347,-15.0577c9.92308,0 16.00961,6.49038 16.21153,15.0577c0,8.36538 -6.31731,15.08653 -16.41346,15.08653zM162.77885,162.98077h-30.08654v-48.51923c0,-11.74039 -3.11538,-19.73077 -13.61538,-19.73077c-8.01923,0 -12.34615,5.39423 -14.42308,10.61538c-0.77885,1.875 -0.98077,4.44231 -0.98077,7.06731v50.56731h-30.23077l-0.17308,-89.30769h30.23077l0.17308,12.60577c3.86538,-5.97116 10.29808,-14.42308 25.70192,-14.42308c19.09616,0 33.37501,12.46154 33.37501,39.25961v51.86539z"></path>
+          </svg>
+        ),
+    },
+    {
+        name: "Instagram",
+        href: "https://www.instagram.com/olly.social_app",
+        target: "_blank",
+        icon: (props: any) => (
+            <svg fill="currentColor" viewBox="0 0 448 512" {...props}>
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+            </svg>
+          ),
+    }
     // {
     //   name: "GitHub",
     //   href: "/github",

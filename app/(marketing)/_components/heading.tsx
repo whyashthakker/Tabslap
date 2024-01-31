@@ -33,14 +33,18 @@ export function HeroSubtitle(props: { children: React.ReactNode }) {
 }
 
 
-export const Heading = () => {
+export const Heading = (props: {
+  title?: string;
+  subtitle?: string;
+  image?: string;
+}) => {
 
   const handleButtonClick = () => {
     window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
   }
 
   return (
-    <div className="relative max-w-3xl min-h-screen space-y-4 mb-4 pt-4">
+    <div className="relative pt-14">
       <div className="pt-5 sm:pb-12 sm:pt-5">
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -68,10 +72,11 @@ export const Heading = () => {
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
             <HeroText>
-              Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
+              {props.title || "Your AI-Powered Second Brain 🧠"}
+              {/* <BrainCircuit size={45} className="inline-block" /> */}
             </HeroText>
             <HeroSubtitle>
-              {(
+              {props.subtitle || (
                 <>
                   In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more!
                 </>
@@ -84,7 +89,7 @@ export const Heading = () => {
       <div className="mt-16 flow-root sm:mt-24">
             <div className="relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
-                src={"/step_main.gif"}
+                src={props.image || "/step_main.gif"}
                 alt="Olly Social Alternatives"
                 width={2432}
                 height={1442}
