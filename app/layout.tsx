@@ -4,7 +4,21 @@ import './globals.css'
 import GoogleAnalytics from './(marketing)/_components/google-analytics'
 import FacebookPixelScript from './(marketing)/_components/fb-pixel-script'
 import SmartlookScript from './(marketing)/_components/smartlook-script'
-const inter = Inter({ subsets: ['latin'] })
+import localFont from "next/font/local";
+// const inter = Inter({ subsets: ['latin'] })
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  preload: true,
+  display: "swap",
+});
+const calFont = localFont({
+  src: "../styles/CalSans-SemiBold.woff2",
+  variable: "--font-cal",
+  preload: true,
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   "metadataBase": new URL("https://olly.social"),
@@ -76,8 +90,10 @@ export default function RootLayout({
 
       <FacebookPixelScript />
 
-      <body className={inter.className}>
-        <GoogleAnalytics ga_id="G-1551CR6XGX" />
+      <body
+        className={`h-full ${inter.variable} ${calFont.variable} font-sans antialiased`}
+      >        
+      <GoogleAnalytics ga_id="G-1551CR6XGX" />
         {children}
         </body>
     </html>
