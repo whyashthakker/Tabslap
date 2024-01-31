@@ -25,7 +25,7 @@ export function VideoDemo() {
         isOpen={isModalOpen}
         hideModal={closeModal}
         padding="none"
-        size="6xl"
+        size="4xl"
         backdropClass="backdrop-blur bg-white/80"
       >
         <iframe
