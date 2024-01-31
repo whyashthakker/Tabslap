@@ -86,7 +86,7 @@ export default function RootLayout({
 
       {/* <CrazyEggScript /> */}
 
-      <SmartlookScript />
+      {process.env.NODE_ENV === 'production' && <SmartlookScript />}
 
       <FacebookPixelScript />
 
