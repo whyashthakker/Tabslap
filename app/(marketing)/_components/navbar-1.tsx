@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
-// import { usePostHog } from "posthog-js/react";
+import { usePostHog } from "posthog-js/react";
 import { MenuIcon, XIcon } from "lucide-react";
 import Logo from "./logo-2";
 
@@ -18,7 +18,7 @@ const navigation = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-//   const posthog = usePostHog();
+  const posthog = usePostHog();
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
