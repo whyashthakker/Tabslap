@@ -91,18 +91,18 @@ export default function RootLayout({
       {process.env.NODE_ENV === 'production' && <SmartlookScript />}
 
       <FacebookPixelScript />
+      <PostHogProvider>
 
       <body
         className={`h-full ${inter.variable} ${calFont.variable} font-sans antialiased`}
       >
-        <PostHogProvider>
         <Suspense>
         <PostHogPageview />        
         <GoogleAnalytics ga_id="G-1551CR6XGX" />
           {children}
         </Suspense>
-        </PostHogProvider>
         </body>
+        </PostHogProvider>
     </html>
   )
 }

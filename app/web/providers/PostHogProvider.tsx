@@ -10,7 +10,7 @@ import { useEffect } from "react";
 if (typeof window !== "undefined" && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
     // https://posthog.com/docs/advanced/proxy/nextjs
-    api_host: `${window.location.origin}/ingest`,
+    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     capture_pageview: false, // Disable automatic pageview capture, as we capture manually
   });
 }
