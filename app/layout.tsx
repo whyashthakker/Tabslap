@@ -6,8 +6,9 @@ import FacebookPixelScript from './(marketing)/_components/fb-pixel-script'
 import SmartlookScript from './(marketing)/_components/smartlook-script'
 import localFont from "next/font/local";
 // const inter = Inter({ subsets: ['latin'] })
-import { PostHogPageview, PostHogProvider } from './web/providers/PostHogProvider'
+import { PostHogProvider } from './web/providers/PostHogProvider'
 import { Suspense } from "react";
+import PostHogPageView from './(marketing)/_components/posthog-page-view'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -97,7 +98,7 @@ export default function RootLayout({
         className={`h-full ${inter.variable} ${calFont.variable} font-sans antialiased`}
       >
         <Suspense>
-        <PostHogPageview />        
+        <PostHogPageView />        
         <GoogleAnalytics ga_id="G-1551CR6XGX" />
           {children}
         </Suspense>
