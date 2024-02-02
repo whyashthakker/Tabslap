@@ -89,7 +89,7 @@ export default function RootLayout({
 
       {/* <CrazyEggScript /> */}
 
-      {process.env.NODE_ENV === 'production' && <SmartlookScript />}
+      {/* {process.env.NODE_ENV === 'production' && <SmartlookScript />} */}
 
       <FacebookPixelScript />
       <PostHogProvider>
