@@ -13,6 +13,7 @@ import BackgroundImage from "./background-image";
 import { VideoDemo } from "./video-demo";
 import {cn} from "@/utils";
 import { CTAButtons } from "./cta-buttons";
+import HeroHeadingAB from "./HeroHeadingAB";
 
 export function HeroText(props: {
   children: React.ReactNode;
@@ -72,13 +73,13 @@ export const Heading = (props: {
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
             <HeroText>
-              {props.title || "Your AI-Powered Second Brain 🧠"}
+              {props.title || <HeroHeadingAB />}
               {/* <BrainCircuit size={45} className="inline-block" /> */}
             </HeroText>
             <HeroSubtitle>
               {props.subtitle || (
                 <>
-                  In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more!
+                  Generate AI Powered Comments, Suggestions, Replies, & Real-time Virality Scores for your Posts, directly on your Social Media Pages.
                 </>
               )}
             </HeroSubtitle>
