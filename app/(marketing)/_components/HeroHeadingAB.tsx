@@ -25,6 +25,8 @@ export default function HeroHeadingAB() {
     //   setLandingCopy("Your AI-Powered Second Brain");
     } else if (variant === "control") {
       setLandingCopy("Your AI-Powered Second Brain 🧠");
+    } else {
+      setLandingCopy("Your AI-Powered Second Brain 🧠");
     }
 
     // console.log("variant", variant);
