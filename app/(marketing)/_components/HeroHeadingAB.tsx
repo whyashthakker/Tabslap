@@ -23,7 +23,7 @@ export default function HeroHeadingAB() {
       setLandingCopy("Biggest Growth Hack on Social Media, on Steroids.");
     // } else if (variant === "Viral-Enhancer-3") {
     //   setLandingCopy("Your AI-Powered Second Brain");
-    } else {
+    } else if (variant === "control") {
       setLandingCopy("Your AI-Powered Second Brain 🧠");
     }
 
