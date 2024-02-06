@@ -57,10 +57,10 @@ export function Header() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
-            href="https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje"
+            href="/activation-guide"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
-            Try Now <span aria-hidden="true">&rarr;</span>
+            Activation Guide <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
       </nav>
@@ -101,10 +101,10 @@ export function Header() {
               </div>
               <div className="py-6">
                 <Link
-                href="https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje"
+                href="/activation-guide"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Try Now
+                  See Activation Guide
                 </Link>
               </div>
             </div>
