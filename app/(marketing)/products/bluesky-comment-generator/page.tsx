@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/bluesky-comment-generator" },
 };
 
-export default function AICommentGeneratorFree() {
+export default function BlueskyCommentGenerator() {
   return (
     <>
       <Heading
