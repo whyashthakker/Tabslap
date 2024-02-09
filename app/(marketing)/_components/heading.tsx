@@ -14,6 +14,7 @@ import { VideoDemo } from "./video-demo";
 import {cn} from "@/utils";
 import { CTAButtons } from "./cta-buttons";
 import HeroHeadingAB from "./HeroHeadingAB";
+import { CTAButtonsAB } from "./cta-ab";
 
 export function HeroText(props: {
   children: React.ReactNode;
@@ -83,7 +84,8 @@ export const Heading = (props: {
                 </>
               )}
             </HeroSubtitle>
-            <CTAButtons />
+            {/* <CTAButtons /> */}
+            <CTAButtonsAB />
           </div>
       {/* <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
 

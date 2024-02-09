@@ -19,6 +19,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        cal: ["var(--font-cal)", ...fontFamily.sans],
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+      },
       fontSize:{
         '2xs': '.65rem',
         '3xs': '.5rem',
@@ -77,10 +81,6 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      fontFamily: {
-        cal: ["var(--font-cal)", ...fontFamily.sans],
-        sans: ["var(--font-inter)", ...fontFamily.sans],
       },
     },
   },

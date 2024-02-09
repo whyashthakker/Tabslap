@@ -7,8 +7,7 @@ import { Button } from "@/components/Button";
 import { Button as ShadcnButton } from "@/components/ui/button";
 
 import pricingFeatures from "./pricing-features";
-
-
+import { usePricing } from "@/app/web/providers/pricingContext";
 
 export function Pricing() {
 
@@ -35,6 +34,8 @@ export function Pricing() {
 }
 
 function LifetimePricing() {
+
+  const {buyNowProps} = usePricing();
 
   return (
     <div className="bg-white py-4 sm:py-8">
@@ -80,14 +81,14 @@ function LifetimePricing() {
               </p>
               <p className="mt-6 flex items-baseline justify-center gap-x-2">
                 <span className="text-5xl font-bold tracking-tight text-gray-900">
-                  $29.99
+                  {buyNowProps.price}
                 </span>
                 <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
                   USD
                 </span>
               </p>
               <a
-                href={"https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca"}
+                href={buyNowProps.url}
                 target="_blank"
                 className="mt-10 block w-full rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
