@@ -21,6 +21,7 @@ import SocialProof from "./_components/social-proof";
 import { Testimonials } from "./_components/testimonials";
 
 import UserReviews from "./_components/user-reviews";
+import { CTAButtonsAB } from "./_components/cta-ab";
 
 const MarketingPage = () => {
   return (
@@ -35,14 +36,14 @@ const MarketingPage = () => {
         <FeaturesUnsubscribe />
         <FeaturesStats />
         <FeaturesAutomation />
-        <CTAButtons />
+        <CTAButtonsAB />
         {/* <AddOllyButton /> */}
         <Suspense>
           <Pricing />
         </Suspense>
         <FAQSection />
         <CTA />
-        <CTAButtons />  
+        <CTAButtonsAB />  
         {/* <PreFooter /> */}
       {/* </div> */}
     </div>
