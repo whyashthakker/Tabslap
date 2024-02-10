@@ -8,6 +8,7 @@ import { Button as ShadcnButton } from "@/components/ui/button";
 
 import pricingFeatures from "./pricing-features";
 import { usePricing } from "@/app/web/providers/pricingContext";
+import RefundOption from "./refund-option";
 
 export function Pricing() {
 
@@ -50,7 +51,7 @@ function LifetimePricing() {
           <p className="mt-6 text-base leading-7 text-gray-600">
             Lifetime updates and support.
             <br />
-            {/* Includes $100 in AI credits. */}
+            <RefundOption />
           </p>
           <div className="mt-10 flex items-center gap-x-4">
             <h4 className="flex-none font-cal text-sm leading-6 text-blue-600">

@@ -15,6 +15,7 @@ import {cn} from "@/utils";
 import { CTAButtons } from "./cta-buttons";
 import HeroHeadingAB from "./HeroHeadingAB";
 import { CTAButtonsAB } from "./cta-ab";
+import RefundOption from "./refund-option";
 
 export function HeroText(props: {
   children: React.ReactNode;
@@ -31,7 +32,7 @@ export function HeroText(props: {
 }
 
 export function HeroSubtitle(props: { children: React.ReactNode }) {
-  return <p className="mt-6 text-lg leading-8 text-gray-600" {...props} />;
+  return <p className="mt-6 text-s sm:text-lg leading-8 text-gray-500" {...props} />;
 }
 
 
@@ -51,25 +52,9 @@ export const Heading = (props: {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* <HeroTag /> */}
-          <div className="mb-10">
+          <div className="mb-4">
             <ProductHuntBadge />
           </div>
-
-      {/* <BackgroundImage /> */}
-      {/* <ProductHuntBadge /> */}
-      {/* <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
-        Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
-      </h1>
-      <h3 className="text-xs md:text-m font-small mb-2 text-gray-500">
-        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more! 
-      </h3>
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
-        <AddOllyButton />
-        <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
-            Get Lifetime Access at&nbsp;
-            <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
-            <span className="text-white-600 text-l">&nbsp;$29.99</span>
-        </Button> */}
 
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
@@ -86,10 +71,11 @@ export const Heading = (props: {
             </HeroSubtitle>
             {/* <CTAButtons /> */}
             <CTAButtonsAB />
+            <RefundOption />
           </div>
       {/* <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
 
-      <div className="mt-16 flow-root sm:mt-24">
+      <div className="mt-12 flow-root sm:mt-20">
             <div className="relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
                 src={props.image || "/step_main.gif"}
