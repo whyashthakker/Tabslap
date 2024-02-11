@@ -21,9 +21,9 @@ const RefundOption = () => {
     }, [variant]);
 
     return (
-        <div>
-            <p className='text-2xs mt-3 text-gray-700'>{landingCopy}</p>
-        </div>
+        <>
+            {landingCopy}
+        </>
     );
 }
 
