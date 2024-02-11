@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
 
     const eventName = body.meta.event_name;
 
+
     // Handling order_created event
     if (eventName === "order_created") {
         const orderData = body.data;
@@ -37,11 +38,12 @@ export async function POST(req: NextRequest) {
             userEmail: orderData.attributes.user_email,
             paidAmount: (orderData.attributes.total / 100).toFixed(2), // Assuming the total is in cents
             currency: orderData.attributes.currency,
+            createdAt: orderData.attributes.created_at
         };
 
         try {
 
-            const message = `@everyone New order created by ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency}`;
+            const message = `@everyone New order created by ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
             await sendDiscordNotification(message);
 
         } catch (error: any) {
@@ -56,6 +58,38 @@ export async function POST(req: NextRequest) {
         return new NextResponse(null, { status: 200 });
     }
 
-    // Your existing user registration handling code can be included here
-    // to manage other types of events or requests.
+    if (eventName === "license_key_created" || eventName === "license_key_updated") {
+
+        const licenseKeyData = body.data.attributes;
+
+        const user = {
+            userName: licenseKeyData.user_name,
+            userEmail: licenseKeyData.user_email,
+            licenseKey: licenseKeyData.key,
+            status: licenseKeyData.status_formatted,
+            activationLimit: licenseKeyData.activation_limit,
+            instancesCount: licenseKeyData.instances_count,
+            createdAt: licenseKeyData.created_at,
+        };
+
+        // Constructing a message with more details
+        const action = eventName === "license_key_created" ? "created" : "updated";
+        const message = `@everyone License key ${action} for ${user.userName} (${user.userEmail}), ` +
+            `Key: ${user.licenseKey}, Status: ${user.status}, Activation Limit: ${user.activationLimit}, ` +
+            `Instances: ${user.instancesCount || 'N/A'}, Created At: ${user.createdAt}`;
+
+        try {
+            await sendDiscordNotification(message);
+        } catch (error: any) {
+            console.error(`Error sending notification: ${error.message}`);
+            await sendDiscordNotification(error.message)
+            return new NextResponse(`Notification Error: ${error.message}`, { status: 500 });
+        }
+
+        return new NextResponse(null, { status: 200 });
+    }
+
+
+
+    
 }
