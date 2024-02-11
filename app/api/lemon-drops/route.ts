@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
 
         try {
 
-            const message = `@everyone We made a Sale to ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
+            const message = `@everyone We made a Sale 🎉 to ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
             await sendDiscordNotification(message);
 
         } catch (error: any) {
