@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
 
         try {
 
-            const message = `@everyone New order created by ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
+            const message = `@everyone We made a Sale to ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
             await sendDiscordNotification(message);
 
         } catch (error: any) {
@@ -74,7 +74,7 @@ export async function POST(req: NextRequest) {
 
         // Constructing a message with more details
         const action = eventName === "license_key_created" ? "created" : "updated";
-        const message = `@everyone License key ${action} for ${user.userName} (${user.userEmail}), ` +
+        const message = `🔑 License key ${action} for ${user.userName} (${user.userEmail}), ` +
             `Key: ${user.licenseKey}, Status: ${user.status}, Activation Limit: ${user.activationLimit}, ` +
             `Instances: ${user.instancesCount || 'N/A'}, Created At: ${user.createdAt}`;
 
