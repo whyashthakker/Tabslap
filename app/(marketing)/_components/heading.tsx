@@ -16,6 +16,7 @@ import { CTAButtons } from "./cta-buttons";
 import HeroHeadingAB from "./HeroHeadingAB";
 import { CTAButtonsAB } from "./cta-ab";
 import RefundOption from "./refund-option";
+import { Tag } from "@/components/Tag";
 
 export function HeroText(props: {
   children: React.ReactNode;
@@ -32,7 +33,7 @@ export function HeroText(props: {
 }
 
 export function HeroSubtitle(props: { children: React.ReactNode }) {
-  return <p className="mt-6 text-s sm:text-lg leading-8 text-gray-500" {...props} />;
+  return <p className="mt-6 text-s sm:text-s leading-8 text-gray-500" {...props} />;
 }
 
 
@@ -42,10 +43,6 @@ export const Heading = (props: {
   image?: string;
 }) => {
 
-  const handleButtonClick = () => {
-    window.open("https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca", "_blank")
-  }
-
   return (
     <div className="relative pt-14">
       <div className="pt-5 sm:pb-12 sm:pt-5">
@@ -53,8 +50,16 @@ export const Heading = (props: {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* <HeroTag /> */}
           <div className="mb-4">
-            <ProductHuntBadge />
+          <ProductHuntBadge />
+
+          <h3 className="flex justify-center font-cal text-2xl text-gray-900">
+            <div className="mt-4 shadow-sm shadow-teal-500/50">
+              <Tag color="green">#1 Social Media Agent</Tag>
+            </div>
+          </h3>
           </div>
+
+          
 
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
