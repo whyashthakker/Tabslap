@@ -89,6 +89,35 @@ export async function POST(req: NextRequest) {
         return new NextResponse(null, { status: 200 });
     }
 
+    if (eventName==='order_refunded') {
+        const userData = body.data;
+
+        const user = {
+            userName: userData.attributes.user_name,
+            userEmail: userData.attributes.user_email,
+            paidAmount: (userData.attributes.total / 100).toFixed(2), // Assuming the total is in cents
+            currency: userData.attributes.currency,
+            createdAt: userData.attributes.created_at,
+            refunded: userData.attributes.refunded
+        };
+
+        try {
+
+            const message = `@everyone ${user.userName} (${user.userEmail}) refunded $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
+            await sendDiscordNotification(message);
+
+        } catch (error: any) {
+
+            console.error(`Error sending notification: ${error.message}`);
+
+            await sendDiscordNotification(error.message)
+
+            return new NextResponse(`Notification Error: ${error.message}`, { status: 500 });
+        }
+
+        return new NextResponse(null, { status: 200 });
+
+    }
 
 
     
