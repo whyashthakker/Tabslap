@@ -1,10 +1,10 @@
 const postData = [
   {
-    "title": "17 Essential Prompt Templates Every Business Analyst Should Know in 2024",
+    "title": "Why Commenting is the Biggest Hack on Social Media",
     "file": "4-use-cases-for-generative-ai-in-data-analytics",
-    "description": "Discover 17 powerful prompt templates that every business analyst should master to leverage AI and drive business success in 2024.",
-    "date": "May 4, 2024",
-    "datetime": "2024-05-04",
+    "description": "Discover the power of commenting on social media and how it can boost your engagement, reach, and influence. Learn the best practices and strategies for effective commenting.",
+    "date": "May 8, 2024",
+    "datetime": "2024-05-08",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",

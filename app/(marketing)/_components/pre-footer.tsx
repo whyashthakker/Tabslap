@@ -28,7 +28,7 @@ const navigation = {
     { name: "Feature Requests", href: "mailto:yash@explainx.ai", target: "_blank" },
   ],
   company: [
-    { name: "Blog", href: "https://blog.olly.social/" },
+    { name: "Blog", href: "/blog" },
     { name: "Affiliates", href: "https://safegpt.lemonsqueezy.com/affiliates", target: "_blank" },
     { name: "Twitter", href: "https://twitter.com/olly_social", target: "_blank" },
     // { name: "GitHub", href: "/github", target: "_blank" },
