@@ -1,3 +1,7 @@
+import nextMdx from '@next/mdx'
+
+const withMDX = nextMdx();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
@@ -21,6 +25,9 @@ const nextConfig = {
     ],
         // domains: ['localhost', 'api.producthunt.com', 'pbs.twimg.com', 'ph-avatars.imgix.net'],
     },
+    pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 }
 
-module.exports = nextConfig
+const mdxConfig = withMDX(nextConfig);
+
+export default mdxConfig;
