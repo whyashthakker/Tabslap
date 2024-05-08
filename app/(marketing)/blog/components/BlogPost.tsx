@@ -12,7 +12,7 @@ export function BlogPost(props: {
 }) {
   const { date, title, author, content } = props;
   return (
-    <BasicLayout>
+    // <BasicLayout>
       <div className="mx-auto max-w-7xl px-6 py-20 flex">
         <div className="flex-1">
           <article>
@@ -41,6 +41,6 @@ export function BlogPost(props: {
           <BlogPostHeader />
         </div> */}
       </div>
-    </BasicLayout>
+    // </BasicLayout>
   );
 }
