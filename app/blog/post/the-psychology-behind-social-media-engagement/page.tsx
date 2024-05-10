@@ -18,4 +18,10 @@ export default function Page() {
         datePublished="2024-05-10T08:00:00+00:00"
         dateModified="2024-05-10T08:00:00+00:00"
         authorName="Yash Thakker"
-        author
+        authorUrl="https://goyashy.com"
+        image={[]}
+      />
+      <Content />
+    </>
+  );
+}
