@@ -1,4 +1,4 @@
-const postData = [
+[
   {
     "title": "Best Practices for Managing a Facebook Group: Fostering Engagement and Community",
     "file": "best-practices-for-managing-a-facebook-group",
@@ -286,5 +286,3 @@ const postData = [
     }
   }
 ]
-
-export default postData;

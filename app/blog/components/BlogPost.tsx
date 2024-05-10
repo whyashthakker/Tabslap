@@ -1,8 +1,8 @@
 import { format, parseISO } from "date-fns";
 import { BasicLayout } from "@/app/(marketing)/_components/BasicLayout";
+import { Prose } from "@/app/blog/components/Prose";
 import { Button } from "@/components/ui/button";
 import { BlogPostHeader } from "./floating-card";
-import { Prose } from "./Prose";
 
 export function BlogPost(props: {
   date: string;
@@ -12,7 +12,7 @@ export function BlogPost(props: {
 }) {
   const { date, title, author, content } = props;
   return (
-    // <BasicLayout>
+    <BasicLayout>
       <div className="mx-auto max-w-7xl px-6 py-20 flex">
         <div className="flex-1">
           <article>
@@ -26,9 +26,9 @@ export function BlogPost(props: {
             */}
 
             {/* Mobile floating element */}
-            {/* <div className="md:hidden mb-8">
+            <div className="md:hidden mb-8">
               <BlogPostHeader />
-            </div> */}
+            </div>
 
             <div className="mt-12">
               <Prose>{content}</Prose>
@@ -37,10 +37,10 @@ export function BlogPost(props: {
         </div>
 
         {/* Desktop floating element */}
-        {/* <div className="ml-8 sticky top-20 self-start max-w-xs hidden md:block">
+        <div className="ml-8 sticky top-20 self-start max-w-xs hidden md:block">
           <BlogPostHeader />
-        </div> */}
+        </div>
       </div>
-    // </BasicLayout>
+    </BasicLayout>
   );
 }

@@ -8,7 +8,7 @@ import Link from "next/link";
 import postData from "@/data/post-data";
 import { Button } from "@/components/ui/button";
 import posthog from "posthog-js";
-import { BasicLayout } from "../_components/BasicLayout";
+import { BasicLayout } from "../(marketing)/_components/BasicLayout";
 
 export default async function BlogPage() {
   // TODO gather metadata for all posts programatically
@@ -40,10 +40,10 @@ function Posts() {
           </div>
           <Button variant={"default"} className="mt-3 sm:mt-0"
             onClick={() => {
-              posthog.capture("Blog Get the Course");
+              posthog.capture("Blog Get Olly");
               }}
           >
-            Get the Course
+            Get Olly
           </Button>
         </div>
           <div className="mt-5 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">

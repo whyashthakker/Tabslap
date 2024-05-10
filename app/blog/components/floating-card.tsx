@@ -16,26 +16,26 @@ export const BlogPostHeader = () => {
   const variant = useFeatureFlagVariantKey("blog-button-cta");
 
   useEffect(() => {
-    if (variant === "upto-date-ai-2024") {
-      setHeaderCopy("The Most Up-to-Date AI Course of 2024");
-    } else if (variant === "genai-wizard") {
-      setHeaderCopy("Become an Image Generation Wizard.");
+    if (variant === "test-1") {
+      setHeaderCopy("Automate Social Media Engagement.");
+    } else if (variant === "test-2") {
+      setHeaderCopy("Unlock lifetime access to AI Social Media Agent.");
     } else if (variant === "control") {
-      setHeaderCopy("The Most up to date AI Course of 2024.");
-    } else if (variant === "become-001") {
-      setHeaderCopy("Become a Top 0.01% in Your Field.");
-    } else if (variant === "beat-genai-revolution") {
-      setHeaderCopy("Beat the GenAI Revolution.");
-    } else if (variant === "write-prompts-like-pro") {
-      setHeaderCopy("Become a Prompt Master.");
+      setHeaderCopy("Biggest Hack on Social Media, now at your fingertips.");
+    } else if (variant === "test-3") {
+      setHeaderCopy("Unlock your AI Second Brain.");
+    } else if (variant === "test-4") {
+      setHeaderCopy("The AI Companion you've been waiting for.");
+    } else if (variant === "test-5") {
+      setHeaderCopy("Quality and Quantity, for the very first time.");
     } else {
-      setHeaderCopy("The Most up to date AI Course of 2024.");
+      setHeaderCopy("Unlock the power of AI for Social Media.");
     }
   }, [variant]);
 
   if (!variant) {
     return (
-      <div className="flex flex-col font-cal items-center text-center mt-8 shadow-lg shadow-orange-500 rounded-lg">
+      <div className="flex flex-col font-cal items-center text-center mt-8 shadow-lg shadow-teal-500 rounded-lg">
         <Card>
           <CardHeader className="text-l">
             <Skeleton className="h-4 w-1/2 mx-auto" />
@@ -51,22 +51,22 @@ export const BlogPostHeader = () => {
   }
 
   return (
-    <div className="flex flex-col font-cal items-center text-center mt-8 shadow-lg shadow-orange-500 rounded-lg">
+    <div className="flex flex-col font-cal items-center text-center mt-8 shadow-lg shadow-teal-500 rounded-lg">
       <Card>
         <CardHeader className="text-l">{headerCopy}</CardHeader>
+
         <CardContent className="text-xs text-gray-500">
-          AI Agents, AGI, RAG, Content Creation, GPT-4, Claude-3, AI Text,
-          Video, Audio, Image Generation, Prompt Engineering and more..
+          AI Generated Comments, Virality scores, Posts and a lot more. With Lifetime access.
           <br />
-          <Link href={"https://learn.genaicourses.com/enroll/generative-ai-masterclass"}>
+          <Link href={"https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca"}>
             <Button
               variant={"default"}
               className="mt-5"
               onClick={() => {
-                posthog.capture(`Clicked Get it now on page ${window.location.pathname}`);
+                posthog.capture(`Clicked Get it now on page`);
               }}
             >
-              Get it Now
+              Get Olly Now
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
