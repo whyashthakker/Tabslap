@@ -7,22 +7,30 @@ import React, { useEffect, useState } from "react";
 export default function HeroHeadingAB() {
   const [landingCopy, setLandingCopy] = useState<string>("");
   // const posthog = usePostHog();
-  // posthog.featureFlags.override({'landing-4-copies': 'smm-agent'})  
+  // posthog.featureFlags.override({'new_landing_copy': 'test-8'})  
   const variant = useFeatureFlagVariantKey(
-    "landing-4-copies"
+    "new_landing_copy"
   );
 
   // console.log("variant", variant);
 
   useEffect(() => {
-    if (variant === "smm-agent") {
-      setLandingCopy("The kind of Agent you want on your side.");
-    } else if (variant === "personal-assistant") {
-      setLandingCopy("There are other AI Assistants, and then there is Olly.");
-    } else if (variant === "rocketship") {
-      setLandingCopy("Biggest Growth Hack on Social Media, on Steroids.");
-    // } else if (variant === "Viral-Enhancer-3") {
-    //   setLandingCopy("Your AI-Powered Second Brain");
+    if (variant === "test-1") {
+      setLandingCopy("Fuel your Social Media Growth Rocket 🚀");
+    } else if (variant === "test-2") {
+      setLandingCopy("With you in the Hustle, 24/7 🌟");
+    } else if (variant === "test-3") {
+      setLandingCopy("Helping you grow, One Comment at a Time.");
+    } else if (variant === "test-4") {
+      setLandingCopy("Goals achieved, only 10x Faster ✅");
+    } else if (variant === "test-5") {
+      setLandingCopy("There are no shortcuts. Only Hustle.");
+    } else if (variant === "test-6") {
+      setLandingCopy("Never run out of Ideas for Posts & Comments, ever again.");
+    } else if (variant === "test-7") {
+      setLandingCopy("Writers Block? Creative Slump? Not anymore.");
+    } else if (variant === "test-8") {
+      setLandingCopy("AI Agent that is more human than most humans.");
     } else if (variant === "control") {
       setLandingCopy("Your AI-Powered Second Brain 🧠");
     } else {
