@@ -16,7 +16,7 @@ export default function HeroHeadingAB() {
 
   useEffect(() => {
     if (variant === "test-1") {
-      setLandingCopy("Fuel your Social Media Growth Rocket 🚀");
+      setLandingCopy("Fuel your Growth Rocket 🚀");
     } else if (variant === "test-2") {
       setLandingCopy("With you in the Hustle, 24/7 🌟");
     } else if (variant === "test-3") {
