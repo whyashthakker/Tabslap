@@ -8,6 +8,8 @@
 
 /scripts/*
 
+/experiments
+
 /.env
 
 /old
