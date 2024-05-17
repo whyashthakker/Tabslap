@@ -23,7 +23,9 @@ const navigation = {
         { name: "X Comment Generator", href: "/products/x-comment-generator" }
     ],
     tools: [
-      {name: "TikTok Comment Generator", href: "/tools/tiktok-comment-generator"}
+      {name: "TikTok Comment Generator", href: "/tools/tiktok-comment-generator"},
+      {name: "Instagram Comment Generator", href: "/tools/instagram-comment-generator"},
+      {name: "YouTube Shorts Comment Generator", href: "/tools/youtube-shorts-comment-generator"},
     ],
   support: [
     { name: "Pricing", href: "/#pricing" },
