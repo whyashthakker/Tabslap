@@ -22,6 +22,9 @@ const navigation = {
         { name: "Virality Score AI", href: "/products/virality-score-ai" },
         { name: "X Comment Generator", href: "/products/x-comment-generator" }
     ],
+    tools: [
+      {name: "TikTok Comment Generator", href: "/tools/tiktok-comment-generator"}
+    ],
   support: [
     { name: "Pricing", href: "/#pricing" },
     { name: "Contact", href: "mailto:yash@explainx.ai", target: "_blank" },
@@ -33,6 +36,9 @@ const navigation = {
     { name: "Twitter", href: "https://twitter.com/olly_social", target: "_blank" },
     // { name: "GitHub", href: "/github", target: "_blank" },
     // { name: "Discord", href: "/discord", target: "_blank" },
+    { name: "Pricing", href: "/#pricing" },
+    { name: "Contact", href: "mailto:yash@explainx.ai", target: "_blank" },
+    { name: "Feature Requests", href: "mailto:yash@explainx.ai", target: "_blank" },
   ],
   legal: [
     { name: "How to Use?", href: "/activation-guide" },
@@ -108,10 +114,10 @@ export function PreFooter() {
         <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <FooterList title="Product" items={navigation.main} />
+              <FooterList title="Products" items={navigation.main} />
             </div>
             <div className="mt-10 md:mt-0">
-              <FooterList title="Support" items={navigation.support} />
+              <FooterList title="Free Tools" items={navigation.tools} />
             </div>
           </div>
           <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -122,6 +128,11 @@ export function PreFooter() {
               <FooterList title="Legal" items={navigation.legal} />
             </div>
           </div>
+          {/* <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <FooterList title="Tools" items={navigation.tools} />
+            </div>
+          </div> */}
         </div>
 
         <div className="mt-16 flex justify-center space-x-10">
