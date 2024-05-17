@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import defaultProfileImage from "@/public/pf.png";
+import { usePostHog } from "posthog-js/react";
 
 
 const TiktokComment = () => {
@@ -19,6 +20,8 @@ const TiktokComment = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const downloadLinkRef = useRef<HTMLAnchorElement>(null);
 
+  const posthog = usePostHog();
+
   useEffect(() => {
     renderCommentDemo();
   }, [username, note, profileImage]);
@@ -29,6 +32,7 @@ const TiktokComment = () => {
       downloadLinkRef.current.href = canvasDataURL;
       downloadLinkRef.current.click();
     }
+    posthog.capture("Downloaded Tiktok Comment");
   };
 
   const handleProfileImageUpload = (
