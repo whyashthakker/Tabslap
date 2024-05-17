@@ -43,17 +43,17 @@ const InstagramPageIntroduction = () => {
               <strong>Comment Threads:</strong> The option to generate comment threads, allowing you to create entire conversations within your Instagram posts, fostering a sense of community and interaction.
             </li>
             <li className="mb-2">
-              <strong>Custom Font and Style Options:</strong> Expanded customization options for fonts, styles, and colors to ensure your generated comments seamlessly blend with your brand's aesthetic and visual identity.
+              <strong>Custom Font and Style Options:</strong> Expanded customization options for fonts, styles, and colors to ensure your generated comments seamlessly blend with your brand&apos;s aesthetic and visual identity.
             </li>
             <li className="mb-2">
               <strong>Multi-Language Support:</strong> The ability to generate comments in multiple languages, catering to a global audience and expanding the reach of your content.
             </li>
           </ul>
           <p className="mb-4">
-            At the core of the Instagram Comment Generator is a commitment to innovation and user experience. We are dedicated to continuously improving and expanding the tool's capabilities to meet the evolving needs of content creators and users alike.
+            At the core of the Instagram Comment Generator is a commitment to innovation and user experience. We are dedicated to continuously improving and expanding the tool&apos;s capabilities to meet the evolving needs of content creators and users alike.
           </p>
           <p className="mb-4">
-            Whether you're a seasoned content creator, a brand looking to engage with your audience, or simply someone who enjoys the creative possibilities of Instagram, the Instagram Comment Generator is your ultimate companion. Unleash your creativity, foster engagement, and elevate your Instagram content to new heights with this powerful tool. We do not support fake Instagram comments. Please use it responsibly.
+            Whether you&apos;re a seasoned content creator, a brand looking to engage with your audience, or simply someone who enjoys the creative possibilities of Instagram, the Instagram Comment Generator is your ultimate companion. Unleash your creativity, foster engagement, and elevate your Instagram content to new heights with this powerful tool. We do not support fake Instagram comments. Please use it responsibly.
           </p>
         </CardContent>
       </Card>
