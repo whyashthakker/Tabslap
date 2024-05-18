@@ -15,10 +15,10 @@ const CommentGeneratorIntroduction: React.FC<CommentGeneratorIntroductionProps> 
         </CardHeader>
         <CardContent>
           <p className="mb-4">
-            Welcome to the {platformName} Comment Generator, a versatile tool designed to help you create engaging and tailored comments for {platformName}. Whether you're a content creator, social media manager, or simply looking to enhance your online presence, this tool simplifies the process of generating comments that resonate with your audience.
+            Welcome to the {platformName} Comment Generator, a versatile tool designed to help you create engaging and tailored comments for {platformName}. Whether you&apos;re a content creator, social media manager, or simply looking to enhance your online presence, this tool simplifies the process of generating comments that resonate with your audience.
           </p>
           <p className="mb-4">
-            With the {platformName} Comment Generator, you can easily customize your comments by choosing an appropriate commenting style, specifying the writing style, and determining the comment length. This flexibility allows you to create comments that align with your brand voice, target audience, and the specific platform you're using.
+            With the {platformName} Comment Generator, you can easily customize your comments by choosing an appropriate commenting style, specifying the writing style, and determining the comment length. This flexibility allows you to create comments that align with your brand voice, target audience, and the specific platform you&apos;re using.
           </p>
           <h3 className="text-lg font-bold mb-2">Key Features</h3>
           <ul className="list-disc pl-6 mb-4">
@@ -29,7 +29,7 @@ const CommentGeneratorIntroduction: React.FC<CommentGeneratorIntroductionProps> 
               <strong>Writing Styles:</strong> Select from analytical, personal, or persuasive writing styles to craft comments that resonate with your intended message and purpose.
             </li>
             <li className="mb-2">
-              <strong>Comment Length:</strong> Specify the desired length of your comment, with options for short, medium, or long comments, to suit your preferences and {platformName}'s character limits.
+              <strong>Comment Length:</strong> Specify the desired length of your comment, with options for short, medium, or long comments, to suit your preferences and {platformName}&apos;s character limits.
             </li>
           </ul>
           <p className="mb-4">

@@ -23,17 +23,17 @@ const CommentGeneratorFAQ: React.FC<CommentGeneratorFAQProps> = ({ platformName 
           <div className="mb-6">
             <h3 className="text-lg font-bold mb-2">How do I use the {platformName} Comment Generator?</h3>
             <ol className="list-decimal pl-6">
-              <li className="mb-2">Enter the post content in the 'Post Content' textarea.</li>
-              <li className="mb-2">Choose the commenting style from the 'Commenting Style' dropdown.</li>
-              <li className="mb-2">Select the writing style from the 'Writing Style' dropdown.</li>
-              <li className="mb-2">Choose the desired comment length from the 'Comment Length' dropdown.</li>
-              <li>Click the 'Generate Comment' button to generate a comment based on your selections.</li>
+              <li className="mb-2">Enter the post content in the &apos;Post Content&apos; textarea.</li>
+              <li className="mb-2">Choose the commenting style from the &apos;Commenting Style&apos; dropdown.</li>
+              <li className="mb-2">Select the writing style from the &apos;Writing Style&apos; dropdown.</li>
+              <li className="mb-2">Choose the desired comment length from the &apos;Comment Length&apos; dropdown.</li>
+              <li>Click the &apos;Generate Comment&apos; button to generate a comment based on your selections.</li>
             </ol>
           </div>
           <div className="mb-6">
             <h3 className="text-lg font-bold mb-2">Can I use the generated comments on my {platformName} posts?</h3>
             <p>
-              Yes, you can use the generated comments on your {platformName} posts. However, please ensure that the comments are relevant, appropriate, and align with {platformName}'s guidelines and policies.
+              Yes, you can use the generated comments on your {platformName} posts. However, please ensure that the comments are relevant, appropriate, and align with {platformName}&apos;s guidelines and policies.
             </p>
           </div>
           <div className="mb-6">
