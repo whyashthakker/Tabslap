@@ -1,14 +1,29 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChromeIcon } from 'lucide-react';
 import { Button } from '@/components/Button';
-import { usePostHog } from 'posthog-js/react';
+import { useFeatureFlagVariantKey, usePostHog } from 'posthog-js/react';
 import { usePricing } from '@/app/web/providers/pricingContext';
 
 export function CTAButtonsAB() {
   const posthog = usePostHog();
   const {buyNowProps} = usePricing();
+  // posthog.featureFlags.override({'landing-cta-price': 'control'})  
+  const variant = useFeatureFlagVariantKey(
+    "landing-cta-price"
+  );
+
+  const [showPrice, setShowPrice] = React.useState(true);
+
+  useEffect(() => {
+    if (variant === "hide") {
+      setShowPrice(false);
+    } else if (variant === "control") {
+      setShowPrice(true);
+    }
+  }
+  , [variant]);
 
   // Component rendering
   return (
@@ -33,9 +48,14 @@ export function CTAButtonsAB() {
         }}
         className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0"
       >
-        Lifetime Access &nbsp;
+        Lifetime Access
+        {showPrice && (
+          <>
+          &nbsp;
         <span className="text-white-600 text-m">{buyNowProps.price} &nbsp;</span>
         <span className="line-through text-gray-800 text-xs">{buyNowProps.originalPrice}</span>
+        </>
+      )}
       </Button>
     </div>
   );

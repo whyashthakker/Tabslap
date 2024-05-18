@@ -4,7 +4,7 @@ import React from 'react'
 
 const WatchDemo = () => {
     const handleWatchDemo = () => {
-        window.open("https://youtu.be/I5jyvy5S5T4", "_blank")
+        window.open("https://youtu.be/8VJTHIgxy1Q?si=WUPdI49PASlSOjJs", "_blank")
       }
 
   return (
