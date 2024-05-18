@@ -1,5 +1,434 @@
 const postData = [
   {
+    "title": "AI Comment Generators vs. Human Moderators: A Comparative Analysis",
+    "file": "ai-comment-generators-vs-human-moderators",
+    "description": "Explore the differences between AI comment generators and human moderators in managing online discussions. Discover the pros and cons of each approach and their impact on user engagement.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "API Integration for AI Comment Generators: Seamless Deployment and Customization",
+    "file": "api-integration-for-ai-comment-generators",
+    "description": "Explore the benefits of API integration for AI comment generators and learn how it enables seamless deployment, customization, and integration with existing systems.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Are There AI Comment Generators Specifically for Instagram?",
+    "file": "are-there-ai-comment-generators-specifically-for-instagram",
+    "description": "Discover if there are AI comment generators designed specifically for Instagram. Learn how these specialized tools can help you boost engagement, save time, and optimize your Instagram presence.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Can AI Comment Generators Handle Comments in Real-Time?",
+    "file": "can-ai-comment-generators-handle-comments-in-real-time",
+    "description": "Discover if AI comment generators can handle comments in real-time. Learn about the capabilities and limitations of real-time comment generation and its implications for engaging with your audience.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Combating Spam and Inappropriate Comments with AI Comment Generators",
+    "file": "combating-spam-and-inappropriate-comments-with-ai-comment-generators",
+    "description": "Learn how AI comment generators effectively handle spammy and inappropriate comments, ensuring a safe and clean online conversation environment.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Customizing AI Comment Generators for Different Industries: Tailoring Moderation to Specific Needs",
+    "file": "customizing-ai-comment-generators-for-different-industries",
+    "description": "Discover how AI comment generators can be customized to meet the unique moderation needs of different industries. Learn about industry-specific challenges and the benefits of tailored AI moderation solutions.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Enhancing Content Moderation with AI Comment Generators",
+    "file": "enhancing-content-moderation-with-ai-comment-generators",
+    "description": "Discover how AI comment generators are revolutionizing content moderation, making it more efficient, accurate, and scalable for online platforms.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Ensuring Data Security with AI Comment Generators: Best Practices and Considerations",
+    "file": "ensuring-data-security-with-ai-comment-generators",
+    "description": "Learn how to safeguard your data when using AI comment generators. Discover best practices, security measures, and key considerations for protecting sensitive information.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Choose the Right AI Comment Generator for Your Needs",
+    "file": "how-to-choose-the-right-ai-comment-generator-for-your-needs",
+    "description": "Discover the key factors to consider when selecting an AI comment generator for your social media strategy. From features and customization to pricing and support, learn how to find the perfect AI comment generator for your needs.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Multilingual AI Comment Generators: Enabling Global Conversations",
+    "file": "multilingual-ai-comment-generators",
+    "description": "Discover how AI comment generators with multilingual support are breaking down language barriers and enabling global conversations across diverse online communities.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Pricing Options for Popular AI Comment Generators",
+    "file": "pricing-options-for-popular-ai-comment-generators",
+    "description": "Explore the pricing options for popular AI comment generators. Compare plans, features, and costs to find the best solution for your needs and budget.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Sentiment Analysis in AI Comment Generators: Understanding User Emotions",
+    "file": "sentiment-analysis-in-ai-comment-generators",
+    "description": "Explore how AI comment generators can analyze the sentiment of user comments, providing valuable insights into user emotions and opinions.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "What Types of Comments Can olly.ai / justdone ai Generate?",
+    "file": "what-types-of-comments-can-justdoneai-generate",
+    "description": "Discover the different types of comments that olly.ai / justdone ai can generate for your social media posts. From engagement-boosting comments to personalized replies, learn how olly.ai / justdone ai can help you optimize your social media presence.",
+    "date": "May 18, 2024",
+    "datetime": "2024-05-18",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators for Professional Platforms: Enhancing LinkedIn Engagement",
+    "file": "ai-comment-generators-for-professional-platforms-enhancing-linkedin-engagement",
+    "description": "Explore the availability and benefits of AI comment generators for professional platforms like LinkedIn. Discover how these tools can help you enhance your engagement and build meaningful connections in a professional context.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators: Handling Negative Comments Effectively",
+    "file": "ai-comment-generators-handling-negative-comments-effectively",
+    "description": "Discover how AI comment generators can effectively handle negative comments on social media platforms. Learn about the strategies and techniques employed to address criticism and maintain a positive brand image.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators: Versatile Templates for Different Comment Types",
+    "file": "ai-comment-generators-versatile-templates-for-different-comment-types",
+    "description": "Discover how AI comment generators offer versatile templates for different types of comments, enabling businesses to efficiently handle diverse customer interactions on social media platforms.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Boosting Engagement Rates with AI Comment Generators: Strategies and Insights",
+    "file": "boosting-engagement-rates-with-ai-comment-generators-strategies-and-insights",
+    "description": "Discover how AI comment generators can significantly improve your engagement rates on social media platforms. Learn effective strategies and gain valuable insights to maximize the impact of AI-generated comments on your audience engagement.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Choosing the Best AI Comment Generator for YouTube: A Comprehensive Guide",
+    "file": "choosing-the-best-ai-comment-generator-for-youtube-a-comprehensive-guide",
+    "description": "Discover the key factors to consider when choosing the best AI comment generator for YouTube. Learn about the top AI comment generator tools and their features to enhance your YouTube engagement strategy.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Editing AI-Generated Comments: Maintaining Control and Quality",
+    "file": "editing-ai-generated-comments-maintaining-control-and-quality",
+    "description": "Discover the possibilities and benefits of editing AI-generated comments before posting. Learn how to maintain control over your brand's voice and ensure the quality of your social media interactions.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Ensuring Relevance with AI Comment Generators: Techniques and Best Practices",
+    "file": "ensuring-relevance-with-ai-comment-generators-techniques-and-best-practices",
+    "description": "Explore how AI comment generators ensure the relevance of comments using advanced techniques and best practices. Learn how these AI-powered tools deliver contextually appropriate responses to enhance customer engagement.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Exploring the Features of LinkedIn Comment Generator: Enhancing LinkedIn Engagement",
+    "file": "exploring-the-features-of-linkedin-comment-generator-enhancing-linkedin-engagement",
+    "description": "Discover the powerful features of LinkedIn Comment Generator and how they can help you enhance your LinkedIn engagement. Learn about automated comment generation, personalization, analytics, and more.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Generating Comments with AI: Essential Information to Provide",
+    "file": "generating-comments-with-ai-essential-information-to-provide",
+    "description": "Discover the essential information you need to provide to generate effective comments using AI comment generators. Learn how to optimize your input for accurate and engaging comment generation.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI Comment Generators Handle Slang and Colloquial Language",
+    "file": "how-ai-comment-generators-handle-slang-and-colloquial-language",
+    "description": "Explore how AI comment generators tackle the challenges of slang and colloquial language in social media interactions. Discover the techniques and approaches used to understand and generate appropriate responses.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Integrating AI Comment Generators with Social Media Management Tools",
+    "file": "integrating-ai-comment-generators-with-social-media-management-tools",
+    "description": "Explore the possibilities and benefits of integrating AI comment generators with social media management tools. Discover how this integration can streamline comment handling and enhance social media strategies.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Integrating AI Comment Generators with Your Social Media Accounts: A Step-by-Step Guide",
+    "file": "integrating-ai-comment-generators-with-your-social-media-accounts",
+    "description": "Learn how to seamlessly integrate AI comment generators with your social media accounts. Follow our step-by-step guide to streamline your comment management and enhance customer engagement.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Leveraging AI Comment Generators for Effective Customer Service",
+    "file": "leveraging-ai-comment-generators-for-effective-customer-service",
+    "description": "Explore how AI comment generators can be utilized to enhance customer service and support. Discover the benefits, best practices, and considerations for implementing AI-powered comment generation in your customer service strategy.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Personalized Responses with AI Comment Generators: Enhancing Customer Engagement",
+    "file": "personalized-responses-with-ai-comment-generators-enhancing-customer-engagement",
+    "description": "Discover how AI comment generators can create personalized responses to enhance customer engagement on social media platforms. Learn about the techniques and benefits of personalized comment generation.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Scalability of AI Comment Generators: Handling Large Volumes of Comments",
+    "file": "scalability-of-ai-comment-generators-handling-large-volumes-of-comments",
+    "description": "Discover the scalability capabilities of AI comment generators and how they can effectively handle large volumes of comments. Learn about the technologies and strategies employed to ensure efficient comment management at scale.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Setting Up an AI Comment Generator for Your Blog: A Step-by-Step Guide",
+    "file": "setting-up-an-ai-comment-generator-for-your-blog-a-step-by-step-guide",
+    "description": "Learn how to set up an AI comment generator for your blog to enhance engagement and streamline comment management. Follow our step-by-step guide to integrate AI-powered comment generation seamlessly into your blogging platform.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Training AI Comment Generators to Understand Your Brand's Voice",
+    "file": "training-ai-comment-generators-to-understand-your-brands-voice",
+    "description": "Learn how to effectively train AI comment generators to understand and replicate your brand's unique voice. Discover best practices and strategies for consistent and on-brand comment generation.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unlocking Engaging Discussions with HyperWrite's Discussion Post Commenter",
+    "file": "unlocking-engaging-discussions-with-hyperwrites-discussion-post-commenter",
+    "description": "Discover how HyperWrite's Discussion Post Commenter streamlines the process of creating engaging discussion posts. Learn about its key features, benefits, and how it can help you foster meaningful conversations on various platforms.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unveiling the Unique Features of AI4Chat's Comment Generator",
+    "file": "unveiling-the-unique-features-of-ai4chats-comment-generator",
+    "description": "Discover what sets AI4Chat's comment generator apart from the rest. Explore its unique features, advanced technologies, and capabilities that revolutionize comment generation for enhanced user engagement.",
+    "date": "May 17, 2024",
+    "datetime": "2024-05-17",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top AI Comment Generators in 2024: Enhancing Social Media Engagement",
+    "file": "top-ai-comment-generators-2024",
+    "description": "Discover the best AI comment generators of 2024 that are revolutionizing social media engagement. Learn about their features, benefits, and how they can help you streamline your commenting process.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
     "title": "Creating a Social Media Content Strategy for E-commerce Brands",
     "file": "creating-a-social-media-content-strategy-for-ecommerce-brands",
     "description": "Learn how to develop a comprehensive social media content strategy that helps your e-commerce brand engage customers, drive traffic, and boost sales. Discover best practices for creating and curating content that resonates with your target audience and aligns with your business goals.",
@@ -1279,6 +1708,175 @@ const postData = [
     "description": "Discover the power of commenting on social media and how it can boost your engagement, reach, and influence. Learn the best practices and strategies for effective commenting.",
     "date": "May 8, 2024",
     "datetime": "2024-05-08",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Accuracy of AI-Generated Comments: Separating Fact from Fiction",
+    "file": "accuracy-of-ai-generated-comments",
+    "description": "Explore the accuracy of AI-generated comments and understand the factors that influence their quality. Learn about the advancements, limitations, and best practices for ensuring accurate and relevant AI-powered commenting.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Leveraging AI Comment Generators for Blog Engagement",
+    "file": "ai-comment-generators-for-blog-engagement",
+    "description": "Explore the potential of using AI comment generators to enhance engagement on your blog posts. Discover the benefits, best practices, and considerations for implementing AI-powered commenting on your blog.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators: Responding to Specific Questions in Comments",
+    "file": "ai-comment-generators-responding-to-questions",
+    "description": "Explore the capabilities of AI comment generators in addressing specific questions posed in user comments. Learn how AI-powered tools can provide targeted and relevant responses to enhance user engagement.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators: Versatility Across Social Media Platforms",
+    "file": "ai-comment-generators-versatility-across-platforms",
+    "description": "Explore the capabilities of AI comment generators in creating comments for various social media platforms. Discover how AI can adapt to different platforms and enhance your overall social media presence.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Benefits of Using an AI Comment Generator: Boosting Engagement and Efficiency",
+    "file": "benefits-of-using-an-ai-comment-generator",
+    "description": "Discover the advantages of using an AI comment generator for your social media strategy. From saving time to increasing engagement, explore how AI can revolutionize your online presence.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Customizing AI-Generated Comments: Tailoring Engagement to Your Brand",
+    "file": "customizing-ai-generated-comments",
+    "description": "Discover the customization options available in AI comment generators and learn how to tailor AI-generated comments to align with your brand's voice, tone, and engagement goals.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Free AI Comment Generators: Enhancing Social Media Engagement on a Budget",
+    "file": "free-ai-comment-generators",
+    "description": "Discover the availability of free AI comment generators and how they can help you enhance your social media engagement without breaking the bank. Explore the features, benefits, and considerations of using free AI-powered commenting tools.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How Does an AI Comment Generator Work? Unveiling the Technology",
+    "file": "how-does-an-ai-comment-generator-work",
+    "description": "Explore the inner workings of an AI comment generator and discover the technology behind automated comment generation on social media platforms.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "A Step-by-Step Guide to Using an AI Comment Generator",
+    "file": "how-to-use-ai-comment-generator",
+    "description": "Learn how to effectively use an AI comment generator to enhance your social media engagement. Follow this step-by-step guide to set up and optimize your AI-powered commenting strategy.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Making AI-Generated Comments Sound More Human: Tips and Techniques",
+    "file": "making-ai-comments-sound-human",
+    "description": "Discover effective tips and techniques to make AI-generated comments sound more human and engaging. Learn how to create authentic and personalized interactions that resonate with your audience.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Mimicking Tones of Voice: The Versatility of AI Comment Generators",
+    "file": "mimicking-tones-of-voice-ai-comment-generators",
+    "description": "Explore the capabilities of AI comment generators in mimicking different tones of voice. Discover how AI can adapt to various communication styles and enhance the effectiveness of your social media engagement.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Multilingual Support in AI Comment Generators: Engaging a Global Audience",
+    "file": "multilingual-support-ai-comment-generators",
+    "description": "Discover the multilingual capabilities of AI comment generators and how they enable engagement with a global audience. Learn about the benefits, challenges, and best practices for leveraging AI-powered commenting in multiple languages.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "What is an AI Comment Generator? Understanding the Basics",
+    "file": "what-is-an-ai-comment-generator",
+    "description": "Discover what an AI comment generator is, how it works, and its potential applications in social media marketing and engagement.",
+    "date": "May 16, 2024",
+    "datetime": "2024-05-16",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",

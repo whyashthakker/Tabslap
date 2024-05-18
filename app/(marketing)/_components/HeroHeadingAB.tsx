@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 export default function HeroHeadingAB() {
   const [landingCopy, setLandingCopy] = useState<string>("");
   // const posthog = usePostHog();
-  // posthog.featureFlags.override({'new_landing_copy': 'test-8'})  
+  // posthog.featureFlags.override({'new_landing_copy': 'control'})  
   const variant = useFeatureFlagVariantKey(
     "new_landing_copy"
   );

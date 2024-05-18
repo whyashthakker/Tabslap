@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="The Accuracy of AI-Generated Comments: Separating Fact from Fiction"
-        datePublished="2023-05-16T08:00:00+00:00"
-        dateModified="2023-05-16T08:00:00+00:00"
+        datePublished="2024-05-16T08:00:00+00:00"
+        dateModified="2024-05-16T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}

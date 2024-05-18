@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="What is an AI Comment Generator? Understanding the Basics"
-        datePublished="2023-05-16T08:00:00+00:00"
-        dateModified="2023-05-16T08:00:00+00:00"
+        datePublished="2024-05-16T08:00:00+00:00"
+        dateModified="2024-05-16T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}
