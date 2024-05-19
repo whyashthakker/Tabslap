@@ -1180,6 +1180,28 @@
       <priority>0.80</priority>
    </url>
 
+   <url>
+   <loc>https://www.olly.social/blog/post/olly-social-the-ultimate-reddit-summarizer</loc>
+   <lastmod>2024-05-19</lastmod>
+   <priority>0.80</priority>
+   </url>
    
+   <url>
+   <loc>https://www.olly.social/blog/post/olly-social-the-game-changing-hackernews-summarizer</loc>
+   <lastmod>2024-05-19</lastmod>
+   <priority>0.80</priority>
+   </url>
+
+   <url>
+   <loc>https://www.olly.social/blog/post/olly-social-revolutionizing-facebook-content-consumption</loc>
+   <lastmod>2024-05-19</lastmod>
+   <priority>0.80</priority>
+   </url>
+
+   <url>
+   <loc>https://www.olly.social/blog/post/revolutionizing-content-consumption-with-gpt-powered-post-summarization</loc>
+   <lastmod>2024-05-19</lastmod>
+   <priority>0.80</priority>
+   </url>
 
 </urlset>
