@@ -11,6 +11,11 @@
       <priority>1.00</priority>
    </url>
    <url>
+      <loc>https://www.olly.social/release-notes</loc>
+      <lastmod>2024-01-10</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
       <loc>https://www.olly.social/privacy-policy</loc>
       <lastmod>2024-01-10</lastmod>
       <priority>0.80</priority>

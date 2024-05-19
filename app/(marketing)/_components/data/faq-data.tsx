@@ -5,36 +5,40 @@ interface FAQData {
   
   const FAQDataMain: FAQData[] = [
     {
-      question: "What is Olly?",
-      answer: "Olly is your personal AI assistant that helps you optimize your presence on social media platforms like LinkedIn, Twitter, Reddit, and Facebook. With Olly, you get personalized interactions, time-saving commenting, and insights into what makes content viral. It's designed to grow your following by strategically enhancing engagement and providing content ideas that resonate with your audience.",
+      question: "I am seeing: You exceeded your current quota, please check your plan and billing details",
+      answer: "This is an issue with your OpenAI API key. Please check your OpenAI API key and ensure it is valid and has not exceeded its usage limits. OpenAI is now prepaid, so you need to add funds to your account to continue using Olly.",
     },
     {
-      question: "How does Olly generate comments?",
-      answer: "Olly uses AI to analyze the post you're engaging with and generates comments that are likely to resonate with the audience. It also allows for customization to make comments more personal.",
+      question: "Can I use Olly Social in my language?",
+      answer: "We just rolled out support for generating comments in various languages. We currently support English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, Arabic, Hindi.",
+    },
+    {
+      question: "How can i request a refund?",
+      answer: "Go to lemonsqueezy orders page from your email or reach out to yash@explainx.ai, no questions asked."
+    },
+    {
+      question: "Automatic commenter is available?",
+      answer: "We are working on it. It will be available soon.",
     },
     {
       question: "What platforms does Olly currently support?",
       answer: "Olly currently supports Facebook, LinkedIn, Instagram, Reddit, Product Hunt, YouTube, Twitter, and plans to add Hacker News, Indie Hackers, Quora, Medium, Pinterest, TikTok, Twitch, and more.",
     },
     {
-      question: "What is Olly's pricing model?",
-      answer: "Olly offers lifetime access for a one-time payment of $19.99, increasing to $49.99 after January 31st. There are no subscription fees, and it includes lifetime updates.",
-    },
-    {
-      question: "Can Olly check the virality of a post?",
-      answer: "Yes, Olly assesses the virality of the post you're engaging with by generating a virality score, which indicates how likely the post is to go viral.",
+      question: "When I Click on Add activation key or add OpenAI key, nothing happens",
+      answer: "You have either activated the maximum number of licenses, that is 3, or your activation key is invalid. Please check your activation key on: https://app.lemonsqueezy.com/orders",
     },
     {
       question: "Is Olly available as a browser extension?",
       answer: "Yes, Olly is available as a browser extension that can be added to Chrome for easy access and use.",
     },
     {
-      question: "Can Olly generate similar posts?",
-      answer: "Yes, Olly helps generate similar posts to the one you're engaging with, using AI to analyze the post and generate content that resonates with the audience.",
+      question: "Can I use more than 3 activation keys?",
+      answer: "No, you can only use a maximum of 3 activation keys for Olly. You can however deactivate an existing key and use a new one.",
     },
     {
-      question: "How does Olly enhance social media engagement?",
-      answer: "Olly enhances social media engagement by providing personalized interactions, time-saving commenting, and content ideas that strategically grow your following and enhance engagement.",
+      question: "Can Olly autocomment on autopilot?",
+      answer: "Working on it. We will keep you posted.",
     },
     {
       question: "Can I customize my commenting style with Olly?",
@@ -42,83 +46,75 @@ interface FAQData {
     },
     {
       question: "Does Olly offer engagement analytics?",
-      answer: "Yes, Olly provides engagement analytics as part of its features, helping you understand and optimize your social media interactions.",
+      answer: "No, data is store locally. We do not track any data.",
     },
     {
-      question: "How does Olly help with content generation?",
-      answer: "Olly aids in content generation by analyzing existing posts and generating similar posts or comments that are likely to resonate with your audience.",
+      question: "What GPT Models are supported by Olly?",
+      answer: "We support GPT-3.5, GPT-4, Turbo and GPT-4o.",
     },
     {
       question: "What makes Olly different from other social media tools?",
-      answer: "Olly stands out by offering AI-powered, personalized interactions and insights into virality, along with a one-time payment model for lifetime access, making it both innovative and cost-effective.",
+      answer: "Lifetime and Fully Private.",
     },
     {
       question: "Is there a trial version of Olly available?",
-      answer: "Currently, Olly does not offer a trial version, but it provides lifetime access with a one-time payment, making it a risk-free investment.",
+      answer: "No, but you can ask for a refund within 7 days of purchase.",
     },
     {
       question: "Does Olly work on mobile devices?",
-      answer: "Olly is primarily designed as a browser extension for Chrome, focusing on desktop usage. Mobile compatibility may vary.",
-    },
-    {
-      question: "How does Olly improve online presence?",
-      answer: "Olly improves online presence by generating engaging comments, assessing virality, and providing content ideas that resonate with your audience, thereby enhancing overall engagement.",
+      answer: "No, it currently only works on Chrome browser on desktop devices.",
     },
     {
       question: "Can I use Olly for multiple social media accounts?",
-      answer: "Yes, Olly can be used across various accounts on supported platforms, making it versatile for managing multiple social media profiles.",
+      answer: "Yes.",
     },
     {
       question: "What are the system requirements for Olly?",
-      answer: "Olly requires Chrome browser for its extension. There are no specific system requirements beyond what is needed to run Chrome efficiently.",
+      answer: "Functional Chrome browser.",
     },
     {
       question: "How does Olly handle user data and privacy?",
-      answer: "Olly prioritizes user data and privacy, ensuring that all interactions and data analyses are conducted with strict adherence to privacy laws and user consent.",
+      answer: "Stored locally, we do not get or track any data.",
     },
     {
       question: "Can businesses use Olly for their social media management?",
-      answer: "Yes, Olly is ideal for businesses looking to enhance their social media engagement and online presence efficiently.",
+      answer: "Yes, you can customise Olly to respond in your brand's voice and style.",
     },
     {
       question: "Is customer support available for Olly users?",
-      answer: "Yes, Olly provides customer support for any queries or issues users may encounter, ensuring a smooth user experience.",
+      answer: "Yep. yash@explainx.ai.",
     },
     {
-        question: "How do I add Olly to Google Chrome?",
-        answer: "You can add Olly to Chrome by visiting the Chrome Web Store and adding the Olly extension. Alternatively, use the 'Add Olly to Chrome' option in the Navbar on the Olly website.",
+        question: "Does Olly support Claude, Gemini AI Models?",
+        answer: "No, but drop us a message if you want us to add it.",
       },
       {
         question: "What should I do after installing Olly?",
-        answer: "After installing Olly, ensure the extension is enabled in your browser and refresh the page. It's recommended to restart your browser for optimal performance.",
+        answer: "Please see activation guide at https://olly.social/activation-guide",
       },
       {
-        question: "How do I choose the AI model in Olly?",
-        answer: "In Olly, you can choose between different AI models like GPT-3.5 or GPT-4 for personalized interactions. Visit OpenAI's pricing page for details on costs and billing.",
-      },
-      {
-        question: "Where can I find my Olly activation key?",
-        answer: "You can obtain your Olly activation key by purchasing it at the provided link. If you've already bought it, check your email or your LemonSqueezy orders.",
+        question: "Is Olly Free forever?",
+        answer: "Olly is one time payment. After this you directly pay OpenAI for usage. We are not involved in billing.",
       },
       {
         question: "How do I set up my OpenAI API key in Olly?",
-        answer: "Enter your activation key and OpenAI API key in Olly, which can be found at OpenAI's platform under API keys. Olly ensures privacy and security as per their policy.",
+        answer: "If you do not know what you are doing, please read OpenAI Docs here: https://openai.com/index/openai-api/, takes about 2 minutes.",
       },
       {
         question: "Can I customize my commenting style with Olly?",
-        answer: "Yes, Olly allows you to set your preferred style for commenting, including the tone and length of replies.",
+        answer: "Yes, style, length, language and tone, one time setup.",
       },
       {
         question: "Where does Olly appear when I'm using it?",
-        answer: "Once set up, Olly will appear at the bottom middle of your screen when you select text across supported platforms like Facebook, Reddit, LinkedIn, etc. If it doesn't appear, refresh the page or ensure the extension is enabled.",
+        answer: "Bottom middle of your screen.",
       },
       {
         question: "What should I do if I can't see Olly after installation?",
         answer: "If Olly doesn't appear, try refreshing the page or check if the extension is enabled in your browser. You might also need to restart your browser.",
       },
       {
-        question: "How many activation keys can I have for Olly?",
-        answer: "You can have a maximum of 5 activation keys for Olly.",
+        question: "How do I disable Olly?",
+        answer: "Go to your extensions find and disable Olly. You should see a slider inside Settings.",
       },
       {
         question: "Will OpenAI bill me for using Olly?",
@@ -126,23 +122,15 @@ interface FAQData {
       },
       {
         question: "Is there a demo available for Olly?",
-        answer: "Yes, you can watch a demo of Olly to understand how it works and get started more effectively.",
-      },
-      {
-        question: "How do I activate Olly in my browser?",
-        answer: "To activate Olly, add the extension to Chrome, ensure it's enabled, enter your activation and OpenAI API keys, and customize your settings.",
+        answer: "Yes, watch it here: https://youtu.be/8VJTHIgxy1Q?si=XtV7C_3aT9xnVeQw",
       },
       {
         question: "Does Olly access my personal data?",
-        answer: "Olly prioritizes user privacy and does not access your personal data. You can refer to their privacy policy for more information.",
+        answer: "Nope.",
       },
       {
         question: "How do I ensure Olly is working correctly?",
-        answer: "To ensure Olly is working, follow the setup steps, choose your AI model, enter the necessary keys, and customize your settings. If issues persist, contact support.",
-      },
-      {
-        question: "What platforms does Olly support?",
-        answer: "Olly supports platforms like Facebook, Reddit, LinkedIn, ProductHunt, Instagram, YouTube, and more.",
+        answer: "To ensure Olly is working, follow the setup steps, choose your AI model, enter the necessary keys, and customize your settings. If issues persist, contact support. Refreshing the page or restarting your browser may also help.",
       },
       {
         question: "How can I contact support for Olly?",
@@ -154,7 +142,7 @@ interface FAQData {
       },
       {
         question: "Is there a guide for first-time Olly users?",
-        answer: "Yes, first-time users can follow the step-by-step guide provided by Olly, which includes installation, activation, and customization instructions.",
+        answer: "Yes, please see the activation guide at https://olly.social/activation-guide.",
       },
       {
         question: "Can I change the AI model in Olly after initial setup?",

@@ -17,25 +17,18 @@ import HeroHeadingAB from "./HeroHeadingAB";
 import { CTAButtonsAB } from "./cta-ab";
 import RefundOption from "./refund-option";
 import { Tag } from "@/components/Tag";
+import NewUpdates from "./new-updates";
 
-export function HeroText(props: {
-  children: React.ReactNode;
-  className?: string;
-}) {
+export function HeroText(props: { children: React.ReactNode; className?: string; }) {
   const { className, ...rest } = props;
-
   return (
-    <h1
-      className={cn("font-cal text-4xl text-gray-900 sm:text-6xl", className)}
-      {...rest}
-    />
+    <h1 className={cn("font-cal text-4xl sm:text-5xl lg:text-6xl text-gray-900", className)} {...rest} />
   );
 }
 
 export function HeroSubtitle(props: { children: React.ReactNode }) {
-  return <p className="mt-6 text-s sm:text-s leading-8 text-gray-500" {...props} />;
+  return <p className="mt-6 text-xs sm:text-s leading-8 text-gray-500" {...props} />;
 }
-
 
 export const Heading = (props: {
   title?: string;
@@ -44,22 +37,23 @@ export const Heading = (props: {
 }) => {
 
   return (
-    <div className="relative pt-14">
+    <div className="relative pt-10">
       <div className="pt-5 sm:pb-12 sm:pt-5">
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {/* <HeroTag /> */}
-          <div className="mb-4">
-          <ProductHuntBadge />
-
-          <h3 className="flex justify-center font-cal text-2xl text-gray-900">
-            <div className="mt-4 shadow-sm shadow-teal-500/50">
+      <div className="mb-4">
+        <div className="flex justify-center items-center space-x-4">
+          <h3 className="hidden sm:block font-cal text-2xl text-gray-900">
+            <div className="shadow-sm shadow-teal-500/50">
               <Tag color="green">#1 Social Media Agent</Tag>
             </div>
           </h3>
-          </div>
-
-          
+          <ProductHuntBadge />
+        </div>
+        <div className="mt-4 flex justify-center">
+          <NewUpdates />
+        </div>
+      </div>          
 
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
@@ -70,7 +64,7 @@ export const Heading = (props: {
             <HeroSubtitle>
               {props.subtitle || (
                 <>
-                  Generate AI Powered Comments, Suggestions, Replies, & Real-time Virality Scores for your Posts, directly on your Social Media Pages.
+                  Not just another AI Tool? Olly is a flexible Chrome Extension that can Generate Comments, Posts, Replies & Summarise across all Social Media Platform, helping you become a brand faster.
                 </>
               )}
             </HeroSubtitle>

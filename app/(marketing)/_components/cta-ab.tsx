@@ -16,7 +16,7 @@ export function CTAButtonsAB() {
 
   // Component rendering
   return (
-    <div className="mt-10 grid items-center justify-center gap-x-6 gap-y-2 sm:flex mb-2">
+    <div className="mt-5 grid items-center justify-center gap-x-6 gap-y-2 sm:flex mb-5">
       <Button
         size="2xl"
         color="white"
