@@ -14,17 +14,6 @@ export function CTAButtonsAB() {
     "landing-cta-price"
   );
 
-  const [showPrice, setShowPrice] = React.useState(true);
-
-  useEffect(() => {
-    if (variant === "hide") {
-      setShowPrice(false);
-    } else if (variant === "control") {
-      setShowPrice(true);
-    }
-  }
-  , [variant]);
-
   // Component rendering
   return (
     <div className="mt-10 grid items-center justify-center gap-x-6 gap-y-2 sm:flex mb-2">
@@ -49,11 +38,11 @@ export function CTAButtonsAB() {
         className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0"
       >
         Lifetime Access
-        {showPrice && (
-          <>
+        {variant === 'control' && (
+        <>
           &nbsp;
-        <span className="text-white-600 text-m">{buyNowProps.price} &nbsp;</span>
-        <span className="line-through text-gray-800 text-xs">{buyNowProps.originalPrice}</span>
+          <span className="text-white-600 text-m">{buyNowProps.price} &nbsp;</span>
+          <span className="line-through text-gray-800 text-xs">{buyNowProps.originalPrice}</span>
         </>
       )}
       </Button>
