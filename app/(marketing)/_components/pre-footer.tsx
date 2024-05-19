@@ -39,8 +39,10 @@ const navigation = {
     // { name: "GitHub", href: "/github", target: "_blank" },
     // { name: "Discord", href: "/discord", target: "_blank" },
     { name: "Pricing", href: "/#pricing" },
-    { name: "Contact", href: "mailto:yash@explainx.ai", target: "_blank" },
+    { name: "Contact", href: "/contact", target: "_blank" },
     { name: "Feature Requests", href: "mailto:yash@explainx.ai", target: "_blank" },
+    { name: "FAQ", href: "/#faq" },
+    // { name: "Who m", href: "https://goyashy.com", target: "_blank" },
   ],
   legal: [
     { name: "How to Use?", href: "/activation-guide" },
