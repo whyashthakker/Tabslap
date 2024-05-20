@@ -10,7 +10,9 @@
 
 /experiments
 
-/.env
+userGenerations.json
+
+.env
 
 /old
 

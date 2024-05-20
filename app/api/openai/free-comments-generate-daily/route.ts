@@ -10,6 +10,7 @@ const openai = new OpenAI({
 });
 
 const generationsFilePath = path.join(process.cwd(), "userGenerations.json");
+const dailyLimit = process.env.DAILY_FREE_LIMIT || 5;
 
 function readUserGenerationsData() {
   try {
@@ -64,7 +65,7 @@ export async function POST(request: Request) {
     writeUserGenerationsData(userGenerationsData);
 
     // Check if the user has reached the daily limit
-    if (userGenerationsData[user_id].count <= 5) {
+    if (userGenerationsData[user_id].count <= dailyLimit) {
       const completion = await openai.chat.completions.create({
         model: model,
         messages: [
@@ -107,7 +108,7 @@ export async function POST(request: Request) {
       const errorResponse = new NextResponse(
         JSON.stringify({
           success: false,
-          error: "Daily free generation limit exceeded 5/5. For Unlimited, please update your OpenAI API key and buy lifetime access from Extension settings.",
+          error: `Daily free generation limit exceeded ${dailyLimit}/${dailyLimit}. For Unlimited, please update your OpenAI API key and buy lifetime access from Extension settings.`,
         }),
         {
           status: 429,
