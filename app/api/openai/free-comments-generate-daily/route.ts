@@ -31,8 +31,8 @@ export async function OPTIONS(request: Request) {
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-      },
+        "Access-Control-Allow-Headers": "*",
+    },
     });
   }
   
@@ -98,8 +98,8 @@ export async function POST(request: Request) {
           headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers": "Content-Type",
-          },
+            "Access-Control-Allow-Headers": "*",
+        },
         }
       );
 
@@ -119,8 +119,8 @@ export async function POST(request: Request) {
           headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers": "Content-Type",
-          },
+            "Access-Control-Allow-Headers": "*",
+        },
         }
       );
 
@@ -138,7 +138,7 @@ export async function POST(request: Request) {
         headers: {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-          "Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Headers": "*",
         },
       }
     );
