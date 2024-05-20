@@ -24,6 +24,18 @@ function writeUserGenerationsData(data: any) {
   fs.writeFileSync(generationsFilePath, JSON.stringify(data));
 }
 
+export async function OPTIONS(request: Request) {
+    const response = new NextResponse(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": "chrome-extension://pkomeokalhjlopcgnoefibpdhphfcgam",
+        "Access-Control-Allow-Methods": "POST",
+        "Access-Control-Allow-Headers": "Content-Type",
+      },
+    });
+    return response;
+  }
+
 export async function POST(request: Request) {
   const formData = await request.formData();
   const prompt = formData.get("prompt")?.toString() || "";
