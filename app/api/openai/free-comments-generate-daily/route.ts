@@ -29,7 +29,7 @@ export async function OPTIONS(request: Request) {
     const response = new NextResponse(null, {
       status: 204,
       headers: {
-        "Access-Control-Allow-Origin": "chrome-extension://pkomeokalhjlopcgnoefibpdhphfcgam",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "POST",
         "Access-Control-Allow-Headers": "Content-Type",
       },
@@ -92,7 +92,7 @@ export async function POST(request: Request) {
         {
           status: 200,
           headers: {
-            "Access-Control-Allow-Origin": "chrome-extension://pkomeokalhjlopcgnoefibpdhphfcgam",
+            "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "POST",
             "Access-Control-Allow-Headers": "Content-Type",
           },
@@ -113,7 +113,7 @@ export async function POST(request: Request) {
         {
           status: 429,
           headers: {
-            "Access-Control-Allow-Origin": "chrome-extension://pkomeokalhjlopcgnoefibpdhphfcgam",
+            "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "POST",
             "Access-Control-Allow-Headers": "Content-Type",
           },
@@ -132,7 +132,7 @@ export async function POST(request: Request) {
       {
         status: 500,
         headers: {
-          "Access-Control-Allow-Origin": "chrome-extension://pkomeokalhjlopcgnoefibpdhphfcgam",
+          "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "POST",
           "Access-Control-Allow-Headers": "Content-Type",
         },
