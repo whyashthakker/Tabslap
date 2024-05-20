@@ -26,18 +26,22 @@ function writeUserGenerationsData(data: any) {
 }
 
 export async function OPTIONS(request: Request) {
-    const response = new NextResponse(null, {
+    return new NextResponse(null, {
       status: 204,
       headers: {
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST",
-        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
       },
     });
-    return response;
   }
+  
 
 export async function POST(request: Request) {
+    if (request.method === 'OPTIONS') {
+        return OPTIONS(request);
+      }
+
   const formData = await request.formData();
   const prompt = formData.get("prompt")?.toString() || "";
   const store_id = formData.get("store_id")?.toString() || "";
@@ -93,7 +97,7 @@ export async function POST(request: Request) {
           status: 200,
           headers: {
             "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "POST",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
             "Access-Control-Allow-Headers": "Content-Type",
           },
         }
@@ -114,7 +118,7 @@ export async function POST(request: Request) {
           status: 429,
           headers: {
             "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "POST",
+            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
             "Access-Control-Allow-Headers": "Content-Type",
           },
         }
@@ -133,7 +137,7 @@ export async function POST(request: Request) {
         status: 500,
         headers: {
           "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "POST",
+          "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
           "Access-Control-Allow-Headers": "Content-Type",
         },
       }
