@@ -11,9 +11,10 @@ const navigation = [
   { name: "Features", href: "/#features" },
   { name: "Wall of Love", href: "/#testimonials" },
   { name: "Blog", href: "/blog", },
-  { name: "Affiliates (25% Per Sale)", href: "https://safegpt.lemonsqueezy.com/affiliates", target: "_blank" as const },
   { name: "Pricing", href: "/#pricing" },
+  { name: "Product Roadmap", href: "/product-roadmap"},
   { name: "FAQ", href: "/#faq" },
+  { name: "Affiliates", href: "https://safegpt.lemonsqueezy.com/affiliates", target: "_blank" as const },
 ];
 
 export function Header() {
