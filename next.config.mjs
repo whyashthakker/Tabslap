@@ -39,6 +39,14 @@ const nextConfig = {
             },
         ];
     },
+    async rewrites() {
+        return [
+          {
+            source: '/api/openai/free-comments-generate-daily',
+            destination: 'https://olly.social/api/openai/free-comments-generate-daily',
+          },
+        ];
+      },
 }
 
 const mdxConfig = withMDX(nextConfig);
