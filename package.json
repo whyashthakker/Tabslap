@@ -20,6 +20,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@tailwindcss/typography": "^0.5.13",
     "@tremor/react": "^3.13.4",
+    "@vercel/kv": "^1.0.1",
     "axios": "^1.6.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",

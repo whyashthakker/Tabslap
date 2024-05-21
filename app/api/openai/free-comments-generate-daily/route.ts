@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 import OpenAI from "openai";
 import fs from "fs";
 import path from "path";
+import { kv } from "@vercel/kv";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -11,18 +12,33 @@ const openai = new OpenAI({
 
 const generationsFilePath = path.join(process.cwd(), "userGenerations.json");
 const dailyLimit = process.env.DAILY_FREE_LIMIT || 5;
+const isProd = process.env.NODE_ENV === "production";
 
-function readUserGenerationsData() {
-  try {
-    const data = fs.readFileSync(generationsFilePath, "utf-8");
-    return JSON.parse(data);
-  } catch (error) {
-    return {};
+
+async function readUserGenerationsData() {
+  if (isProd) {
+    try {
+      const data: string | null = await kv.get("userGenerations");
+      return data ? JSON.parse(data) : {};
+    } catch (error) {
+      return {};
+    }
+  } else {
+    try {
+      const data = fs.readFileSync(generationsFilePath, "utf-8");
+      return JSON.parse(data);
+    } catch (error) {
+      return {};
+    }
   }
 }
 
-function writeUserGenerationsData(data: any) {
-  fs.writeFileSync(generationsFilePath, JSON.stringify(data));
+async function writeUserGenerationsData(data: any) {
+  if (isProd) {
+    await kv.set("userGenerations", JSON.stringify(data));
+  } else {
+    fs.writeFileSync(generationsFilePath, JSON.stringify(data));
+  }
 }
 
 export async function OPTIONS(request: Request) {
@@ -52,7 +68,7 @@ export async function POST(request: Request) {
 
   try {
     // Read the existing user generations data from the JSON file
-    const userGenerationsData = readUserGenerationsData();
+    const userGenerationsData = await readUserGenerationsData();
 
     // Check if the user has an entry for the current date
     if (!userGenerationsData[user_id] || userGenerationsData[user_id].date !== date) {
@@ -66,7 +82,7 @@ export async function POST(request: Request) {
     }
 
     // Save the updated user generations data back to the JSON file
-    writeUserGenerationsData(userGenerationsData);
+    await writeUserGenerationsData(userGenerationsData);
 
     // Check if the user has reached the daily limit
     if (userGenerationsData[user_id].count <= dailyLimit) {
