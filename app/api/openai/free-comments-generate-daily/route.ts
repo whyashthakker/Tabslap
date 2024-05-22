@@ -2,63 +2,44 @@
 import { sendDiscordNotification } from "@/service/discord-notify";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
-import fs from "fs";
-import path from "path";
 import { kv } from "@vercel/kv";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const generationsFilePath = path.join(process.cwd(), "userGenerations.json");
 const dailyLimit = process.env.DAILY_FREE_LIMIT || 5;
-const isProd = process.env.NODE_ENV === "production";
 
-
-async function readUserGenerationsData() {
-  if (isProd) {
-    try {
-      const data: string | null = await kv.get("userGenerations");
-      return data ? JSON.parse(data) : {};
-    } catch (error) {
-      return {};
-    }
-  } else {
-    try {
-      const data = fs.readFileSync(generationsFilePath, "utf-8");
-      return JSON.parse(data);
-    } catch (error) {
-      return {};
-    }
+async function readUserGenerationData(userId: string) {
+  try {
+    const data: string | null = await kv.get(`userGenerations:${userId}`);
+    return data ? JSON.parse(data) : { date: "", count: 0 };
+  } catch (error) {
+    return { date: "", count: 0 };
   }
 }
 
-async function writeUserGenerationsData(data: any) {
-  if (isProd) {
-    await kv.set("userGenerations", JSON.stringify(data));
-  } else {
-    fs.writeFileSync(generationsFilePath, JSON.stringify(data));
-  }
+async function writeUserGenerationData(userId: string, data: any) {
+  await kv.set(`userGenerations:${userId}`, JSON.stringify(data));
 }
 
 export async function OPTIONS(request: Request) {
-  const origin = request.headers.get('origin')
+  const origin = request.headers.get('origin');
 
-    return new NextResponse(null, {
-      status: 204,
-      headers: {
-        'Access-Control-Allow-Origin': origin || '*',
-        "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-        "Access-Control-Allow-Headers": "*",
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': origin || '*',
+      "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+      "Access-Control-Allow-Headers": "*",
     },
-    });
-  }
-  
+  });
+}
 
 export async function POST(request: Request) {
-    if (request.method === 'OPTIONS') {
-        return OPTIONS(request);
-      }
+  if (request.method === 'OPTIONS') {
+    return OPTIONS(request);
+  }
 
   const formData = await request.formData();
   const prompt = formData.get("prompt")?.toString() || "";
@@ -69,64 +50,11 @@ export async function POST(request: Request) {
   const model = formData.get("model")?.toString() || "";
 
   try {
-    // Read the existing user generations data from the JSON file
-    const userGenerationsData = await readUserGenerationsData();
-
-    // Check if the user has an entry for the current date
-    if (!userGenerationsData[user_id] || userGenerationsData[user_id].date !== date) {
-      userGenerationsData[user_id] = {
-        date: date,
-        count: 1,
-      };
-    } else {
-      // Increment the generation count for the user on the current date
-      userGenerationsData[user_id].count++;
-    }
-
-    // Save the updated user generations data back to the JSON file
-    await writeUserGenerationsData(userGenerationsData);
+    // Read the user-specific generation data
+    const userGenerationData = await readUserGenerationData(user_id);
 
     // Check if the user has reached the daily limit
-    if (userGenerationsData[user_id].count <= dailyLimit) {
-      const completion = await openai.chat.completions.create({
-        model: model,
-        messages: [
-          {
-            role: "user",
-            content: prompt,
-          },
-        ],
-        n: 1,
-        stop: null,
-        temperature: 0.8,
-      });
-
-      const comment = completion.choices[0].message.content;
-      console.log("Generated comment:", comment);
-
-      const response = new NextResponse(
-        JSON.stringify({
-          success: true,
-          data: {
-            generatedText: comment,
-          },
-        }),
-        {
-          status: 200,
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-            "Access-Control-Allow-Headers": "*",
-        },
-        }
-      );
-
-      await sendDiscordNotification(
-        `Generated comment for user ${user_id} on product ${product_id} at store ${store_id} on ${date} using model ${model}: ${comment}`
-      );
-
-      return response;
-    } else {
+    if (userGenerationData.date === date && userGenerationData.count >= dailyLimit) {
       const errorResponse = new NextResponse(
         JSON.stringify({
           success: false,
@@ -138,12 +66,62 @@ export async function POST(request: Request) {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
             "Access-Control-Allow-Headers": "*",
-        },
+          },
         }
       );
 
       return errorResponse;
     }
+
+    const completion = await openai.chat.completions.create({
+      model: model,
+      messages: [
+        {
+          role: "user",
+          content: prompt,
+        },
+      ],
+      n: 1,
+      stop: null,
+      temperature: 0.8,
+    });
+
+    const comment = completion.choices[0].message.content;
+    console.log("Generated comment:", comment);
+
+    // Increment the count only if the response is successful
+    if (userGenerationData.date !== date) {
+      userGenerationData.date = date;
+      userGenerationData.count = 1;
+    } else {
+      userGenerationData.count++;
+    }
+
+    // Write the updated user-specific generation data
+    await writeUserGenerationData(user_id, userGenerationData);
+
+    const response = new NextResponse(
+      JSON.stringify({
+        success: true,
+        data: {
+          generatedText: comment,
+        },
+      }),
+      {
+        status: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          "Access-Control-Allow-Headers": "*",
+        },
+      }
+    );
+
+    await sendDiscordNotification(
+      `Generated comment for user ${user_id} on product ${product_id} at store ${store_id} on ${date} using model ${model}: ${comment}`
+    );
+
+    return response;
   } catch (error: any) {
     console.error(`Error generating comments: ${error.message}`);
     const errorResponse = new NextResponse(
