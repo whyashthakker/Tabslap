@@ -12,6 +12,25 @@ export default function ReleaseNotes() {
             </p>
           </div>
           <div className="space-y-8">
+          <div className="space-y-4">
+              <h2 className="text-2xl font-bold">Version 1.3.2 - May 22, 2024</h2>
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
+                <li>
+                  <span className="font-medium text-gray-900 dark:text-gray-100">
+                    Forever Free Plan
+                  </span>{" "}
+                  - We&apos;ve introduced a new Forever Free plan that allows you to
+                  access Olly&apos;s core features at no cost.
+                </li>
+                <li>
+                  <span className="font-medium text-gray-900 dark:text-gray-100">
+                    UX Updates
+                  </span>{" "}
+                  - We have made several updates to the user interface to improve
+                  the overall user experience.
+                </li>
+              </ul>
+            </div>
             <div className="space-y-4">
               <h2 className="text-2xl font-bold">Version 1.2.0 - May 19, 2024</h2>
               <ul className="space-y-2 text-gray-500 dark:text-gray-400">

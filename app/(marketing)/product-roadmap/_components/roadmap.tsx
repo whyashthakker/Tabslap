@@ -43,13 +43,13 @@ export default function ProductRoadmap() {
              <td className="px-4 py-3">Enhances the user interface for better usability and aesthetics.</td>
            </tr>
            <tr className="border-b border-gray-200 dark:border-gray-700">
-             <td className="px-4 py-3 font-medium">GPT-4O Support</td>
+             <td className="px-4 py-3 font-medium">GPT-4o Support</td>
              <td className="px-4 py-3">
                <span className="inline-block px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
                  Completed
                </span>
              </td>
-             <td className="px-4 py-3">Integrates the GPT-4O language model for advanced natural language processing capabilities.</td>
+             <td className="px-4 py-3">Integrates the GPT-4o language model for advanced natural language processing capabilities.</td>
            </tr>
            <tr className="border-b border-gray-200 dark:border-gray-700">
              <td className="px-4 py-3 font-medium">Post Pops</td>
@@ -81,8 +81,8 @@ export default function ProductRoadmap() {
            <tr className="border-b border-gray-200 dark:border-gray-700">
              <td className="px-4 py-3 font-medium">Free Support for 5 Comments / Day</td>
              <td className="px-4 py-3">
-               <span className="inline-block px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100">
-                 In Progress
+              <span className="inline-block px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
+                 Completed
                </span>
              </td>
              <td className="px-4 py-3">Offers free support for up to 5 comments per day for non-premium users.</td>
