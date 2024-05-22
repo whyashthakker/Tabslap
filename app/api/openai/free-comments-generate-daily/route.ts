@@ -183,7 +183,7 @@ export async function POST(request: Request) {
     );
 
     await sendDiscordNotification(
-      `Generated comment for user ${user_id} on product ${product_id} at store ${store_id} on ${date} using model ${model}: ${comment}`
+      `Generated comment for user ${user_id} on product ${product_id} at store ${store_id} on ${date} using model ${model}`
     );
 
     return response;
