@@ -2,7 +2,6 @@
 import { sendDiscordNotification } from "@/service/discord-notify";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
-import { kv } from "@vercel/kv";
 import { google, sheets_v4 } from 'googleapis';
 
 const openai = new OpenAI({
@@ -32,14 +31,14 @@ async function readUserGenerationData(userId: string, date: string) {
     const sheets: sheets_v4.Sheets = google.sheets({ version: 'v4', auth: auth as any });
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Sheet1!A:B',
+      range: 'Sheet1!A:C',
     });
     const rows = response.data.values;
-    const userRow = rows?.find((row) => row[0] === `${userId}_${date}`);
-    return userRow ? { date, count: parseInt(userRow[1], 10) } : { date, count: 0 };
+    const userRow = rows?.find((row) => row[0] === userId && row[1] === date);
+    return userRow ? parseInt(userRow[2], 10) : 0;
   } catch (error) {
     console.error('Error reading user generation data from Google Sheets:', error);
-    return { date, count: 0 };
+    return -1; // Return -1 to indicate an error occurred
   }
 }
 
@@ -51,29 +50,29 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
     // Check if the user's data already exists in the sheet
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Sheet1!A:B',
+      range: 'Sheet1!A:C',
     });
     const rows = response.data.values;
-    const userRowIndex = rows?.findIndex((row) => row[0] === `${userId}_${date}`);
+    const userRowIndex = rows?.findIndex((row) => row[0] === userId && row[1] === date);
 
     if (userRowIndex !== undefined && userRowIndex !== -1) {
       // Update the existing row
       await sheets.spreadsheets.values.update({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
-        range: `Sheet1!A${userRowIndex + 1}:B${userRowIndex + 1}`,
+        range: `Sheet1!A${userRowIndex + 1}:C${userRowIndex + 1}`,
         valueInputOption: 'USER_ENTERED',
         requestBody: {
-          values: [[`${userId}_${date}`, count]],
+          values: [[userId, date, count]],
         },
       });
     } else {
       // Append a new row
       await sheets.spreadsheets.values.append({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
-        range: 'Sheet1!A:B',
+        range: 'Sheet1!A:C',
         valueInputOption: 'USER_ENTERED',
         requestBody: {
-          values: [[`${userId}_${date}`, count]],
+          values: [[userId, date, count]],
         },
       });
     }
@@ -81,7 +80,6 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
     console.error('Error writing user generation data to Google Sheets:', error);
   }
 }
-
 
 export async function OPTIONS(request: Request) {
   const origin = request.headers.get('origin');
@@ -111,10 +109,12 @@ export async function POST(request: Request) {
 
   try {
     // Read the user-specific generation data
-    const userGenerationData = await readUserGenerationData(user_id, date);
+    const userGenerationCount = await readUserGenerationData(user_id, date);
 
-    // Check if the user has reached the daily limit
-    if (userGenerationData.count >= dailyLimit) {
+    if (userGenerationCount === -1) {
+      // An error occurred while reading the data, allow the user to proceed
+      console.warn('Error reading user generation data, allowing the user to proceed');
+    } else if (userGenerationCount >= dailyLimit) {
       const errorResponse = new NextResponse(
         JSON.stringify({
           success: false,
@@ -150,7 +150,7 @@ export async function POST(request: Request) {
     console.log("Generated comment:", comment);
 
     // Increment the count only if the response is successful
-    const newCount = userGenerationData.count + 1;
+    const newCount = userGenerationCount === -1 ? 1 : userGenerationCount + 1;
 
     // Write the updated user-specific generation data to Google Sheets
     await writeUserGenerationData(user_id, date, newCount);
@@ -177,7 +177,7 @@ export async function POST(request: Request) {
     );
 
     return response;
-    } catch (error: any) {
+  } catch (error: any) {
     console.error(`Error generating comments: ${error.message}`);
     const errorResponse = new NextResponse(
       JSON.stringify({
@@ -194,5 +194,5 @@ export async function POST(request: Request) {
       }
     );
     return errorResponse;
-    }
-    }
+  }
+}
