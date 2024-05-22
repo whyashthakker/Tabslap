@@ -19,8 +19,8 @@ export function CTAButtonsAB() {
     <div className="mt-5 grid items-center justify-center gap-x-6 gap-y-2 sm:flex mb-5">
       <Button
         size="2xl"
-        color="white"
-        className="shadow-lg shadow-teal-500/50"
+        color="primary"
+        // className="shadow-lg shadow-teal-500/50"
         link={{ href: "https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", target: "_blank"}}
         onClick={() => {
           posthog.capture("Clicked Get Started");
@@ -35,16 +35,18 @@ export function CTAButtonsAB() {
         onClick={() => {
           posthog.capture("Clicked Buy Now", { price: buyNowProps.price});
         }}
-        className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0"
+        color='white'
+        className='shadow-md shadow-teal-500'
+        // className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0"
       >
-        Lifetime Access
-        {variant === 'control' && (
+        Get Lifetime Access
+        {/* {variant === 'control' && (
         <>
           &nbsp;
           <span className="text-white-600 text-m">{buyNowProps.price} &nbsp;</span>
           <span className="line-through text-gray-800 text-xs">{buyNowProps.originalPrice}</span>
         </>
-      )}
+      )} */}
       </Button>
     </div>
   );
