@@ -47,14 +47,36 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
   try {
     const auth = await getAuthenticatedClient();
     const sheets: sheets_v4.Sheets = google.sheets({ version: 'v4', auth: auth as any });
-    await sheets.spreadsheets.values.update({
+
+    // Check if the user's data already exists in the sheet
+    const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: 'Sheet1!A:B',
-      valueInputOption: 'USER_ENTERED',
-      requestBody: {
-        values: [[`${userId}_${date}`, count]],
-      },
     });
+    const rows = response.data.values;
+    const userRowIndex = rows?.findIndex((row) => row[0] === `${userId}_${date}`);
+
+    if (userRowIndex !== undefined && userRowIndex !== -1) {
+      // Update the existing row
+      await sheets.spreadsheets.values.update({
+        spreadsheetId: process.env.GOOGLE_SHEET_ID,
+        range: `Sheet1!A${userRowIndex + 1}:B${userRowIndex + 1}`,
+        valueInputOption: 'USER_ENTERED',
+        requestBody: {
+          values: [[`${userId}_${date}`, count]],
+        },
+      });
+    } else {
+      // Append a new row
+      await sheets.spreadsheets.values.append({
+        spreadsheetId: process.env.GOOGLE_SHEET_ID,
+        range: 'Sheet1!A:B',
+        valueInputOption: 'USER_ENTERED',
+        requestBody: {
+          values: [[`${userId}_${date}`, count]],
+        },
+      });
+    }
   } catch (error) {
     console.error('Error writing user generation data to Google Sheets:', error);
   }
