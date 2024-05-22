@@ -104,7 +104,8 @@ export async function POST(request: Request) {
   const store_id = formData.get("store_id")?.toString() || "";
   const product_id = formData.get("product_id")?.toString() || "";
   const user_id = formData.get("user_id")?.toString() || "";
-  const date = formData.get("date")?.toString() || "";
+  // const date = formData.get("date")?.toString() || "";
+  const date = "2024-05-23"
   const model = formData.get("model")?.toString() || "";
 
   try {
@@ -147,7 +148,6 @@ export async function POST(request: Request) {
     });
 
     const comment = completion.choices[0].message.content;
-    console.log("Generated comment:", comment);
 
     // Increment the count only if the response is successful
     const newCount = userGenerationCount === -1 ? 1 : userGenerationCount + 1;
