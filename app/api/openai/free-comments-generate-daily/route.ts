@@ -98,6 +98,11 @@ export async function OPTIONS(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const extensionId = request.headers.get('X-Extension-ID');
+
+  if (extensionId !== process.env.EXTENSION_ID) {
+    return new NextResponse('Unauthorized', { status: 403 });
+  }
   if (request.method === 'OPTIONS') {
     return OPTIONS(request);
   }
@@ -108,8 +113,8 @@ export async function POST(request: Request) {
   const product_id = formData.get("product_id")?.toString() || "";
   const user_id = formData.get("user_id")?.toString() || "";
   const action_type = formData.get("action_type")?.toString() || "";
-  // const date = formData.get("date")?.toString() || "";
-  const date = "2024-05-23";
+  const date = formData.get("date")?.toString() || "";
+  // const date = "2024-05-23";
   const model = formData.get("model")?.toString() || "";
 
   try {
