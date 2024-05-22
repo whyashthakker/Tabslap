@@ -8,11 +8,11 @@ import { Header } from "../(marketing)/_components/navbar-1";
 const ToolsLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <Header /> */}
+      <Header />
       {/* <StickyBanner show={true} /> */}
       <main className="flex-grow pt-[96px]">{children}</main>
-      {/* <PreFooter /> */}
-      {/* <Footer /> */}
+      <PreFooter />
+      <Footer />
     </div>
   );
 };
