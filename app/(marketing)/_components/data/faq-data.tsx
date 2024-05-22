@@ -17,6 +17,10 @@ interface FAQData {
       answer: "Go to lemonsqueezy orders page from your email or reach out to yash@explainx.ai, no questions asked."
     },
     {
+      question: "How many free comments can I generate in free forever plan?",
+      answer: "You can generate 5 comments per day in free forever plan."
+    },
+    {
       question: "Automatic commenter is available?",
       answer: "We are working on it. It will be available soon.",
     },
@@ -94,7 +98,7 @@ interface FAQData {
       },
       {
         question: "Is Olly Free forever?",
-        answer: "Olly is one time payment. After this you directly pay OpenAI for usage. We are not involved in billing.",
+        answer: "Yes, Olly AI is free forever. You can also opt in for one time payment. After this you directly pay OpenAI for usage. We are not involved in billing.",
       },
       {
         question: "How do I set up my OpenAI API key in Olly?",

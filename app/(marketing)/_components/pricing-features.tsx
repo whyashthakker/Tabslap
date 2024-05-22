@@ -1,8 +1,10 @@
 const pricingFeatures = [
-    "AI Comments, Posts & Virality Scores",
+    "AI Comments, Summaries, Posts & Virality Scores",
+    "Supported on all Social Media Platforms",
+    "Multi language support",
+    "Gamification",
+    "Longer Comments & All Models Support",
     "Personalized Interactions",
-    "Supported on 10+ Platforms",
-    "Lifetime Updates",
   ];
 
 export default pricingFeatures;

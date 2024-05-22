@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckIcon, CreditCardIcon } from "lucide-react";
+import { CheckIcon, CreditCardIcon, CrossIcon, XIcon } from "lucide-react";
 import { Tag } from "@/components/Tag";
 import { Button } from "@/components/Button";
 import { Button as ShadcnButton } from "@/components/ui/button";
@@ -9,6 +9,7 @@ import { Button as ShadcnButton } from "@/components/ui/button";
 import pricingFeatures from "./pricing-features";
 import { usePricing } from "@/app/web/providers/pricingContext";
 import RefundOption from "./refund-option";
+import Link from "next/link";
 
 export function Pricing() {
 
@@ -35,70 +36,114 @@ export function Pricing() {
 }
 
 function LifetimePricing() {
-
-  const {buyNowProps} = usePricing();
+  const { buyNowProps } = usePricing();
 
   return (
     <div className="bg-white py-4 sm:py-8">
-      <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 lg:mx-0 lg:flex lg:max-w-none">
-        <div className="p-8 sm:p-10 lg:flex-auto">
-          <h3 className="flex items-center font-cal text-2xl text-gray-900">
-            Lifetime access
-            <div className="ml-4">
-              <Tag color="green">Limited Time Offer</Tag>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          {/* Free Plan */}
+          <div className="rounded-3xl bg-white p-8 shadow-md">
+            <h3 className="font-cal text-2xl text-gray-900">Free Forever</h3>
+            <p className="mt-2 text-sm text-gray-500">Get started for free, forever.</p>
+            <p className="mt-6 text-base leading-7 text-gray-600">
+              Basic features with limited usage.
+            </p>
+            <div className="mt-10">
+              <p className="text-4xl font-extrabold text-gray-900">$0</p>
+              <p className="mt-1 text-sm font-semibold text-gray-500">Forever</p>
             </div>
-          </h3>
-          <p className="mt-6 text-base leading-7 text-gray-600">
-            Lifetime updates and support.
-            <br />
-            <RefundOption />
-          </p>
-          <div className="mt-10 flex items-center gap-x-4">
-            <h4 className="flex-none font-cal text-sm leading-6 text-blue-600">
-              What’s included
-            </h4>
-            <div className="h-px flex-auto bg-gray-100" />
-          </div>
-          <ul
-            role="list"
-            className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
-          >
-            {pricingFeatures.map((feature) => (
-              <li key={feature} className="flex gap-x-3">
+            <ul
+              role="list"
+              className="mt-8 space-y-4 text-sm leading-6 text-gray-600"
+            >
+              <li className="flex gap-x-3">
                 <CheckIcon
                   className="h-6 w-5 flex-none text-blue-600"
                   aria-hidden="true"
                 />
-                {feature}
+                5 Free Comments / Day
               </li>
-            ))}
-          </ul>
-        </div>
-        <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-          <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
-            <div className="mx-auto max-w-xs px-8">
-              <p className="text-base font-semibold text-gray-600">
-                Lifetime access to Olly
-              </p>
-              <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                <span className="text-5xl font-bold tracking-tight text-gray-900">
-                  {buyNowProps.price}
-                </span>
-                <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
-                  USD
-                </span>
-              </p>
-              <a
-                href={buyNowProps.url}
-                target="_blank"
-                className="mt-10 block w-full rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-              >
-                Get lifetime access
-              </a>
-              <p className="mt-6 text-xs leading-5 text-gray-600">
-                This is a launch offer and price will increase to $49.99 after February 15th.
-              </p>
+              <li className="flex gap-x-3">
+                <CheckIcon
+                  className="h-6 w-5 flex-none text-blue-600"
+                  aria-hidden="true"
+                />
+                Supported on all Social Media Platforms
+              </li>
+              <li className="flex gap-x-3">
+                <XIcon
+                  className="h-6 w-5 flex-none text-blue-600"
+                  aria-hidden="true"
+                />
+                Multi language support
+              </li>
+              <li className="flex gap-x-3">
+                <XIcon
+                  className="h-6 w-5 flex-none text-blue-600"
+                  aria-hidden="true"
+                />
+                Gamification
+              </li>
+              <li className="flex gap-x-3">
+                <XIcon
+                  className="h-6 w-5 flex-none text-blue-600"
+                  aria-hidden="true"
+                />
+                Longer Comments
+              </li>
+              <li className="flex gap-x-3">
+                <XIcon
+                  className="h-6 w-5 flex-none text-blue-600"
+                  aria-hidden="true"
+                />
+                Model Support
+              </li>
+            </ul>
+            <ShadcnButton className="mt-10 w-full">
+              <Link href="https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje" target="_blank">
+                Start for Free
+              </Link>
+            </ShadcnButton>
+          </div>
+
+          {/* Lifetime Plan */}
+          <div className="rounded-3xl bg-white p-8 shadow-md">
+            <div className="flex items-center">
+              <h3 className="font-cal text-2xl text-gray-900">Lifetime Access</h3>
+              <div className="ml-4">
+                <Tag color="green">Most Popular</Tag>
+              </div>
             </div>
+            <p className="mt-2 text-sm text-gray-500">Get full access to all features forever.</p>
+            <p className="mt-6 text-base leading-7 text-gray-600">
+              Access to all features with no limitations.
+            </p>
+            <div className="mt-10">
+              <p className="text-4xl font-extrabold text-gray-900">{buyNowProps.price}</p>
+              <p className="mt-1 text-sm font-semibold text-gray-500">One-time payment</p>
+            </div>
+            <ul
+              role="list"
+              className="mt-8 space-y-4 text-sm leading-6 text-gray-600"
+            >
+              {pricingFeatures.map((feature) => (
+                <li key={feature} className="flex gap-x-3">
+                  <CheckIcon
+                    className="h-6 w-5 flex-none text-blue-600"
+                    aria-hidden="true"
+                  />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={buyNowProps.url}
+              target="_blank"
+              className="mt-10 block w-full rounded-md bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            >
+              Get Lifetime Access
+            </a>
           </div>
         </div>
       </div>
