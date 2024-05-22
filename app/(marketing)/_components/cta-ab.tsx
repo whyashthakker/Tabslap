@@ -27,7 +27,7 @@ export function CTAButtonsAB() {
         }}
       >
         <ChromeIcon className="mr-2 h-4 w-4" />
-        Add Olly to Chrome
+        Get Started for Free
       </Button>
       <Button
         size="2xl"
