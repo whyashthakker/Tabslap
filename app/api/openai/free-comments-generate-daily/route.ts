@@ -103,6 +103,7 @@ export async function POST(request: Request) {
   if (extensionId !== process.env.EXTENSION_ID) {
     return new NextResponse('Unauthorized', { status: 403 });
   }
+  
   if (request.method === 'OPTIONS') {
     return OPTIONS(request);
   }
