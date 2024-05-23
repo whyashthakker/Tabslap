@@ -42,7 +42,7 @@ async function readUserGenerationData(userId: string, date: string) {
   }
 }
 
-async function writeUserGenerationData(userId: string, date: string, count: number, action_type: string) {
+async function writeUserGenerationData(userId: string, date: string, count: number, action_type: string, platform: string) {
   try {
     const auth = await getAuthenticatedClient();
     const sheets: sheets_v4.Sheets = google.sheets({ version: 'v4', auth: auth as any });
@@ -50,7 +50,7 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
     // Check if the user's data already exists in the sheet
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Sheet1!A:D',
+      range: 'Sheet1!A:E',
     });
     const rows = response.data.values || [];
     const userRowIndex = rows?.findIndex((row) => row[0] === userId && row[1] === date);
@@ -60,12 +60,15 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
       const existingActionTypes = rows[userRowIndex][3] || '';
       const updatedActionTypes = `${existingActionTypes}${existingActionTypes ? ',' : ''}${action_type}`;
 
+      const existingPlatform = rows[userRowIndex][4] || '';
+      const updatedPlatform = `${existingPlatform}${existingPlatform ? ',' : ''}${platform}`;
+
       await sheets.spreadsheets.values.update({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
         range: `Sheet1!A${userRowIndex + 1}:D${userRowIndex + 1}`,
         valueInputOption: 'USER_ENTERED',
         requestBody: {
-          values: [[userId, date, count, updatedActionTypes]],
+          values: [[userId, date, count, updatedActionTypes, updatedPlatform]],
         },
       });
     } else {
@@ -75,7 +78,7 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
         range: 'Sheet1!A:D',
         valueInputOption: 'USER_ENTERED',
         requestBody: {
-          values: [[userId, date, count, action_type]],
+          values: [[userId, date, count, action_type, platform]],
         },
       });
     }
@@ -117,6 +120,7 @@ export async function POST(request: Request) {
   const date = formData.get("date")?.toString() || "";
   // const date = "2024-05-23";
   const model = formData.get("model")?.toString() || "";
+  const platform = formData.get("platform")?.toString() || "";
 
   try {
     // Read the user-specific generation data
@@ -163,7 +167,7 @@ export async function POST(request: Request) {
     const newCount = userGenerationCount === -1 ? 1 : userGenerationCount + 1;
 
     // Write the updated user-specific generation data to Google Sheets
-    await writeUserGenerationData(user_id, date, newCount, action_type);
+    await writeUserGenerationData(user_id, date, newCount, action_type, platform);
 
     const response = new NextResponse(
       JSON.stringify({
