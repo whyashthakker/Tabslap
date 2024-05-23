@@ -75,7 +75,7 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
       // Append a new row
       await sheets.spreadsheets.values.append({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
-        range: 'Sheet1!A:D',
+        range: 'Sheet1!A:E',
         valueInputOption: 'USER_ENTERED',
         requestBody: {
           values: [[userId, date, count, action_type, platform]],
