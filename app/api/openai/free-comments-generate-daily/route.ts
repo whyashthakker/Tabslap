@@ -31,7 +31,7 @@ async function readUserGenerationData(userId: string, date: string) {
     const sheets: sheets_v4.Sheets = google.sheets({ version: 'v4', auth: auth as any });
     const response = await sheets.spreadsheets.values.get({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Sheet1!A:D',
+      range: 'Sheet1!A:E',
     });
     const rows = response.data.values;
     const userRow = rows?.find((row) => row[0] === userId && row[1] === date);
