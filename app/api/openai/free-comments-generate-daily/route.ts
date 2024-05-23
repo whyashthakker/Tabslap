@@ -65,7 +65,7 @@ async function writeUserGenerationData(userId: string, date: string, count: numb
 
       await sheets.spreadsheets.values.update({
         spreadsheetId: process.env.GOOGLE_SHEET_ID,
-        range: `Sheet1!A${userRowIndex + 1}:D${userRowIndex + 1}`,
+        range: `Sheet1!A${userRowIndex + 1}:E${userRowIndex + 1}`,
         valueInputOption: 'USER_ENTERED',
         requestBody: {
           values: [[userId, date, count, updatedActionTypes, updatedPlatform]],
