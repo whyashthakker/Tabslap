@@ -2,8 +2,9 @@
 
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
+import FeedbackDialog from "./feedback";
 
 interface CommentGeneratorProps {
     title?: string;
@@ -17,6 +18,8 @@ export default function CommentGenerator({ title = "Comment Generator", defaultP
     const [generatedComment, setGeneratedComment] = useState("");
     const [commentLength, setCommentLength] = useState("short");
     const [platform, setPlatform] = useState(defaultPlatform);
+    const [showFeedbackDialog, setShowFeedbackDialog] = useState(false);
+    const [generationCount, setGenerationCount] = useState(0);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -41,10 +44,27 @@ export default function CommentGenerator({ title = "Comment Generator", defaultP
 
             const data = await response.json();
             setGeneratedComment(data.comment);
+            setGenerationCount(generationCount + 1);
+
+            // if (generationCount === 0) {
+            //     setShowFeedbackDialog(true);
+            // }
+
         } catch (error: any) {
             console.error(`Error generating comment: ${error.message}`);
         }
     };
+
+    useEffect(() => {
+        if (generatedComment && generationCount === 1) {
+            const timer = setTimeout(() => {
+                setShowFeedbackDialog(true);
+            }, 3000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [generatedComment, generationCount]);
+
 
     return (
         <div className="flex justify-center items-center min-h-screen mt-5 px-4">
@@ -156,6 +176,7 @@ export default function CommentGenerator({ title = "Comment Generator", defaultP
                     </div>
                 )}
             </div>
+            <FeedbackDialog open={showFeedbackDialog} onClose={() => setShowFeedbackDialog(false)} />
         </div>
     );
 }
