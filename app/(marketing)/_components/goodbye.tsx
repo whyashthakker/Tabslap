@@ -111,7 +111,7 @@ export default function GoodByeFeedback() {
           </div>
           {reason === 'not_needed' && (
             <div className="ml-6">
-              <p className='text-xs text-gray-600'>We're sorry to see you go.</p>
+              <p className='text-xs text-gray-600'>We&apos;re sorry to see you go.</p>
             </div>
           )}
           <div className="grid gap-2">
