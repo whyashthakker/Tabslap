@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card";
@@ -24,7 +23,6 @@ export default function GoodByeFeedback() {
 
   const handleSubmit = () => {
     const userId = searchParams.get('u');
-
     if (userId) {
       fetch('/api/uninstall', {
         method: 'POST',
@@ -72,6 +70,11 @@ export default function GoodByeFeedback() {
             />
             <Label htmlFor="option1">Olly is too annoying because of popup.</Label>
           </div>
+          {reason === 'annoying' && (
+            <div className="ml-6">
+              <p className='text-xs text-gray-600'>Sorry for the inconvenience.</p>
+            </div>
+          )}
           <div className="flex items-center space-x-2">
             <Checkbox
               id="option2"
@@ -80,6 +83,11 @@ export default function GoodByeFeedback() {
             />
             <Label htmlFor="option2">Because it was paid.</Label>
           </div>
+          {reason === 'paid' && (
+            <div className="ml-6">
+              <p className='text-xs text-gray-600'>Olly is free forever. You can generate 5 free comments per day.</p>
+            </div>
+          )}
           <div className="flex items-center space-x-2">
             <Checkbox
               id="option3"
@@ -88,6 +96,11 @@ export default function GoodByeFeedback() {
             />
             <Label htmlFor="option3">Did not work.</Label>
           </div>
+          {reason === 'not_working' && (
+            <div className="ml-6">
+              <p className='text-xs text-gray-600'>Please reach out to support@explainx.ai for assistance.</p>
+            </div>
+          )}
           <div className="flex items-center space-x-2">
             <Checkbox
               id="option4"
@@ -96,6 +109,11 @@ export default function GoodByeFeedback() {
             />
             <Label htmlFor="option4">Do not need it anymore.</Label>
           </div>
+          {reason === 'not_needed' && (
+            <div className="ml-6">
+              <p className='text-xs text-gray-600'>We're sorry to see you go.</p>
+            </div>
+          )}
           <div className="grid gap-2">
             <Label htmlFor="other">Anything else</Label>
             <Textarea
