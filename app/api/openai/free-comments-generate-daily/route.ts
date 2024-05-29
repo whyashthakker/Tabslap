@@ -122,6 +122,8 @@ export async function POST(request: Request) {
   const model = formData.get("model")?.toString() || "";
   const platform = formData.get("platform")?.toString() || "";
 
+  console.log("all data", prompt, store_id, product_id, user_id, action_type, date, model, platform)
+
   try {
     // Read the user-specific generation data
     const userGenerationCount = await readUserGenerationData(user_id, date);
@@ -162,6 +164,8 @@ export async function POST(request: Request) {
     });
 
     const comment = completion.choices[0].message.content;
+
+    console.log("comment", comment);
 
     // Increment the count only if the response is successful
     const newCount = userGenerationCount === -1 ? 1 : userGenerationCount + 1;
