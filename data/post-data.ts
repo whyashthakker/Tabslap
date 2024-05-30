@@ -1,5 +1,1214 @@
 const postData = [
   {
+    "title": "AI Comedy Generator: Laughing with Machine Learning",
+    "file": "ai-comedy-generator",
+    "description": "Discover the world of AI comedy generators and how they are revolutionizing the world of humor. Learn about the technology behind these tools and explore some of the best AI comedy generators available.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Generator Text Detector: Identifying Machine-Generated Content",
+    "file": "ai-generator-text-detector",
+    "description": "Learn how AI generator text detectors can help identify machine-generated content and maintain the integrity of online information. Discover the best tools and techniques for detecting AI-generated text.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Effect Generator: Creating Stunning Visual Text",
+    "file": "ai-text-effect-generator",
+    "description": "Discover the world of AI text effect generators and how they can help you create stunning visual text for your designs and projects. Explore the benefits, features, and top AI text effect generators available.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator API: Harness the Power of AI for Your Applications",
+    "file": "ai-text-generator-api",
+    "description": "Discover the potential of AI text generator APIs and learn how to integrate them into your applications for powerful content generation capabilities.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator from Prompt: Unleash the Power of AI-Driven Content Creation",
+    "file": "ai-text-generator-from-prompt",
+    "description": "Discover the potential of AI text generators that create content from prompts. Learn how these tools can streamline your writing process and boost your creativity.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator: Unleashing the Hilarity with AI-Powered Humor",
+    "file": "ai-text-generator-funny",
+    "description": "Discover the world of AI text generators that specialize in creating hilarious and witty content. Learn how these AI tools can inject humor into your writing and entertain your audience.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator: Create High-Quality Content Without Sign-Up",
+    "file": "ai-text-generator-no-sign-up",
+    "description": "Discover the best AI text generators that allow you to create high-quality content without the need for sign-up. Streamline your writing process and boost productivity.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator: Perchance - Unleashing Creative Writing",
+    "file": "ai-text-generator-perchance",
+    "description": "Explore the world of AI text generation with Perchance, a powerful tool that unleashes your creative writing potential. Discover how Perchance can help you overcome writer's block and generate unique and engaging content.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator Playground: Unleash Your Creativity with AI-Powered Writing",
+    "file": "ai-text-generator-playground",
+    "description": "Explore the exciting world of AI text generator playgrounds and discover how these interactive platforms can help you unleash your creativity and improve your writing skills.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator: Crafting Compelling Stories with AI",
+    "file": "ai-text-generator-story",
+    "description": "Discover the power of AI text generators in crafting compelling stories. Learn how AI can assist writers in creating engaging narratives and explore the best AI story generators available.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generator Without Login: Effortless Content Creation for Everyone",
+    "file": "ai-text-generator-without-login",
+    "description": "Discover the convenience of AI text generators that don't require login. Learn how these tools make content creation accessible and hassle-free for everyone.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Reply Generator: Create Quick and Free Responses",
+    "file": "ai-text-reply-generator-free",
+    "description": "Discover the power of AI text reply generators that allow you to create quick and free responses. Streamline your communication and boost productivity with these helpful tools.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Browse AI: The Ultimate Chrome Extension for AI-Powered Web Browsing",
+    "file": "browse-ai-chrome-extension",
+    "description": "Discover Browse AI, the revolutionary Chrome extension that enhances your web browsing experience with artificial intelligence. Learn how Browse AI can help you find relevant information, automate tasks, and boost your productivity.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Ejoy AI: The Chrome Extension for Enhanced Browsing Happiness",
+    "file": "ejoy-ai-chrome-extension",
+    "description": "Discover Ejoy AI, the innovative Chrome extension that uses artificial intelligence to elevate your browsing experience and bring more joy to your online activities.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Engage AI: The Ultimate Chrome Extension for Enhancing User Engagement",
+    "file": "engage-ai-chrome-extension",
+    "description": "Discover Engage AI, the powerful Chrome extension that revolutionizes user engagement. Learn how Engage AI can help you create personalized experiences, increase conversions, and boost customer satisfaction.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "PDF.ai: The Ultimate Chrome Extension for PDF Management",
+    "file": "pdf-ai-chrome-extension",
+    "description": "Discover PDF.ai, the powerful Chrome extension that revolutionizes the way you handle PDFs. With advanced AI capabilities, PDF.ai makes working with PDFs a breeze.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Regie.ai: The Smart Chrome Extension for Effortless Web Automation",
+    "file": "regie-ai-chrome-extension",
+    "description": "Discover Regie.ai, the intelligent Chrome extension that uses AI to automate repetitive tasks, boost productivity, and enhance your browsing experience.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Whiteboard AI: The Intelligent Chrome Extension for Visual Collaboration",
+    "file": "whiteboard-ai-chrome-extension",
+    "description": "Discover Whiteboard AI, the smart Chrome extension that revolutionizes visual collaboration. Learn how Whiteboard AI can help you brainstorm ideas, create diagrams, and collaborate seamlessly with your team.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Whiteboard AI: The Intelligent Chrome Extension for Visual Collaboration",
+    "file": "whiteboard-ai-chrome-extension copy",
+    "description": "Discover Whiteboard AI, the smart Chrome extension that revolutionizes visual collaboration. Learn how Whiteboard AI can help you brainstorm ideas, create diagrams, and collaborate seamlessly with your team.",
+    "date": "May 30, 2024",
+    "datetime": "2024-05-30",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Chrome Extension: Empowering Browsing with Artificial Intelligence",
+    "file": "ai-chrome-extension-empowering-browsing",
+    "description": "Discover how AI Chrome extensions are revolutionizing web browsing, enhancing productivity, and providing intelligent features to improve the user experience.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generator: Enhancing Online Engagement and Interaction",
+    "file": "ai-comment-generator-enhancing-online-engagement",
+    "description": "Discover how AI comment generators are transforming online discussions, increasing engagement, and fostering meaningful interactions on websites and social media platforms.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Post Summarizer: Streamlining Content Consumption for Busy Readers",
+    "file": "ai-post-summarizer-streamlining-content-consumption",
+    "description": "Discover how AI post summarizers are revolutionizing content consumption, helping busy readers quickly grasp the key points of articles and save valuable time.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Best Chrome Add-Ons: Enhance Your Browsing Experience",
+    "file": "best-chrome-add-ons",
+    "description": "Discover the best Chrome add-ons to boost your productivity, enhance your browsing experience, and unlock new features. Our curated list includes top-rated extensions for various use cases.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Blogging on LinkedIn: How to Grow Your Personal Brand and Engage Your Network",
+    "file": "blogging-on-linkedin",
+    "description": "Discover the power of blogging on LinkedIn to establish your thought leadership, grow your personal brand, and engage your professional network. Learn tips and best practices for creating compelling content and maximizing your reach on the platform.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Change Your Facebook Profile Picture Without Notifying Everyone",
+    "file": "change-facebook-profile-picture-without-notifying",
+    "description": "Learn how to discreetly update your Facebook profile picture without sending notifications to all your friends. Discover the step-by-step guide and useful tips.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Easy Tagging: Simplify Content Organization and Discovery",
+    "file": "easy-tagging",
+    "description": "Learn how easy tagging can help you organize and discover content efficiently. Explore the benefits, best practices, and tools for implementing a simple tagging system.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Effortless Content Creation with Free AI Text Generators: No Sign Up Required",
+    "file": "effortless-content-creation-with-free-ai-text-generators",
+    "description": "Discover the convenience and power of free AI text generators that require no sign up, enabling you to create high-quality content effortlessly.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Elevate Your Writing with Compose AI Chrome Extension: Seamless Integration for Enhanced Productivity",
+    "file": "elevate-your-writing-with-compose-ai-chrome-extension",
+    "description": "Discover how Compose AI Chrome Extension revolutionizes your writing experience, offering advanced features and seamless integration for unparalleled productivity.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Enhancing Web Browsing with Seamless AI Chrome Extension: Productivity and Efficiency at Your Fingertips",
+    "file": "enhancing-web-browsing-with-seamless-ai-chrome-extension",
+    "description": "Discover how Seamless AI Chrome Extension revolutionizes web browsing, offering advanced features and AI-powered tools to boost productivity and efficiency.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Change Your LinkedIn Email Address: A Step-by-Step Guide",
+    "file": "how-to-change-linkedin-email",
+    "description": "Learn how to update your email address on LinkedIn. Follow our easy step-by-step guide to change your LinkedIn email and keep your account secure.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Generate an OpenAI API Key: A Step-by-Step Guide",
+    "file": "how-to-generate-openai-api-key",
+    "description": "Learn how to generate an OpenAI API key to access powerful language models and AI tools. Follow our step-by-step guide to create your API key and start building intelligent applications.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Show a Promotion on LinkedIn: Celebrating Your Career Milestones",
+    "file": "how-to-show-a-promotion-on-linkedin",
+    "description": "Learn how to effectively showcase your career advancement by adding a promotion to your LinkedIn profile. Discover tips and best practices to highlight your achievements and attract new opportunities.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Show a Promotion on LinkedIn: Showcase Your Career Growth",
+    "file": "how-to-show-promotion-on-linkedin",
+    "description": "Learn how to effectively showcase your promotion on LinkedIn. Follow our step-by-step guide to update your profile and share your career advancement with your network.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to View a LinkedIn Profile Anonymously: A Step-by-Step Guide",
+    "file": "how-to-view-a-linkedin-profile-anonymously",
+    "description": "Learn how to view LinkedIn profiles anonymously without leaving a trace. Discover the steps to browse profiles privately and maintain your privacy on the platform.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Industries That Need Lead Generation: Strategies for Success",
+    "file": "industries-that-need-lead-generation",
+    "description": "Discover the industries that heavily rely on lead generation for growth and explore effective strategies to generate high-quality leads in these sectors.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Revolutionizing Content Creation with AI Post Generators: Efficiency and Quality Combined",
+    "file": "revolutionizing-content-creation-with-ai-post-generators",
+    "description": "Discover how AI post generators are transforming the content creation landscape, offering unparalleled efficiency and quality for businesses and content creators.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unleashing Limitless Creativity with Free Unlimited AI Text Generators",
+    "file": "unleashing-limitless-creativity-with-free-unlimited-ai-text-generators",
+    "description": "Discover the power of free unlimited AI text generators and how they revolutionize content creation, providing endless possibilities for writers, marketers, and creators.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unleashing the Power of Chrome Extensions on iOS: Enhancing Mobile Browsing Experience",
+    "file": "unleashing-the-power-of-chrome-extensions-on-ios",
+    "description": "Discover how Chrome extensions on iOS are revolutionizing mobile browsing, offering enhanced functionality, productivity, and personalization for iPhone and iPad users.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unlocking Creativity with AI Quote Generators: Inspiring Insights at Your Fingertips",
+    "file": "unlocking-creativity-with-ai-quote-generators",
+    "description": "Discover how AI quote generators are revolutionizing the way we access and share inspiring insights, empowering creativity and personal growth.",
+    "date": "May 29, 2024",
+    "datetime": "2024-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI in Social Media Analytics: Tools and Techniques",
+    "file": "ai-in-social-media-analytics-tools-and-techniques",
+    "description": "Discover how AI is transforming social media analytics, empowering businesses with powerful tools and techniques to gain insights, understand audiences, and optimize strategies.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI-Powered Auto Commenter for Instagram: Boost Engagement and Reach",
+    "file": "ai-powered-auto-commenter-for-instagram",
+    "description": "Discover how an AI-powered auto commenter for Instagram can revolutionize your social media strategy, boost engagement, and expand your reach on the platform.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Boost Your LinkedIn Presence with Social Selling Index Check",
+    "file": "boost-your-linkedin-presence-with-social-selling-index-check",
+    "description": "Discover how to leverage LinkedIn's Social Selling Index (SSI) to measure and improve your social selling effectiveness, build your professional brand, and generate leads.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI is Revolutionizing Influencer Marketing",
+    "file": "how-ai-is-revolutionizing-influencer-marketing",
+    "description": "Discover how AI is transforming the influencer marketing landscape, enabling brands to identify the right influencers, optimize campaigns, and measure ROI effectively.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Change Your Email in LinkedIn: A Step-by-Step Guide",
+    "file": "how-to-change-your-email-in-linkedin",
+    "description": "Learn how to easily update your email address in LinkedIn, ensuring you stay connected with your professional network and receive important notifications.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Generate an OpenAI API Key: A Step-by-Step Guide",
+    "file": "how-to-generate-an-openai-api-key",
+    "description": "Learn how to generate an OpenAI API key to access powerful language models and integrate AI capabilities into your applications and projects.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Post a Promotion on LinkedIn: Boost Your Visibility and Reach",
+    "file": "how-to-post-a-promotion-on-linkedin",
+    "description": "Learn the best practices and strategies for posting a promotion on LinkedIn to maximize visibility, engage your audience, and drive results for your business or personal brand.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Tag on LinkedIn: Boost Engagement and Visibility",
+    "file": "how-to-tag-on-linkedin",
+    "description": "Learn how to effectively tag people, companies, and topics on LinkedIn to increase your post's engagement, reach, and visibility within your professional network.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to View LinkedIn Profiles Anonymously: Protect Your Privacy",
+    "file": "how-to-view-linkedin-profiles-anonymously",
+    "description": "Learn how to browse LinkedIn profiles anonymously, maintaining your privacy while researching potential connections, competitors, or industry experts.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "LinkedIn Background Photo Dimensions: How to Create the Perfect Cover Image",
+    "file": "linkedin-background-photo-dimensions",
+    "description": "Learn the optimal LinkedIn background photo dimensions and best practices to create a visually appealing and professional cover image that showcases your personal brand.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Future of AI in Social Media: Trends to Watch in 2024",
+    "file": "the-future-of-ai-in-social-media-trends-to-watch-in-2024",
+    "description": "Explore the emerging trends and innovations shaping the future of AI in social media, from personalized content to virtual influencers and beyond.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top 10 Must-Have Chrome Addons for Enhanced Productivity and Browsing",
+    "file": "top-10-must-have-chrome-addons",
+    "description": "Discover the best Chrome addons that can revolutionize your browsing experience, boost productivity, and unlock a world of convenient features.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI to Optimize Social Media Advertising Campaigns",
+    "file": "using-ai-to-optimize-social-media-advertising-campaigns",
+    "description": "Learn how AI can help optimize your social media advertising campaigns, improve targeting, automate ad creation, and maximize ROI.",
+    "date": "May 28, 2024",
+    "datetime": "2024-05-28",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI-Powered Tools for Social Media Sentiment Analysis",
+    "file": "ai-powered-tools-for-social-media-sentiment-analysis",
+    "description": "Explore how AI-powered sentiment analysis tools can help you gauge public opinion, monitor brand reputation, and make data-driven decisions for your social media strategy.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Tools for Planning and Managing Your Social Media Calendar",
+    "file": "ai-tools-for-planning-and-managing-your-social-media-calendar",
+    "description": "Discover how AI tools can help you streamline your social media planning, scheduling, and management, saving you time and boosting your online presence.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Unleash Your Creativity with the Best Comment Generator for YouTube!",
+    "file": "best-comment-generator-for-youtube",
+    "description": "Generate AI comments for YouTube videos with the best comment generator. Get creative and engage your audience with unique comments.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Boosting Organic Engagement on Facebook Using AI Tools",
+    "file": "boosting-organic-engagement-on-facebook-using-ai-tools",
+    "description": "Learn how to leverage AI tools to skyrocket your organic engagement on Facebook, create compelling content, and grow your audience.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI Can Enhance Your Social Media Listening Strategy",
+    "file": "how-ai-can-enhance-your-social-media-listening-strategy",
+    "description": "Discover how AI can take your social media listening to the next level, providing valuable insights and enabling data-driven decision-making for your brand.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI Can Help You Create Better Content for Your Blog",
+    "file": "how-ai-can-help-you-create-better-content-for-your-blog",
+    "description": "Discover how AI tools can revolutionize your blog content creation process, improve quality, and boost engagement with your audience.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI Helps in Generating High-Quality Blog Post Summaries",
+    "file": "how-ai-helps-in-generating-high-quality-blog-post-summaries",
+    "description": "Discover how AI tools can create accurate, engaging, and time-saving summaries for your blog posts, enhancing user experience and driving more traffic.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Leveraging AI for Competitor Analysis in Social Media",
+    "file": "leveraging-ai-for-competitor-analysis-in-social-media",
+    "description": "Discover how AI tools can help you gain a competitive edge by analyzing your rivals' social media strategies, content performance, and audience insights.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Maximizing Clubhouse Organic Growth with AI Summarization",
+    "file": "maximizing-clubhouse-organic-growth-with-ai-summarization",
+    "description": "Learn how AI summarization can help you boost your organic growth on Clubhouse, engage your audience, and establish your authority in your niche.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Organic Pinterest Growth Strategies Enhanced by AI Summarization Tools",
+    "file": "organic-pinterest-growth-strategies-enhanced-by-ai-summarization-tools",
+    "description": "Discover how AI summarization tools can supercharge your organic growth on Pinterest, drive more traffic, and boost your brand's visibility.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Role of AI in Automating Social Media Content Creation",
+    "file": "the-role-of-ai-in-automating-social-media-content-creation",
+    "description": "Explore how AI is revolutionizing social media content creation, enabling marketers to automate processes, personalize content, and drive better results.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Tips for Organic Growth on Reddit with the Help of AI Summarizers",
+    "file": "tips-for-organic-growth-on-reddit-with-ai-summarizers",
+    "description": "Discover how AI summarizers can help you achieve organic growth on Reddit, boost engagement, and build a strong community presence.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top AI Tools for Creating and Managing Social Media Campaigns",
+    "file": "top-ai-tools-for-creating-and-managing-social-media-campaigns",
+    "description": "Discover the best AI tools to streamline your social media campaigns, from content creation to performance tracking, and boost your online presence.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI to Create Engaging Content for Organic Growth on TikTok",
+    "file": "using-ai-to-create-engaging-content-for-organic-growth-on-tiktok",
+    "description": "Discover how AI can help you create captivating content and boost your organic growth on TikTok, the fastest-growing social media platform.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI to Generate Catchy Social Media Captions",
+    "file": "using-ai-to-generate-catchy-social-media-captions",
+    "description": "Learn how AI tools can help you create engaging, witty, and shareable social media captions that capture your audience's attention and boost your online presence.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI to Monitor and Improve Social Media Engagement",
+    "file": "using-ai-to-monitor-and-improve-social-media-engagement",
+    "description": "Learn how AI tools can help you track, analyze, and optimize your social media engagement, driving better results and building stronger connections with your audience.",
+    "date": "May 27, 2024",
+    "datetime": "2024-05-27",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Summarizers for Facebook: Which Ones Stand Out?",
+    "file": "ai-summarizers-for-facebook-which-ones-stand-out",
+    "description": "Discover the top AI summarizers for Facebook posts and comments. We compare the best tools based on accuracy, features, and ease of use to help you choose the perfect summarizer.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Best AI Tools for Summarizing Clubhouse Conversations",
+    "file": "best-ai-tools-for-summarizing-clubhouse-conversations",
+    "description": "Discover the top AI tools for summarizing Clubhouse conversations, helping you capture key insights, save time, and stay informed about the discussions that matter to you.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Best Practices for Using AI to Summarize Instagram Comments",
+    "file": "best-practices-for-using-ai-to-summarize-instagram-comments",
+    "description": "Discover the best practices for leveraging AI to summarize Instagram comments effectively, saving time and extracting valuable insights from user feedback.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Comparing AI Summarizers: Which Tool is Best for LinkedIn Posts?",
+    "file": "comparing-ai-summarizers-which-tool-is-best-for-linkedin-posts",
+    "description": "Discover the best AI summarizers for LinkedIn posts. We compare the top tools in terms of accuracy, ease of use, and features to help you choose the perfect summarizer for your needs.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Growing Your YouTube Channel Organically with AI-Powered Summaries",
+    "file": "growing-your-youtube-channel-organically-with-ai-powered-summaries",
+    "description": "Discover how AI-powered summaries can help you grow your YouTube channel organically, attract more viewers, and increase engagement on your videos.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Harnessing AI to Summarize YouTube Comments: Tools and Techniques",
+    "file": "harnessing-ai-to-summarize-youtube-comments-tools-and-techniques",
+    "description": "Discover how to leverage AI tools and techniques to effectively summarize YouTube comments, saving time and extracting valuable insights from viewer feedback.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI is Changing the Way We Consume Twitter Feeds",
+    "file": "how-ai-is-changing-the-way-we-consume-twitter-feeds",
+    "description": "Explore how artificial intelligence is revolutionizing the way we interact with and consume content on Twitter, making our feeds more personalized and engaging.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Grow Organically on Quora Using AI-Enhanced Answers",
+    "file": "how-to-grow-organically-on-quora-using-ai-enhanced-answers",
+    "description": "Learn how to leverage AI tools to create compelling, informative answers on Quora, boosting your visibility, credibility, and organic growth on the platform.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Use AI to Boost Your Instagram Organic Growth",
+    "file": "how-to-use-ai-to-boost-your-instagram-organic-growth",
+    "description": "Discover how artificial intelligence tools can help you boost your Instagram organic growth, create engaging content, and build a loyal following on the platform.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How to Use AI to Get the Most Out of TikTok Comments",
+    "file": "how-to-use-ai-to-get-the-most-out-of-tiktok-comments",
+    "description": "Discover how to leverage AI tools and techniques to effectively analyze and extract insights from TikTok comments, helping you engage with your audience and grow your presence on the platform.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Organic Growth on Twitter: Leveraging AI for Better Engagement",
+    "file": "organic-growth-on-twitter-leveraging-ai-for-better-engagement",
+    "description": "Learn how to harness the power of artificial intelligence to drive organic growth on Twitter, create engaging content, and build a loyal following on the platform.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top AI Summarization Tools for Summarizing Podcast Transcripts",
+    "file": "top-ai-summarization-tools-for-summarizing-podcast-transcripts",
+    "description": "Discover the best AI summarization tools for efficiently summarizing podcast transcripts, saving time and extracting key insights from lengthy audio content.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top AI Tools for Summarizing Reddit Discussions in 2024",
+    "file": "top-ai-tools-for-summarizing-reddit-discussions-in-2024",
+    "description": "Discover the best AI tools for summarizing Reddit discussions in 2024, saving time and extracting valuable insights from lengthy threads.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI Summarizers to Enhance Your Pinterest Strategy",
+    "file": "using-ai-summarizers-to-enhance-your-pinterest-strategy",
+    "description": "Discover how AI summarizers can revolutionize your Pinterest strategy, helping you create compelling pin descriptions, analyze user comments, and drive engagement on the platform.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Using AI to Improve Your Organic Reach on LinkedIn",
+    "file": "using-ai-to-improve-your-organic-reach-on-linkedin",
+    "description": "Discover how artificial intelligence tools can help you boost your organic reach on LinkedIn, create compelling content, and engage with your target audience effectively.",
+    "date": "May 25, 2024",
+    "datetime": "2024-05-25",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators: Empowering Large Enterprises in Social Media Engagement",
+    "file": "ai-comment-generators-empowering-large-enterprises-in-social-media-engagement",
+    "description": "Discover how AI comment generators support large enterprises in managing and optimizing their social media engagement efforts. Learn about the key benefits and best practices for implementation.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Comment Generators vs. Traditional Methods: A Comparative Analysis",
+    "file": "ai-comment-generators-vs-traditional-methods-a-comparative-analysis",
+    "description": "Discover how AI comment generators stack up against traditional methods of social media engagement. Learn the key differences, advantages, and limitations of each approach.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "How AI Comment Generators Improve Social Media ROI",
+    "file": "how-ai-comment-generators-improve-social-media-roi",
+    "description": "Discover how AI comment generators can boost your social media ROI by increasing engagement, saving time, and providing valuable insights for optimizing your strategy.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Success Stories: How AI Comment Generators Revolutionized Social Media Engagement",
+    "file": "success-stories-how-ai-comment-generators-revolutionized-social-media-engagement",
+    "description": "Discover real-life success stories of businesses and content creators who leveraged AI comment generators to revolutionize their social media engagement and achieve remarkable results.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Best AI Comment Generators for Small Businesses in 2024",
+    "file": "the-best-ai-comment-generators-for-small-businesses",
+    "description": "Discover the top AI comment generators tailored for small businesses. Learn how these tools can help you enhance your social media engagement and grow your online presence.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Impact of AI Comment Generators on User Engagement Metrics",
+    "file": "the-impact-of-ai-comment-generators-on-user-engagement-metrics",
+    "description": "Explore how AI comment generators influence user engagement metrics on social media platforms. Learn about the key metrics affected and the potential implications for your social media strategy.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Most User-Friendly AI Comment Generators in 2024",
+    "file": "the-most-user-friendly-ai-comment-generators",
+    "description": "Discover the most user-friendly AI comment generators that make social media engagement effortless. Learn about their key features, benefits, and how they can streamline your commenting process.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Pros and Cons of Using AI Comment Generators for Social Media Engagement",
+    "file": "the-pros-and-cons-of-using-ai-comment-generators-for-social-media-engagement",
+    "description": "Explore the advantages and disadvantages of using AI comment generators for social media engagement. Learn how these tools can impact your online presence and make an informed decision.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top-Rated AI Comment Generators: Revolutionizing Social Media Engagement",
+    "file": "top-rated-ai-comment-generators-revolutionizing-social-media-engagement",
+    "description": "Discover the top-rated AI comment generators that can revolutionize your social media engagement. Learn how these tools can help you boost interaction, save time, and grow your online presence.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "User Reviews of Popular AI Comment Generators: Insights and Experiences",
+    "file": "user-reviews-of-popular-ai-comment-generators-insights-and-experiences",
+    "description": "Discover what users have to say about popular AI comment generators. Learn about their experiences, the pros and cons, and how these tools have impacted their social media engagement.",
+    "date": "May 23, 2024",
+    "datetime": "2024-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
     "title": "Data Requirements for Training AI Comment Generators",
     "file": "data-requirements-for-training-ai-comment-generators",
     "description": "Explore the key data requirements and considerations for training effective and reliable AI comment generators.",
@@ -2319,6 +3528,84 @@ const postData = [
     "description": "Discover the power of commenting on social media and how it can boost your engagement, reach, and influence. Learn the best practices and strategies for effective commenting.",
     "date": "May 8, 2024",
     "datetime": "2024-05-08",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Generators: Create Content Instantly, No Sign-Up Required",
+    "file": "ai-text-generators-no-sign-up",
+    "description": "Discover the best AI text generators that allow you to create content instantly without the need for sign-up. Explore their features, benefits, and how they can enhance your writing.",
+    "date": "May 29, 2023",
+    "datetime": "2023-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "AI Text Response Generators: Enhancing Customer Engagement and Support",
+    "file": "ai-text-response-generators",
+    "description": "Discover how AI text response generators are revolutionizing customer engagement and support. Explore their features, benefits, and best practices for implementation.",
+    "date": "May 29, 2023",
+    "datetime": "2023-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "The Power of AI-Generated Summaries: Enhancing Content Comprehension and Efficiency",
+    "file": "the-power-of-ai-generated-summaries",
+    "description": "Explore the benefits of AI-generated summaries and how they revolutionize content comprehension and efficiency. Discover the techniques and applications of AI-powered summarization.",
+    "date": "May 29, 2023",
+    "datetime": "2023-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Top AI Text Generators Online: Free, No Sign-Up Required",
+    "file": "top-ai-text-generators-online-free-no-sign-up",
+    "description": "Discover the best AI text generators available online for free, without the need for sign-up. Explore their features, capabilities, and how they can enhance your writing.",
+    "date": "May 29, 2023",
+    "datetime": "2023-05-29",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Best Practices for Developing AI Comment Generators: Ensuring Quality and Effectiveness",
+    "file": "best-practices-for-developing-ai-comment-generators",
+    "description": "Discover the best practices for developing AI comment generators, including data preparation, model selection, training techniques, and ethical considerations, to ensure high-quality and effective automated engagement.",
+    "date": "May 23, 2023",
+    "datetime": "2023-05-23",
+    "author": {
+      "name": "Yash Thakker",
+      "role": "Founder",
+      "href": "#",
+      "imageUrl": "/images/blog/yt.jpg"
+    }
+  },
+  {
+    "title": "Computational Requirements for AI Comment Generators: Powering Automated Engagement",
+    "file": "computational-requirements-for-ai-comment-generators",
+    "description": "Explore the computational requirements for AI comment generators, including hardware, software, and infrastructure needs, to power automated engagement and drive social media success.",
+    "date": "May 23, 2023",
+    "datetime": "2023-05-23",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",
