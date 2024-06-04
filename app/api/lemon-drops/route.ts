@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { sendDiscordNotification } from "@/service/discord-notify";
 import crypto from 'crypto';
+import { sendWelcomeEmail } from "@/lib/emails/welcome";
 
 function verifySignature(req: NextRequest, secret: string): boolean {
     const signature  = req.headers.get('x-signature');
@@ -46,35 +47,9 @@ export async function POST(req: NextRequest) {
             const message = `@everyone We made a Sale 🎉 to ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
             await sendDiscordNotification(message);
 
-            const firstName = user.userName.split(' ')[0];
-
-            const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
-
-            // const emailResponse = await fetch(`${baseUrl}/api/emails/welcome`, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify({
-            //         firstName: firstName,
-            //         email: user.userEmail,
-            //     }),
-            // });
-    
-            // if (!emailResponse.ok) {
-            //     throw new Error(`Failed to send welcome email: ${emailResponse.statusText}`);
-            // }
-
-            try{
-                // Sending the welcome email by invoking the API
-                const response = await fetch(`${baseUrl}/api/emails/welcome`, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
-                        firstName: firstName, 
-                        email: user.userEmail
-                     }) 
-                });
+            try {
+                const firstName = user.userName.split(' ')[0];
+                await sendWelcomeEmail(firstName, user.userEmail);
             } catch (emailError: any) {
                 console.error(`Error sending welcome email: ${emailError.message}`);
                 sendDiscordNotification(`Error sending welcome email: ${emailError.message}`);
