@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
 
             const firstName = user.userName.split(' ')[0];
 
-            const emailResponse = await fetch('/emails/welcome', {
+            const emailResponse = await fetch('/api/emails/welcome', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
