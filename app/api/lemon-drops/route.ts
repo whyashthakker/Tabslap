@@ -46,6 +46,23 @@ export async function POST(req: NextRequest) {
             const message = `@everyone We made a Sale 🎉 to ${user.userName} (${user.userEmail}) for $${user.paidAmount} ${user.currency} at ${user.createdAt}`;
             await sendDiscordNotification(message);
 
+            const firstName = user.userName.split(' ')[0];
+
+            const emailResponse = await fetch('/emails/welcome', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName: firstName,
+                    email: user.userEmail,
+                }),
+            });
+    
+            if (!emailResponse.ok) {
+                throw new Error(`Failed to send welcome email: ${emailResponse.statusText}`);
+            }
+
         } catch (error: any) {
 
             console.error(`Error sending notification: ${error.message}`);
