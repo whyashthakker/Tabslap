@@ -50,19 +50,34 @@ export async function POST(req: NextRequest) {
 
             const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
 
-            const emailResponse = await fetch(`${baseUrl}/api/emails/welcome`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    firstName: firstName,
-                    email: user.userEmail,
-                }),
-            });
+            // const emailResponse = await fetch(`${baseUrl}/api/emails/welcome`, {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify({
+            //         firstName: firstName,
+            //         email: user.userEmail,
+            //     }),
+            // });
     
-            if (!emailResponse.ok) {
-                throw new Error(`Failed to send welcome email: ${emailResponse.statusText}`);
+            // if (!emailResponse.ok) {
+            //     throw new Error(`Failed to send welcome email: ${emailResponse.statusText}`);
+            // }
+
+            try{
+                // Sending the welcome email by invoking the API
+                const response = await fetch(`${baseUrl}/api/emails/welcome`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        firstName: firstName, 
+                        email: user.userEmail
+                     }) 
+                });
+            } catch (emailError: any) {
+                console.error(`Error sending welcome email: ${emailError.message}`);
+                sendDiscordNotification(`Error sending welcome email: ${emailError.message}`);
             }
 
         } catch (error: any) {
