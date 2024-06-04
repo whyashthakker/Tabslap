@@ -48,7 +48,9 @@ export async function POST(req: NextRequest) {
 
             const firstName = user.userName.split(' ')[0];
 
-            const emailResponse = await fetch('/api/emails/welcome', {
+            const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+
+            const emailResponse = await fetch(`${baseUrl}/api/emails/welcome`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
