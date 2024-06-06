@@ -44,9 +44,6 @@ export const Heading = (props: {
       <div className="mb-4">
         <div className="flex justify-center items-center space-x-4">
           <h3 className="hidden sm:block font-cal text-2xl text-gray-900">
-            <div className="shadow-sm shadow-teal-500/50">
-              <Tag color="green">#1 Social Media Agent</Tag>
-            </div>
           </h3>
           <ProductHuntBadge />
         </div>
