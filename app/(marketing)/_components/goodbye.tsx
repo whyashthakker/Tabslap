@@ -98,7 +98,7 @@ export default function GoodByeFeedback() {
           </div>
           {reason === 'not_working' && (
             <div className="ml-6">
-              <p className='text-xs text-gray-600'>Please reach out to support@explainx.ai for assistance.</p>
+              <p className='text-xs text-gray-600'>Please reach out to yash@olly.socialainx.ai for assistance.</p>
             </div>
           )}
           <div className="flex items-center space-x-2">
