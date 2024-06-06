@@ -7,6 +7,7 @@ interface BuyNowButtonProps {
   url: string;
   price: string;
   originalPrice: string;
+  monthlyUrl?: string;
 }
 
 interface PricingContextType {
@@ -17,6 +18,7 @@ const defaultBuyNowProps: BuyNowButtonProps = {
   url: 'https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca',
   price: '$29.99',
   originalPrice: '$49.99',
+  monthlyUrl: 'https://safegpt.lemonsqueezy.com/buy/ccfcb6bb-06c7-4c35-b0f2-949cd3ca7452',
 };
 
 const PricingContext = createContext<PricingContextType>({ buyNowProps: defaultBuyNowProps });

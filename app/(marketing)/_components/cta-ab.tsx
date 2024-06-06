@@ -9,9 +9,9 @@ import { usePricing } from '@/app/web/providers/pricingContext';
 export function CTAButtonsAB() {
   const posthog = usePostHog();
   const {buyNowProps} = usePricing();
-  // posthog.featureFlags.override({'landing-cta-price': 'control'})  
+  // posthog.featureFlags.override({'landing-subscription-type': 'test'})  
   const variant = useFeatureFlagVariantKey(
-    "landing-cta-price"
+    "landing-subscription-type"
   );
 
   // Component rendering
@@ -31,22 +31,18 @@ export function CTAButtonsAB() {
       </Button>
       <Button
         size="2xl"
-        link={{ href: buyNowProps.url, target: "_blank" }}
+        link={variant === 'control' ? { href: buyNowProps.url ?? '', target: "_blank" } : { href: buyNowProps.monthlyUrl ?? '', target: "_blank" }}
         onClick={() => {
           posthog.capture("Clicked Buy Now", { price: buyNowProps.price});
         }}
         color='white'
         className='shadow-md shadow-teal-500'
-        // className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white border-0"
       >
-        Get Lifetime Access
-        {/* {variant === 'control' && (
-        <>
-          &nbsp;
-          <span className="text-white-600 text-m">{buyNowProps.price} &nbsp;</span>
-          <span className="line-through text-gray-800 text-xs">{buyNowProps.originalPrice}</span>
-        </>
-      )} */}
+        {variant === 'control' ? (
+          <>Get Lifetime Access</>
+        ) : (
+          <>Start @ $2.99/month</>
+        )}
       </Button>
     </div>
   );
