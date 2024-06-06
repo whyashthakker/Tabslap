@@ -57,7 +57,7 @@ const ActivationGuide: React.FC = () => {
         ))}
       </div>
       <p className="text-center text-gray-800 m-3">
-        If you have any questions, please reach out to us at yash@explainx.ai.
+        If you have any questions, please reach out to us at yash@olly.social.
       </p>
     </div>
   );

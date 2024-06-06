@@ -29,7 +29,7 @@ const TermsOfService: React.FC = () => {
                 <p>We reserve the right to revise and update these Terms of Service from time to time in our sole discretion. All changes are effective immediately when we post them, and apply to all access to and use of the Website thereafter. Your continued use of the Website following the posting of revised Terms of Service means that you accept and agree to the changes.</p>
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">Contact Information</h2>
-                <p>Questions or comments about the Website or these Terms of Service may be directed to our support team at <a href="mailto:yash@explainx.ai">yash@explainx.ai</a>.</p>
+                <p>Questions or comments about the Website or these Terms of Service may be directed to our support team at <a href="mailto:yash@olly.social">yash@olly.social</a>.</p>
 
                 <h2 className="text-lg font-semibold mb-2 mt-4">Disclaimer of Warranties</h2>
                 <p>THE SERVICE AND ITS CONTENT ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; BASIS WITHOUT ANY WARRANTIES OF ANY KIND. WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE WARRANTY OF TITLE, MERCHANTABILITY, NON-INFRINGEMENT OF THIRD PARTIES&rsquo; RIGHTS, AND FITNESS FOR PARTICULAR PURPOSE.</p>

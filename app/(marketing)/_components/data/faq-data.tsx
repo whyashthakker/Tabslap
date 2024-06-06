@@ -14,7 +14,7 @@ interface FAQData {
     },
     {
       question: "How can i request a refund?",
-      answer: "Go to lemonsqueezy orders page from your email or reach out to yash@explainx.ai, no questions asked."
+      answer: "Go to lemonsqueezy orders page from your email or reach out to yash@olly.social, no questions asked."
     },
     {
       question: "How many free comments can I generate in free forever plan?",
@@ -86,7 +86,7 @@ interface FAQData {
     },
     {
       question: "Is customer support available for Olly users?",
-      answer: "Yep. yash@explainx.ai.",
+      answer: "Yep. yash@olly.social.",
     },
     {
         question: "Does Olly support Claude, Gemini AI Models?",
@@ -138,7 +138,7 @@ interface FAQData {
       },
       {
         question: "How can I contact support for Olly?",
-        answer: "For any questions or issues with Olly, you can reach out to their support team at yash@explainx.ai.",
+        answer: "For any questions or issues with Olly, you can reach out to their support team at yash@olly.social.",
       },
       {
         question: "What are Chrome extension permissions for Olly?",

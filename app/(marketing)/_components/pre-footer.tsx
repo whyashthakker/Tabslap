@@ -29,8 +29,8 @@ const navigation = {
     ],
   support: [
     { name: "Pricing", href: "/#pricing" },
-    { name: "Contact", href: "mailto:yash@explainx.ai", target: "_blank" },
-    { name: "Feature Requests", href: "mailto:yash@explainx.ai", target: "_blank" },
+    { name: "Contact", href: "mailto:yash@olly.social", target: "_blank" },
+    { name: "Feature Requests", href: "mailto:yash@olly.social", target: "_blank" },
   ],
   company: [
     { name: "Blog", href: "/blog" },
@@ -40,7 +40,7 @@ const navigation = {
     // { name: "Discord", href: "/discord", target: "_blank" },
     { name: "Pricing", href: "/#pricing" },
     { name: "Contact", href: "/contact", target: "_blank" },
-    { name: "Feature Requests", href: "mailto:yash@explainx.ai", target: "_blank" },
+    { name: "Feature Requests", href: "mailto:yash@olly.social", target: "_blank" },
     { name: "FAQ", href: "/#faq" },
     // { name: "Who m", href: "https://goyashy.com", target: "_blank" },
   ],
