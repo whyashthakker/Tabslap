@@ -18,7 +18,6 @@ const navigation = {
         { name: "Instagram Auto Commenter", href: "/products/instagram-auto-commenter" },
         { name: "Medium Comment Generator", href: "/products/medium-comment-generator" },
         { name: "Social Media Chrome Extension", href: "/products/social-media-chrome-extension" },
-        { name: "TikTok Comment Generator", href: "/products/tiktok-comment-generator" },
         { name: "Virality Score AI", href: "/products/virality-score-ai" },
         { name: "X Comment Generator", href: "/products/x-comment-generator" }
     ],
