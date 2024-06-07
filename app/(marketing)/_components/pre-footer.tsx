@@ -31,6 +31,7 @@ const navigation = {
     { name: "Pricing", href: "/#pricing" },
     { name: "Contact", href: "mailto:yash@olly.social", target: "_blank" },
     { name: "Feature Requests", href: "mailto:yash@olly.social", target: "_blank" },
+    {name: "OpenAI Cost Calculator", href: "/openai-cost-calculator"},
   ],
   company: [
     { name: "Blog", href: "/blog" },
