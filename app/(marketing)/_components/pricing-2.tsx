@@ -119,7 +119,12 @@ function PricingPlans() {
            <p className="mt-6 text-base leading-7 text-gray-600">
              Access to all features with your OpenAI API key.
            </p>
-           <div className="mt-10">
+           <p className="text-2xs text-blue-500 mt-2">
+            <Link href="/openai-cost-calculator" target="_blank">
+            OpenAI Cost calculator
+            </Link>
+            </p>
+           <div className="mt-5">
              <p className="text-4xl font-extrabold text-gray-900">{buyNowProps.price}</p>
              <p className="mt-1 text-sm font-semibold text-gray-500">One-time payment</p>
            </div>
@@ -158,7 +163,12 @@ function PricingPlans() {
            <p className="mt-6 text-base leading-7 text-gray-600">
              Access to all features using our OpenAI API key.
            </p>
-           <div className="mt-10">
+           <p className="text-2xs text-blue-500 mt-2">
+            <Link href="/openai-cost-calculator" target="_blank">
+            OpenAI Cost calculator
+            </Link>
+            </p>
+           <div className="mt-5">
              <p className="text-4xl font-extrabold text-gray-900">$2.99</p>
              <p className="mt-1 text-sm font-semibold text-gray-500">Per Month</p>
            </div>
