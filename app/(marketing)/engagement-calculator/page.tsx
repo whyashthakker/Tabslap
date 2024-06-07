@@ -50,7 +50,7 @@ const EngagementCalculatorPage: React.FC = () => {
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-4">How to Improve Your LinkedIn, Twitter, X, Instagram, Engagement Rate</h2>
         <ul className="list-disc pl-6 mb-4">
-          <li>Create valuable and relevant content that addresses your audience's interests and pain points.</li>
+          <li>Create valuable and relevant content that addresses your audience&apos;s interests and pain points.</li>
           <li>Use eye-catching visuals, such as images and videos, to make your posts more engaging.</li>
           <li>Encourage interaction by asking questions, starting discussions, and responding to comments.</li>
           <li>Post consistently to maintain a strong presence and keep your audience engaged.</li>
