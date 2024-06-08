@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="AnswersAI ai Chrome Extension: Your Personal AI Assistant for the Web"
-        datePublished="2023-06-06T08:00:00+00:00"
-        dateModified="2023-06-06T08:00:00+00:00"
+        datePublished="2024-06-06T08:00:00+00:00"
+        dateModified="2024-06-06T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}

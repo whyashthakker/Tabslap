@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="AI Text Response Generators: Enhancing Customer Engagement and Support"
-        datePublished="2023-05-29T08:00:00+00:00"
-        dateModified="2023-05-29T08:00:00+00:00"
+        datePublished="2024-05-29T08:00:00+00:00"
+        dateModified="2024-05-29T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}

@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="Hilarious AI-Generated Quotes: When Machines Try to Be Funny"
-        datePublished="2023-06-04T08:00:00+00:00"
-        dateModified="2023-06-04T08:00:00+00:00"
+        datePublished="2024-06-04T08:00:00+00:00"
+        dateModified="2024-06-04T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}

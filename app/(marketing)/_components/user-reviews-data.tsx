@@ -10,7 +10,7 @@ interface ReviewData {
 const UserReviewsData: ReviewData[] = [
     {
         reviewerName: "Geeta Belani",
-        reviewDate: "Dec 18, 2023",
+        reviewDate: "Dec 18, 2024",
         review: "This extension is a social saver, have been able to engage more with people on multiple platforms in a better way and much more frequently.",
         reviewStar: 5,
         userName: "geetabelani",

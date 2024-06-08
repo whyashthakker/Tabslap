@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="The Power of AI-Generated Summaries: Enhancing Content Comprehension and Efficiency"
-        datePublished="2023-05-29T08:00:00+00:00"
-        dateModified="2023-05-29T08:00:00+00:00"
+        datePublished="2024-05-29T08:00:00+00:00"
+        dateModified="2024-05-29T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}
