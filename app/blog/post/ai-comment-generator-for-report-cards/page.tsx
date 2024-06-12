@@ -15,8 +15,8 @@ export default function Page() {
     <>
       <StructuredData
         headline="AI Comment Generator for Report Cards: Streamlining Teacher Feedback"
-        datePublished="2023-06-10T08:00:00+00:00"
-        dateModified="2023-06-10T08:00:00+00:00"
+        datePublished="2024-06-10T08:00:00+00:00"
+        dateModified="2024-06-10T08:00:00+00:00"
         authorName="Yash Thakker"
         authorUrl="https://goyashy.com"
         image={[]}

@@ -5242,8 +5242,8 @@ const postData = [
     "title": "AI Comment Generator for Report Cards: Streamlining Teacher Feedback",
     "file": "ai-comment-generator-for-report-cards",
     "description": "Discover how AI comment generators are revolutionizing the way teachers provide feedback on student report cards. Explore the benefits, features, and best practices for using AI-powered comment generators in education.",
-    "date": "June 10, 2023",
-    "datetime": "2023-06-10",
+    "date": "June 10, 2024",
+    "datetime": "2024-06-10",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",
@@ -5255,8 +5255,8 @@ const postData = [
     "title": "AI Feedback Generator for Teachers: Enhancing Student Learning",
     "file": "ai-feedback-generator-for-teachers",
     "description": "Explore how AI feedback generators are empowering teachers to provide personalized and actionable feedback to students. Discover the benefits, features, and best practices for leveraging AI-powered feedback tools in education.",
-    "date": "June 10, 2023",
-    "datetime": "2023-06-10",
+    "date": "June 10, 2024",
+    "datetime": "2024-06-10",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",
@@ -5265,11 +5265,11 @@ const postData = [
     }
   },
   {
-    "title": "Best AI Text Generator 2023: Unleashing the Power of Generative AI",
-    "file": "best-ai-text-generator-2023",
-    "description": "Discover the best AI text generators of 2023 and how they are transforming content creation, writing, and communication. Explore the features, benefits, and use cases of these powerful tools.",
-    "date": "June 10, 2023",
-    "datetime": "2023-06-10",
+    "title": "Best AI Text Generator 2024: Unleashing the Power of Generative AI",
+    "file": "best-ai-text-generator-2024",
+    "description": "Discover the best AI text generators of 2024 and how they are transforming content creation, writing, and communication. Explore the features, benefits, and use cases of these powerful tools.",
+    "date": "June 10, 2024",
+    "datetime": "2024-06-10",
     "author": {
       "name": "Yash Thakker",
       "role": "Founder",
