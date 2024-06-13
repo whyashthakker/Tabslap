@@ -25,7 +25,7 @@ const calFont = localFont({
 
 export const metadata: Metadata = {
   "metadataBase": new URL("https://tabslap.me"),
-  "title": "TabSlap: Your Ultimate Chrome Tab Productivity Extension",
+  "title": "TabSlap: Your Ultimate Chrome Tab Productivity Extension ✨",
   "description": "TabSlap is a powerful Chrome tab productivity extension designed to help users stay focused on their tasks by monitoring their open tabs and providing timely reminders. With its intuitive design and robust functionality, TabSlap is your go-to tool for enhancing productivity and maintaining focus.",
   "keywords": "TabSlap, Chrome Extension, Productivity, Tab Monitoring, Reminders, Focus, Task Prioritization, Efficiency, Developers, Students, Professionals",
   "appLinks": {
