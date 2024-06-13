@@ -20,7 +20,7 @@ export default function ReleaseNotes() {
                     Forever Free Plan
                   </span>{" "}
                   - We&apos;ve introduced a new Forever Free plan that allows you to
-                  access Olly&apos;s core features at no cost.
+                  access Tabslap&apos;s core features at no cost.
                 </li>
                 <li>
                   <span className="font-medium text-gray-900 dark:text-gray-100">
@@ -38,7 +38,7 @@ export default function ReleaseNotes() {
                   <span className="font-medium text-gray-900 dark:text-gray-100">
                     ⚡ GPT-4 & GPT-4 Turbo Integration
                   </span>{" "}
-                  - Olly now harnesses the incredible capabilities of GPT-4 to
+                  - Tabslap now harnesses the incredible capabilities of GPT-4 to
                   deliver even more intelligent and contextually relevant writing
                   assistance. Get ready for a new level of AI-powered support.
                 </li>
@@ -46,7 +46,7 @@ export default function ReleaseNotes() {
                   <span className="font-medium text-gray-900 dark:text-gray-100">
                     🌍 Bonjour! ¡Hola! Hallo!
                   </span>{" "}
-                  - In addition to English, Olly now offers full support for
+                  - In addition to English, Tabslap now offers full support for
                   French, German, Hindi, Spanish and a bunch more. Generate
                   comments & summarise posts.
                 </li>
@@ -54,7 +54,7 @@ export default function ReleaseNotes() {
                   <span className="font-medium text-gray-900 dark:text-gray-100">
                     ✨ Refreshed User Interface
                   </span>{" "}
-                  - We&apos;ve given Olly&apos;s UI a sleek new look to enhance usability
+                  - We&apos;ve given Tabslap&apos;s UI a sleek new look to enhance usability
                   and help you stay focused on your writing. Enjoy a more
                   intuitive and visually appealing experience.
                 </li>
@@ -62,7 +62,7 @@ export default function ReleaseNotes() {
                   <span className="font-medium text-gray-900 dark:text-gray-100">
                     📝 Helpful Post Summaries
                   </span>{" "}
-                  - Olly can now generate summaries of posts. You can select
+                  - Tabslap can now generate summaries of posts. You can select
                   additional option from the dropdown.
                 </li>
               </ul>
@@ -165,7 +165,7 @@ export default function ReleaseNotes() {
                   <span className="font-medium text-gray-900 dark:text-gray-100">
                     Platform Level Guide
                   </span>{" "}
-                  - Created a platform level guide to ensure optimal usage of Olly
+                  - Created a platform level guide to ensure optimal usage of Tabslap
                   across different platforms.
                 </li>
               </ul>

@@ -66,7 +66,7 @@ export const BlogPostHeader = () => {
                 posthog.capture(`Clicked Get it now on page`);
               }}
             >
-              Get Olly Now
+              Get Tabslap Now
               <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>

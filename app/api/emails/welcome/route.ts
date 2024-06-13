@@ -14,17 +14,17 @@ export async function POST(req: Request) {
     
     const emailText = `Hi ${firstName},
 
-This is Yash. Maker of Olly Chrome Extension. I am so excited to have you on board. 🎉
+This is Yash. Maker of Tabslap Chrome Extension. I am so excited to have you on board. 🎉
 
-Right off the bat, I want to thank you for installing Olly. I hope you find it useful and it helps you you scale your social media like 100 others.
+Right off the bat, I want to thank you for installing Tabslap. I hope you find it useful and it helps you you scale your social media like 100 others.
 
-I would love to speak to you to hear your thoughts on Olly and how I can make it better. You can reply to this email or book a time with me here: https://calendly.com/explainx/discussion
+I would love to speak to you to hear your thoughts on Tabslap and how I can make it better. You can reply to this email or book a time with me here: https://calendly.com/explainx/discussion
 
 Best,
 Yash`;
 
     // Send the welcome email object
-    await sendMail(subject, email, emailText, "Yash @ Olly AI"); // Added the senderName argument
+    await sendMail(subject, email, emailText, "Yash @ Tabslap AI"); // Added the senderName argument
 
     return new NextResponse(null, { status: 200 });
   } catch (error: any) {

@@ -5,7 +5,6 @@ import { Accessibility, ArrowBigDown, ArrowBigDownDash, ArrowRight, Brain, Brain
 import React, { useState, useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
-import AddOllyButton from "./add-olly";
 import ProductHuntBadge from "./ph-embed";
 import Image from "next/image";
 import SupportedPlatforms from "./supported-platforms";
@@ -55,22 +54,6 @@ export const HeadingAffiliate = (props: {
             <ProductHuntBadge />
           </div>
 
-      {/* <BackgroundImage /> */}
-      {/* <ProductHuntBadge /> */}
-      {/* <h1 className="text-3xl sm:text-5xl m-2 md:text-6xl font-bold md:mb-5">
-        Your AI-Powered Second Brain <BrainCircuit size={45} className="inline-block" />
-      </h1>
-      <h3 className="text-xs md:text-m font-small mb-2 text-gray-500">
-        In-Browser AI Generated Comments, Replies, Virality Scores & similar Posts in seconds. Works on LinkedIn, Facebook, Instagram, YouTube, Product Hunt, Hacker News, Quora and more! 
-      </h3>
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-start">
-        <AddOllyButton />
-        <Button variant="premium" size="lg" className="mt-2 md:mt-0 md:ml-2" onClick={handleButtonClick}>
-            Get Lifetime Access at&nbsp;
-            <span className="line-through text-gray-800 text-l justify-bottom">$49.99</span>
-            <span className="text-white-600 text-l">&nbsp;$29.99</span>
-        </Button> */}
-
         <div className="mx-auto max-w-xl text-center">
             {/* <HeroText>{props.title || <HeroHeadingAB />}</HeroText> */}
             <HeroText>
@@ -86,13 +69,13 @@ export const HeadingAffiliate = (props: {
             </HeroSubtitle>
             <CTAButtonsAffiliate />
           </div>
-      {/* <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
+      {/* <p className="text-xs text-red-500">Tabslap is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
 
       <div className="mt-16 flow-root sm:mt-24">
             <div className="relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
                 src={props.image || "/step_main.gif"}
-                alt="Olly Social Alternatives"
+                alt="Tabslap Social Alternatives"
                 width={2432}
                 height={1442}
                 className="rounded-md shadow ring-1 ring-gray-900/10"

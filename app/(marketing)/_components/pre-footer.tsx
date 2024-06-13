@@ -2,45 +2,23 @@ import Link from "next/link";
 
 const navigation = {
     main: [
-        { name: "LinkedIn Comment Generator", href: "/products/linkedin-comment-generator" },
-        { name: "Twitter / X Comment Generator", href: "/products/twitter-x-comment-generator" },
-        { name: "Facebook Comment Generator", href: "/products/facebook-comment-generator" },
-        { name: "Reddit Comment Generator", href: "/products/reddit-comment-generator" },
-        { name: "Product Hunt Comment Generator", href: "/products/product-hunt-comment-generator" },
-        { name: "YouTube Comment Generator", href: "/products/youtube-comment-generator" },
-        { name: "Instagram Comment Generator", href: "/products/instagram-comment-generator" },
-        { name: "AI Comment Generator", href: "/products/ai-comment-generator" },
-        { name: "Quora Comment Generator", href: "/products/quora-comment-generator" },
-        { name: "AI Chrome Extension", href: "/products/ai-chrome-extension" },
-        { name: "Automatic Blog Commenting", href: "/products/automatic-blog-commenting" },
-        { name: "Automatic Commenter", href: "/products/automatic-commenter" },
-        { name: "Hacker News/YCombinator Comment Generator", href: "/products/hacker-news-ycombinator-comment-generator" },
-        { name: "Instagram Auto Commenter", href: "/products/instagram-auto-commenter" },
-        { name: "Medium Comment Generator", href: "/products/medium-comment-generator" },
-        { name: "Social Media Chrome Extension", href: "/products/social-media-chrome-extension" },
-        { name: "Virality Score AI", href: "/products/virality-score-ai" },
-        { name: "X Comment Generator", href: "/products/x-comment-generator" }
-    ],
-    tools: [
-      {name: "TikTok Comment Generator", href: "/tools/tiktok-comment-generator"},
-      {name: "Instagram Comment Generator", href: "/tools/instagram-comment-generator"},
-      {name: "YouTube Shorts Comment Generator", href: "/tools/youtube-shorts-comment-generator"},
+        { name: "Tab Management Extension Chrome", href: "/products/tab-management-extension-chrome" },
     ],
   support: [
     { name: "Pricing", href: "/#pricing" },
-    { name: "Contact", href: "mailto:yash@olly.social", target: "_blank" },
-    { name: "Feature Requests", href: "mailto:yash@olly.social", target: "_blank" },
+    { name: "Contact", href: "mailto:yash@tabslap.me", target: "_blank" },
+    { name: "Feature Requests", href: "mailto:yash@tabslap.me", target: "_blank" },
     {name: "OpenAI Cost Calculator", href: "/openai-cost-calculator"},
   ],
   company: [
     { name: "Blog", href: "/blog" },
     { name: "Affiliates", href: "https://safegpt.lemonsqueezy.com/affiliates", target: "_blank" },
-    { name: "Twitter", href: "https://twitter.com/olly_social", target: "_blank" },
+    { name: "Twitter", href: "https://twitter.com/tabslap_social", target: "_blank" },
     // { name: "GitHub", href: "/github", target: "_blank" },
     // { name: "Discord", href: "/discord", target: "_blank" },
     { name: "Pricing", href: "/#pricing" },
     { name: "Contact", href: "/contact", target: "_blank" },
-    { name: "Feature Requests", href: "mailto:yash@olly.social", target: "_blank" },
+    { name: "Feature Requests", href: "mailto:yash@tabslap.me", target: "_blank" },
     { name: "FAQ", href: "/#faq" },
     // { name: "Who m", href: "https://goyashy.com", target: "_blank" },
   ],
@@ -53,7 +31,7 @@ const navigation = {
   social: [
     {
       name: "Twitter",
-      href: "https://twitter.com/olly_social",
+      href: "https://twitter.com/tabslap_social",
       target: "_blank",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
@@ -63,7 +41,7 @@ const navigation = {
     },
     {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/company/olly-social",
+        href: "https://www.linkedin.com/company/tabslap-social",
         target: "_blank",
         icon: (props: any) => (
           <svg fill="currentColor" viewBox="0 0 192 192" {...props}>
@@ -73,7 +51,7 @@ const navigation = {
     },
     {
         name: "Instagram",
-        href: "https://www.instagram.com/olly.social_app",
+        href: "https://www.instagram.com/tabslap.me_app",
         target: "_blank",
         icon: (props: any) => (
             <svg fill="currentColor" viewBox="0 0 448 512" {...props}>
@@ -120,9 +98,9 @@ export function PreFooter() {
             <div>
               <FooterList title="Products" items={navigation.main} />
             </div>
-            <div className="mt-10 md:mt-0">
+            {/* <div className="mt-10 md:mt-0">
               <FooterList title="Free Tools" items={navigation.tools} />
-            </div>
+            </div> */}
           </div>
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>

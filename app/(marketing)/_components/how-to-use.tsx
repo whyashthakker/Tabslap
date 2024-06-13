@@ -7,14 +7,14 @@ interface howToUseData {
 
 const howToUseData: howToUseData[] = [
     {
-        featureName: "Step 1: Add Olly to Google Chrome",
-        featureDescription: "Head to the Chrome Web Store and add Olly to your browser. You can also click Add Olly to Chrome via the Navbar.",
+        featureName: "Step 1: Add Tabslap to Google Chrome",
+        featureDescription: "Head to the Chrome Web Store and add Tabslap to your browser. You can also click Add Tabslap to Chrome via the Navbar.",
         imageLink: "/step_1.gif",
         formatImage: "right"
     },
     {
         featureName: "Step 2: Turn on and Refresh the Page",
-        featureDescription: "Make sure that the Olly extension is enabled in your browser. Please Refresh the page if you have just installed Olly. Note all pages need to be refreshed after installing Olly. We recommend restarting your browser after installing Olly.",
+        featureDescription: "Make sure that the Tabslap extension is enabled in your browser. Please Refresh the page if you have just installed Tabslap. Note all pages need to be refreshed after installing Tabslap. We recommend restarting your browser after installing Tabslap.",
         imageLink: "/step_2.gif",
         formatImage: "right"
     },
@@ -26,13 +26,13 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "Step 4: Setup your Activation Key",
-        featureDescription: "Enter your activation key first to start using Olly. Get your Activation key: https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca - if you already bought the key, you can find it in your email or your lemonsqeezy orders. Note you can have a maximum of 5 activation keys.",
+        featureDescription: "Enter your activation key first to start using Tabslap. Get your Activation key: https://safegpt.lemonsqueezy.com/checkout/buy/ccbea37a-e676-45b7-8052-e2f45c0210ca - if you already bought the key, you can find it in your email or your lemonsqeezy orders. Note you can have a maximum of 5 activation keys.",
         imageLink: "/step_4.gif",
         formatImage: "right"
     },
     {
         featureName: "Step 5: Setup your OpenAI API Key",
-        featureDescription: "Enter your activation key and OpenAI API key to start using Olly: https://platform.openai.com/account/api-keys - We never access any of your data. You can read on Chrome extension permissions and also our Privacy Policy for more information. Also note OpenAI will bill you per month based on your usage.",
+        featureDescription: "Enter your activation key and OpenAI API key to start using Tabslap: https://platform.openai.com/account/api-keys - We never access any of your data. You can read on Chrome extension permissions and also our Privacy Policy for more information. Also note OpenAI will bill you per month based on your usage.",
         imageLink: "/step_5.gif",
         formatImage: "right"
     },
@@ -44,7 +44,7 @@ const howToUseData: howToUseData[] = [
     },
     {
         featureName: "You are all set!",
-        featureDescription: "Select the text across Facebook, Reddit, LinkedIn, ProductHunt, Instagram, X and YouTube! and Olly will popup in the bottom middle of your screen. If you don not see Olly, please refresh the page or check if the extension is enabled as shown in step 1.",
+        featureDescription: "Select the text across Facebook, Reddit, LinkedIn, ProductHunt, Instagram, X and YouTube! and Tabslap will popup in the bottom middle of your screen. If you don not see Tabslap, please refresh the page or check if the extension is enabled as shown in step 1.",
         imageLink: "/step_7.gif",
         formatImage: "right"
     },

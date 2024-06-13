@@ -25,18 +25,18 @@ import { CTAButtonsAB } from "./_components/cta-ab";
 import { Metadata } from "next";
 
 // export const metadata: Metadata = {
-//   title: "Olly Social - Your Social Media Sidekick",
-//   description: "Generate multi-lingual comments, summarise posts, generate posts, reply to comments, see virality scores, and lot more with olly ai, it works across Instagram, LinkedIn, twitter, reddit, hackernews, youtube, facebook, tiktok, product hunt and more.",
+//   title: "Tabslap Social - Your Social Media Sidekick",
+//   description: "Generate multi-lingual comments, summarise posts, generate posts, reply to comments, see virality scores, and lot more with tabslap ai, it works across Instagram, LinkedIn, twitter, reddit, hackernews, youtube, facebook, tiktok, product hunt and more.",
 //   alternates: {
 //     canonical: "/",
 //   },
-//   keywords: "olly, olly ai, ai comment generator, ai comment maker, ai comment creator, ai comments generator, ai reply generator, ai comment image generator, ai comment generator with profile picture, ai comment generator online, ai comment generator app, ai comment generator download, ai comment generator free, ai comment generator no watermark, ai comment generator without watermark, ai comment generator without logo, ai comment generator without watermark free, ai comment generator without watermark online, ai comment generator without watermark app, ai comment generator without watermark download, ai comment generator without watermark free online, ai comment generator without watermark free download, ai comment generator without watermark free app, ai comment generator without watermark free download, reddit summariser, reddit summarizer, reddit summary, reddit summarization, reddit summarization tool, reddit summarization app, reddit summarization software, reddit summarization tool online, reddit summarization tool free, reddit summarization tool without watermark, reddit summarization tool without logo, reddit summarization tool without watermark free, reddit summarization tool without watermark online, reddit summarization tool free online, reddit summarization tool free download, post summarizer, tiktok comment generator",
+//   keywords: "tabslap, tabslap ai, ai comment generator, ai comment maker, ai comment creator, ai comments generator, ai reply generator, ai comment image generator, ai comment generator with profile picture, ai comment generator online, ai comment generator app, ai comment generator download, ai comment generator free, ai comment generator no watermark, ai comment generator without watermark, ai comment generator without logo, ai comment generator without watermark free, ai comment generator without watermark online, ai comment generator without watermark app, ai comment generator without watermark download, ai comment generator without watermark free online, ai comment generator without watermark free download, ai comment generator without watermark free app, ai comment generator without watermark free download, reddit summariser, reddit summarizer, reddit summary, reddit summarization, reddit summarization tool, reddit summarization app, reddit summarization software, reddit summarization tool online, reddit summarization tool free, reddit summarization tool without watermark, reddit summarization tool without logo, reddit summarization tool without watermark free, reddit summarization tool without watermark online, reddit summarization tool free online, reddit summarization tool free download, post summarizer, tiktok comment generator",
 // };
 
 
 const MarketingPage = () => {
   return (
-<div className="min-h-full flex flex-col bg-no-repeat bg-[url('/sm_website_bg.jpg')] lg:bg-[url('/lg_website_bg.jpg')] md:bg-[url('/md_website_bg.jpg')] 2xl:bg-[url('/xl_website_bg.png')]">
+<div className="min-h-full flex flex-col">
       {/* <div className="flex flex-col items-center justify-center md:justify-start text-center gap-y-1 flex-1 px-4 md:px-6 pb-10"> */}
         <Heading />
         {/* <SocialProof /> */}
@@ -48,7 +48,6 @@ const MarketingPage = () => {
         <FeaturesStats />
         <FeaturesAutomation />
         <CTAButtonsAB />
-        {/* <AddOllyButton /> */}
         <Suspense>
           <Pricing />
         </Suspense>

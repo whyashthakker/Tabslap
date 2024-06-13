@@ -43,7 +43,7 @@ const nextConfig = {
         return [
           {
             source: '/api/openai/free-comments-generate-daily/',
-            destination: 'https://olly.social/api/openai/free-comments-generate-daily/',
+            destination: 'https://tabslap.me/api/openai/free-comments-generate-daily/',
           },
         ];
       },

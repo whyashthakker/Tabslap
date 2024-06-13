@@ -40,10 +40,10 @@ function Posts() {
           </div>
           <Button variant={"default"} className="mt-3 sm:mt-0"
             onClick={() => {
-              posthog.capture("Blog Get Olly");
+              posthog.capture("Blog Get Tabslap");
               }}
           >
-            Get Olly
+            Get Tabslap
           </Button>
         </div>
           <div className="mt-5 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">

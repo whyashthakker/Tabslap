@@ -101,7 +101,7 @@ function PricingPlans() {
              </li>
            </ul>
            <ShadcnButton className="mt-10 w-full">
-             <Link href="https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje" target="_blank">
+             <Link href="https://chromewebstore.google.com/detail/tabslap-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje" target="_blank">
                Start for Free
              </Link>
            </ShadcnButton>

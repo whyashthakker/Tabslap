@@ -8,7 +8,7 @@ export default function ProductRoadmap() {
 
  const handleRequestFeature = () => {
    setIsEmailOpen(true)
-   window.open(`mailto:yash@olly.social?subject=Request a New Feature`)
+   window.open(`mailto:yash@tabslap.me?subject=Request a New Feature`)
  }
 
  return (

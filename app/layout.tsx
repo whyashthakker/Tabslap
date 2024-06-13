@@ -24,34 +24,34 @@ const calFont = localFont({
 });
 
 export const metadata: Metadata = {
-  "metadataBase": new URL("https://olly.social"),
-  "title": "Olly: AI-Driven Social Media Assistant & Virality Enhancer Chrome Extension",
-  "description": "Olly redefines social media engagement by not only creating compelling comments but also assessing virality scores and generating similar posts. This Chrome Extension serves as your personal AI assistant, optimizing your presence on platforms like LinkedIn, Twitter, Reddit, and Facebook. With Olly, you get personalized interactions, time-saving commenting, and insights into what makes content viral. It's designed to grow your following by strategically enhancing engagement and providing content ideas that resonate with your audience.",
-  "keywords": "Olly, AI Social Media Assistant, Virality Score, Content Generation, Chrome Extension, Social Media Engagement, AI, Artificial Intelligence, Smart Commenting, LinkedIn, Twitter, Reddit, Facebook, Viral Content, Online Presence, Audience Growth, Personalized Interactions, Browser Extension, Engagement Analytics, Post Generation, Trend Analysis",
+  "metadataBase": new URL("https://tabslap.me"),
+  "title": "TabSlap: Your Ultimate Chrome Tab Productivity Extension",
+  "description": "TabSlap is a powerful Chrome tab productivity extension designed to help users stay focused on their tasks by monitoring their open tabs and providing timely reminders. With its intuitive design and robust functionality, TabSlap is your go-to tool for enhancing productivity and maintaining focus.",
+  "keywords": "TabSlap, Chrome Extension, Productivity, Tab Monitoring, Reminders, Focus, Task Prioritization, Efficiency, Developers, Students, Professionals",
   "appLinks": {
     web: {
-      url: "https://olly.social",
+      url: "https://tabslap.me",
       should_fallback: false,
     },
   },
-  "generator": "Olly",
+  "generator": "TabSlap",
   "referrer": "no-referrer-when-downgrade",
   "authors": [
     {
-      name: "Yash Thakker",
-      url: "https://yashthakker.com",
+      name: "TabSlap Team",
+      url: "https://tabslap.me/team",
     }
   ],
-  "creator": 'Yash Thakker',
-  "publisher": "Yash Thakker",
+  "creator": 'TabSlap',
+  "publisher": "TabSlap",
   "openGraph": {
-    title: "Olly: AI-Driven Social Media Assistant & Virality Enhancer Chrome Extension",
-    description: "Olly redefines social media engagement by not only creating compelling comments but also assessing virality scores and generating similar posts. This Chrome Extension serves as your personal AI assistant, optimizing your presence on platforms like LinkedIn, Twitter, Reddit, and Facebook. With Olly, you get personalized interactions, time-saving commenting, and insights into what makes content viral. It's designed to grow your following by strategically enhancing engagement and providing content ideas that resonate with your audience.",
-    url: "https://olly.social",
-    siteName: "Olly - Your AI-Powered Second Brain",
+    title: "TabSlap: Your Ultimate Chrome Tab Productivity Extension",
+    description: "TabSlap is a powerful Chrome tab productivity extension designed to help users stay focused on their tasks by monitoring their open tabs and providing timely reminders. With its intuitive design and robust functionality, TabSlap is your go-to tool for enhancing productivity and maintaining focus.",
+    url: "https://tabslap.me",
+    siteName: "TabSlap - Boost Your Productivity",
     images: [
       {
-        url: "https://videosilvids.s3.ap-south-1.amazonaws.com/Screenshot+2024-01-15+at+1.00.33%E2%80%AFPM.png",
+        url: "https://tabslap.me/images/og-image.png",
         width: 1200,
         height: 630,
       }
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
   "icons": {
     icon: "/icon.png"
   },
-  "category": "Artificial Intelligence",
-}
+  "category": "Productivity",
+ }
 
 export default function RootLayout({
   children,

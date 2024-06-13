@@ -43,7 +43,7 @@ export async function POST(request: Request) {
       let reasonText = '';
       switch (reason) {
         case 'annoying':
-          reasonText = 'Olly is too annoying because of popup.';
+          reasonText = 'Tabslap is too annoying because of popup.';
           break;
         case 'paid':
           reasonText = 'Because it was paid.';

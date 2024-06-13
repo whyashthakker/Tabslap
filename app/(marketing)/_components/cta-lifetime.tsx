@@ -21,7 +21,7 @@ export function CTALifetime() {
         size="2xl"
         color="primary"
         // className="shadow-lg shadow-teal-500/50"
-        link={{ href: "https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", target: "_blank"}}
+        link={{ href: "https://chromewebstore.google.com/detail/tabslap-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", target: "_blank"}}
         onClick={() => {
           posthog.capture("Clicked Get Started");
         }}

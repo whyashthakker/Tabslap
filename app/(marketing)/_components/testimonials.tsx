@@ -95,7 +95,7 @@ const testimonials: {
         },
       },
       {
-        body: `congratulation Yash Olly is prefect example of best use of Ai keep it up bro..`,
+        body: `congratulation Yash Tabslap is prefect example of best use of Ai keep it up bro..`,
         author: {
           name: "Jawad Naeem",
           handle: "jawadnaeem243",

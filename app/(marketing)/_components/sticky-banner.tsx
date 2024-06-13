@@ -10,7 +10,7 @@ const StickyBanner = () => {
       <div className="container mx-auto">
         <p className="text-sm">
             {/* Add Text: We've just launched a new Platform Level Guide, check it here:  */}
-            <span><Badge title='Guide' />How to use Olly across various Social Media Platforms: </span>
+            <span><Badge title='Guide' />How to use Tabslap across various Social Media Platforms: </span>
         </p>
       </div>
     </div>

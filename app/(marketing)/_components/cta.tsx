@@ -19,11 +19,11 @@ export function CTA() {
         <h2 className="font-cal text-3xl text-gray-900 sm:text-4xl">
           Boost your productivity.
           <br />
-          Start using Olly today.
+          Start using Tabslap today.
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
-          Olly uses AI to improve your Social Media Engagement. What previously
-          took hours, now takes seconds. Olly is your
+          Tabslap uses AI to improve your Social Media Engagement. What previously
+          took hours, now takes seconds. Tabslap is your
           Social Media Sidekick in your browser.
         </p>
       </div>

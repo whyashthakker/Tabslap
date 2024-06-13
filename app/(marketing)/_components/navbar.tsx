@@ -20,15 +20,6 @@ export const Navbar = () => {
       <Logo />
       <div className="flex flex-wrap md:ml-auto md:justify-end justify-between w-full items-center gap-x-2">
           <>
-              {/* <Button variant="ghost" size="sm">
-                <Link href="https://chromewebstore.google.com/u/2/detail/safegpt/fecdlcopjiaeaoachfgpocdgaanolkkc?hl=en-GB">
-                  Add Now
-                </Link>
-              </Button> */}
-
-              {/* <div className="hidden md:flex">
-                <AddOllyButton />
-              </div>               */}
 
               <Button variant="ghost" size="sm">
                 <Link href="/privacy-policy">
@@ -59,7 +50,7 @@ export const Navbar = () => {
 
               <div className="hidden md:flex">
               <Button variant="ghost" size="sm">
-                <Link href="https://blog.olly.social">
+                <Link href="https://blog.tabslap.me">
                   Blog
                 </Link>
               </Button>

@@ -13,13 +13,13 @@ export function CTAButtons() {
         size="2xl"
         color="white"
         className="shadow-lg shadow-teal-500/50"
-        link={{ href: "https://chromewebstore.google.com/detail/olly-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", target: "_blank"}}
+        link={{ href: "https://chromewebstore.google.com/detail/tabslap-social-media-sidekic/ofjpapfmglfjdhmadpegoeifocomaeje", target: "_blank"}}
         onClick={() => {
           posthog.capture("Clicked Get Started");
         }}
       >
         <ChromeIcon className="mr-2 h-4 w-4" />
-        Add Olly to Chrome
+        Add Tabslap to Chrome
       </Button>
       <Button
         size="2xl"

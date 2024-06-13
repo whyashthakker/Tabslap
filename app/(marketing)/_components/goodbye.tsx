@@ -68,7 +68,7 @@ export default function GoodByeFeedback() {
               checked={reason === 'annoying'}
               onCheckedChange={() => handleReasonChange('annoying')}
             />
-            <Label htmlFor="option1">Olly is too annoying because of popup.</Label>
+            <Label htmlFor="option1">Tabslap is too annoying because of popup.</Label>
           </div>
           {reason === 'annoying' && (
             <div className="ml-6">
@@ -85,7 +85,7 @@ export default function GoodByeFeedback() {
           </div>
           {reason === 'paid' && (
             <div className="ml-6">
-              <p className='text-xs text-gray-600'>Olly is free forever. You can generate 5 free comments per day.</p>
+              <p className='text-xs text-gray-600'>Tabslap is free forever. You can generate 5 free comments per day.</p>
             </div>
           )}
           <div className="flex items-center space-x-2">
@@ -98,7 +98,7 @@ export default function GoodByeFeedback() {
           </div>
           {reason === 'not_working' && (
             <div className="ml-6">
-              <p className='text-xs text-gray-600'>Please reach out to yash@olly.socialainx.ai for assistance.</p>
+              <p className='text-xs text-gray-600'>Please reach out to yash@tabslap.meainx.ai for assistance.</p>
             </div>
           )}
           <div className="flex items-center space-x-2">

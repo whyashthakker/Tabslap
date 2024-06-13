@@ -9,9 +9,9 @@ import { CTA } from "../_components/cta";
 import { HeadingAffiliate } from "../_components/heading-affiliate";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program | Top Affiliate Programs for Creators | AI Chrome Extension | Olly.social",
+  title: "Affiliate Program | Top Affiliate Programs for Creators | AI Chrome Extension | Tabslap.social",
   description:
-    "Join Olly.social's affiliate program and earn money by promoting our AI Chrome Extension. Our affiliate program is designed for creators, influencers, and anyone with an audience. Sign up today and start earning commissions for every sale you refer.",
+    "Join Tabslap.social's affiliate program and earn money by promoting our AI Chrome Extension. Our affiliate program is designed for creators, influencers, and anyone with an audience. Sign up today and start earning commissions for every sale you refer.",
   alternates: { canonical: "/affiliate-program" },
 };
 

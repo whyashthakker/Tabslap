@@ -5,7 +5,7 @@ import { Accessibility, ArrowBigDown, ArrowBigDownDash, ArrowRight, Brain, Brain
 import React, { useState, useEffect } from "react";
 
 import { Button } from "@/components/ui/button";
-import AddOllyButton from "./add-olly";
+import AddOllylapButton from "./add-olly";
 import ProductHuntBadge from "./ph-embed";
 import Image from "next/image";
 import SupportedPlatforms from "./supported-platforms";
@@ -61,7 +61,7 @@ export const Heading = (props: {
             <HeroSubtitle>
               {props.subtitle || (
                 <>
-                  Not just another AI Tool? Olly is a flexible Chrome Extension that can Generate Comments, Posts, Replies & Summarise across all Social Media Platform, helping you become a brand faster.
+                  Not just another AI Tool? Tabslap is a flexible Chrome Extension that can Generate Comments, Posts, Replies & Summarise across all Social Media Platform, helping you become a brand faster.
                 </>
               )}
             </HeroSubtitle>
@@ -69,13 +69,13 @@ export const Heading = (props: {
             <CTAButtonsAB />
             <RefundOption />
           </div>
-      {/* <p className="text-xs text-red-500">Olly is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
+      {/* <p className="text-xs text-red-500">Tabslap is one time payment. We hate subscriptions. But you will get lifetime updates. Note: After January 31st the price will be $49.99.</p> */}
 
       <div className="mt-12 flow-root sm:mt-20">
             <div className="relative -m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
                 src={props.image || "/step_main.gif"}
-                alt="Olly Social Alternatives"
+                alt="Tabslap Social Alternatives"
                 width={2432}
                 height={1442}
                 className="rounded-md shadow ring-1 ring-gray-900/10"

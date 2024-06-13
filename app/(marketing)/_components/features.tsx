@@ -116,7 +116,7 @@ const featuresAutomations = [
   {
     name: "Pay once, use forever",
     description:
-      "Olly is a one time payment. We hate subscriptions. But you will get lifetime updates.",
+      "Tabslap is a one time payment. We hate subscriptions. But you will get lifetime updates.",
     icon: DollarSign,
   },
   {
@@ -138,8 +138,8 @@ export function FeaturesAutomation() {
     <FeaturesWithImage
       imageSide="left"
       title="Your AI-Powered Second Brain"
-      subtitle="Rocketship your engagement with Olly."
-      description="Think of Olly as your AI-powered second brain. Generate comments, replies, virality scores and similar posts in seconds."
+      subtitle="Rocketship your engagement with Tabslap."
+      description="Think of Tabslap as your AI-powered second brain. Generate comments, replies, virality scores and similar posts in seconds."
       image="/ai_main.png"
       features={featuresAutomations}
     />
@@ -173,7 +173,7 @@ export function FeaturesStats() {
       imageSide="right"
       title="Go Viral"
       subtitle="Predict what will work and what won't."
-      description="Leverage the power of AI to predict what will go viral and what won't. Olly can generate virality scores for your and community posts."
+      description="Leverage the power of AI to predict what will go viral and what won't. Tabslap can generate virality scores for your and community posts."
       image="/ai_virality.png"
       features={featuresStats}
     />
@@ -190,13 +190,13 @@ const featuresUnsubscribe = [
   {
     name: "Use your own voice",
     description:
-      "Customise your commenting style one time and Olly will use it to generate comments in your voice.",
+      "Customise your commenting style one time and Tabslap will use it to generate comments in your voice.",
     icon: Music2,
   },
   {
     name: "Learn from past comments",
     description:
-      "Olly learns from your past comments and improves the quality of comments over time.",
+      "Tabslap learns from your past comments and improves the quality of comments over time.",
     icon: BarChart2Icon,
   },
 ];

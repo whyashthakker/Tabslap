@@ -21,7 +21,7 @@ const ActivationGuide: React.FC = () => {
       <div className="mb-5">
         <h1 className="text-4xl font-semibold text-center my-4">How to use</h1>
         <p className="text-gray-500 text-center">
-          The following guide will help you to get started with the Olly.
+          The following guide will help you to get started with the Tabslap.
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start mb-4">
@@ -32,7 +32,7 @@ const ActivationGuide: React.FC = () => {
           className="mt-2 md:mt-0 md:ml-2"
           onClick={handleButtonClick}
         >
-          Activate Olly
+          Activate Tabslap
         </Button>
       </div>
       <div className="mt-12 sm:mt-20">
@@ -57,7 +57,7 @@ const ActivationGuide: React.FC = () => {
         ))}
       </div>
       <p className="text-center text-gray-800 m-3">
-        If you have any questions, please reach out to us at yash@olly.social.
+        If you have any questions, please reach out to us at yash@tabslap.me.
       </p>
     </div>
   );
