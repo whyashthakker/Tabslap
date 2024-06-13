@@ -44,5 +44,8 @@ export default function HeroHeadingAB() {
   if (!variant && process.env.NEXT_PUBLIC_POSTHOG_KEY)
     return <Skeleton className="h-28 w-full rounded" />;
 
-  return <>{landingCopy}</>;
+  // return <>{landingCopy}</>;
+  return <>
+  Your Ultimate Chrome Productivity Extension
+  </>
 }
